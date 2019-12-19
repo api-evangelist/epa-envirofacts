@@ -1,0 +1,862 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "version": "v1",
+        "title": "EPA Radiation Ambient Monitoring API",
+        "description": "Formerly, Environmental Radiation Ambient Monitoring System (ERAMS), provides data from a national network of monitoring stations that collect air, precipitation, drinking water, and milk samples for analysis of radioactivity.",
+        "termsOfService": ""
+    },
+    "servers": [
+        "httpsiaspub.epa.gov\/enviro\/efservice\/"
+    ],
+    "paths": {
+        "\/BGM_ONSITE_TREATMENT\/ROWS\/{row_start}:{row_end}\/{output}": {
+            "get": {
+                "summary": "",
+                "description": "",
+                "operationId": "EnviroFactsBGMONSITETREATMENT",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "output",
+                        "in": "path",
+                        "description": "which format to output (JSON,XML,CSV,Excel)"
+                    },
+                    {
+                        "name": "row_end",
+                        "in": "path",
+                        "description": "which row to end on"
+                    },
+                    {
+                        "name": "row_start",
+                        "in": "path",
+                        "description": "which row to start on"
+                    }
+                ]
+            }
+        },
+        "\/ERM_ANALYSIS\/ROWS\/{row_start}:{row_end}\/{output}": {
+            "get": {
+                "summary": "",
+                "description": "",
+                "operationId": "EnviroFactsERMANALYSIS",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "output",
+                        "in": "path",
+                        "description": "which format to output (JSON,XML,CSV,Excel)"
+                    },
+                    {
+                        "name": "row_end",
+                        "in": "path",
+                        "description": "which row to end on"
+                    },
+                    {
+                        "name": "row_start",
+                        "in": "path",
+                        "description": "which row to start on"
+                    }
+                ]
+            }
+        },
+        "\/ERM_ANALYTE\/ROWS\/{row_start}:{row_end}\/{output}": {
+            "get": {
+                "summary": "",
+                "description": "",
+                "operationId": "EnviroFactsERMANALYTE",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "output",
+                        "in": "path",
+                        "description": "which format to output (JSON,XML,CSV,Excel)"
+                    },
+                    {
+                        "name": "row_end",
+                        "in": "path",
+                        "description": "which row to end on"
+                    },
+                    {
+                        "name": "row_start",
+                        "in": "path",
+                        "description": "which row to start on"
+                    }
+                ]
+            }
+        },
+        "\/ERM_ANA_PROC\/ROWS\/{row_start}:{row_end}\/{output}": {
+            "get": {
+                "summary": "",
+                "description": "",
+                "operationId": "EnviroFactsERMANAPROC",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "output",
+                        "in": "path",
+                        "description": "which format to output (JSON,XML,CSV,Excel)"
+                    },
+                    {
+                        "name": "row_end",
+                        "in": "path",
+                        "description": "which row to end on"
+                    },
+                    {
+                        "name": "row_start",
+                        "in": "path",
+                        "description": "which row to start on"
+                    }
+                ]
+            }
+        },
+        "\/ERM_COUNT\/ROWS\/{row_start}:{row_end}\/{output}": {
+            "get": {
+                "summary": "",
+                "description": "",
+                "operationId": "EnviroFactsERMCOUNT",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "output",
+                        "in": "path",
+                        "description": "which format to output (JSON,XML,CSV,Excel)"
+                    },
+                    {
+                        "name": "row_end",
+                        "in": "path",
+                        "description": "which row to end on"
+                    },
+                    {
+                        "name": "row_start",
+                        "in": "path",
+                        "description": "which row to start on"
+                    }
+                ]
+            }
+        },
+        "\/ERM_DET_TYPE\/ROWS\/{row_start}:{row_end}\/{output}": {
+            "get": {
+                "summary": "",
+                "description": "",
+                "operationId": "EnviroFactsERMDETTYPE",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "output",
+                        "in": "path",
+                        "description": "which format to output (JSON,XML,CSV,Excel)"
+                    },
+                    {
+                        "name": "row_end",
+                        "in": "path",
+                        "description": "which row to end on"
+                    },
+                    {
+                        "name": "row_start",
+                        "in": "path",
+                        "description": "which row to start on"
+                    }
+                ]
+            }
+        },
+        "\/ERM_LOCATION\/ROWS\/{row_start}:{row_end}\/{output}": {
+            "get": {
+                "summary": "",
+                "description": "",
+                "operationId": "EnviroFactsERMLOCATION",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "output",
+                        "in": "path",
+                        "description": "which format to output (JSON,XML,CSV,Excel)"
+                    },
+                    {
+                        "name": "row_end",
+                        "in": "path",
+                        "description": "which row to end on"
+                    },
+                    {
+                        "name": "row_start",
+                        "in": "path",
+                        "description": "which row to start on"
+                    }
+                ]
+            }
+        },
+        "\/ERM_MATRIX\/ROWS\/{row_start}:{row_end}\/{output}": {
+            "get": {
+                "summary": "",
+                "description": "",
+                "operationId": "EnviroFactsERMMATRIX",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "output",
+                        "in": "path",
+                        "description": "which format to output (JSON,XML,CSV,Excel)"
+                    },
+                    {
+                        "name": "row_end",
+                        "in": "path",
+                        "description": "which row to end on"
+                    },
+                    {
+                        "name": "row_start",
+                        "in": "path",
+                        "description": "which row to start on"
+                    }
+                ]
+            }
+        },
+        "\/ERM_PROJECT\/ROWS\/{row_start}:{row_end}\/{output}": {
+            "get": {
+                "summary": "",
+                "description": "",
+                "operationId": "EnviroFactsERMPROJECT",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "output",
+                        "in": "path",
+                        "description": "which format to output (JSON,XML,CSV,Excel)"
+                    },
+                    {
+                        "name": "row_end",
+                        "in": "path",
+                        "description": "which row to end on"
+                    },
+                    {
+                        "name": "row_start",
+                        "in": "path",
+                        "description": "which row to start on"
+                    }
+                ]
+            }
+        },
+        "\/ERM_RESULT\/ROWS\/{row_start}:{row_end}\/{output}": {
+            "get": {
+                "summary": "",
+                "description": "",
+                "operationId": "EnviroFactsERMRESULT",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "output",
+                        "in": "path",
+                        "description": "which format to output (JSON,XML,CSV,Excel)"
+                    },
+                    {
+                        "name": "row_end",
+                        "in": "path",
+                        "description": "which row to end on"
+                    },
+                    {
+                        "name": "row_start",
+                        "in": "path",
+                        "description": "which row to start on"
+                    }
+                ]
+            }
+        },
+        "\/ERM_SAMPLE\/ROWS\/{row_start}:{row_end}\/{output}": {
+            "get": {
+                "summary": "",
+                "description": "",
+                "operationId": "EnviroFactsERMSAMPLE",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "output",
+                        "in": "path",
+                        "description": "which format to output (JSON,XML,CSV,Excel)"
+                    },
+                    {
+                        "name": "row_end",
+                        "in": "path",
+                        "description": "which row to end on"
+                    },
+                    {
+                        "name": "row_start",
+                        "in": "path",
+                        "description": "which row to start on"
+                    }
+                ]
+            }
+        },
+        "\/ERM_STUDY\/ROWS\/{row_start}:{row_end}\/{output}": {
+            "get": {
+                "summary": "",
+                "description": "",
+                "operationId": "EnviroFactsERMSTUDY",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "output",
+                        "in": "path",
+                        "description": "which format to output (JSON,XML,CSV,Excel)"
+                    },
+                    {
+                        "name": "row_end",
+                        "in": "path",
+                        "description": "which row to end on"
+                    },
+                    {
+                        "name": "row_start",
+                        "in": "path",
+                        "description": "which row to start on"
+                    }
+                ]
+            }
+        },
+        "\/LCR_SAMPLE\/ROWS\/{row_start}:{row_end}\/{output}": {
+            "get": {
+                "summary": "",
+                "description": "",
+                "operationId": "EnviroFactsLCRSAMPLE",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "output",
+                        "in": "path",
+                        "description": "which format to output (JSON,XML,CSV,Excel)"
+                    },
+                    {
+                        "name": "row_end",
+                        "in": "path",
+                        "description": "which row to end on"
+                    },
+                    {
+                        "name": "row_start",
+                        "in": "path",
+                        "description": "which row to start on"
+                    }
+                ]
+            }
+        },
+        "\/LCR_SAMPLE_RESULT\/ROWS\/{row_start}:{row_end}\/{output}": {
+            "get": {
+                "summary": "",
+                "description": "",
+                "operationId": "EnviroFactsLCRSAMPLERESULT",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "output",
+                        "in": "path",
+                        "description": "which format to output (JSON,XML,CSV,Excel)"
+                    },
+                    {
+                        "name": "row_end",
+                        "in": "path",
+                        "description": "which row to end on"
+                    },
+                    {
+                        "name": "row_start",
+                        "in": "path",
+                        "description": "which row to start on"
+                    }
+                ]
+            }
+        }
+    },
+    "components": {
+        "schemas": {
+            "erm_result": {
+                "type": "object",
+                "properties": {
+                    "": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "ANALYTE_ID": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "ANA_NUM": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "CSU": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "CSU_IN_SI": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "MDC": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "MDC_IN_SI": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "RESULT_AMOUNT": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "RESULT_DATE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "RESULT_ID": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "RESULT_IN_SI": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "RESULT_UNIT": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "SI_UNIT": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "erm_analysis": {
+                "type": "object",
+                "properties": {
+                    "": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "ANA_COMMENT": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "ANA_NUM": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "ANA_PROC_NUM": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "ANA_SIZE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "ANA_SIZE_2": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "ANA_UNIT": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "ANA_UNIT_2": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "SAMP_NUM": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "erm_count": {
+                "type": "object",
+                "properties": {
+                    "": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "ANA_NUM": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "DET_NUM": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "DURATION": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "RUN_NUM": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "RUN_START": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "erm_sample": {
+                "type": "object",
+                "properties": {
+                    "": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "CLIENT_ID": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "COLLECT_END": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "COLLECT_START": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "LOC_NUM": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "MAT_ID": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "PROJ_NUM": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "SAMP_COMMENT": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "SAMP_DESC": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "SAMP_ID": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "SAMP_NUM": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "SAMP_SIZE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "SAMP_UNIT": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "erm_matrix": {
+                "type": "object",
+                "properties": {
+                    "": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "MAT_DESC": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "MAT_ID": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "MAT_NUM": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "erm_location": {
+                "type": "object",
+                "properties": {
+                    "": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "CITY_NAME": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "LOC_NUM": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "STATE_ABBR": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "STATION": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "SURFACE_WATER_SOURCE": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "erm_project": {
+                "type": "object",
+                "properties": {
+                    "": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "PROJ_ID": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "PROJ_NAME": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "PROJ_NUM": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "STUDY_NUM": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "erm_study": {
+                "type": "object",
+                "properties": {
+                    "": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "STUDY_ID": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "STUDY_NAME": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "STUDY_NUM": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "erm_analyte": {
+                "type": "object",
+                "properties": {
+                    "": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "ANALYTE_ID": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "ANALYTE_NAME": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "ANA_TYPE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "CRS_ID": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "HALF_LIFE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "HALF_LIFE_TIME_UNIT": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "erm_ana_proc": {
+                "type": "object",
+                "properties": {
+                    "": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "ANA_PROC_ID": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "ANA_PROC_NAME": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "ANA_PROC_NUM": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "PROC_TYPE_ID": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "erm_det_type": {
+                "type": "object",
+                "properties": {
+                    "": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "DET_ID": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "DET_NUM": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "DET_TYPE_ID": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "bgm_onsite_treatment": {
+                "type": "object",
+                "properties": {
+                    "ACTIVITY_LOCATION": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "HANDLER_ID": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "HZ_PG": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "LAST_CHANGE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "MANAGED_TONS_CALC": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "MANAGEMENT_METHOD": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "MANAGEMENT_METHOD_OWNER": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "SEQ_NUMBER": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "SOURCE_TYPE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "SYS_PG_NUM_SEQ": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "SYS_TDR_QTY": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "USERID": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "lcr_sample": {
+                "type": "object",
+                "properties": {
+                    "": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "EPA_REGION": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "PRIMACY_AGENCY_CODE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "PWSID": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "RECONCILIATION_ID": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "SAMPLE_ID": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "SAMPLING_END_DATE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "SAMPLING_START_DATE": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "lcr_sample_result": {
+                "type": "object",
+                "properties": {
+                    "": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "CONTAMINANT_CODE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "EPA_REGION": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "PRIMACY_AGENCY_CODE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "PWSID": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "RESULT_SIGN_CODE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "SAMPLE_ID": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "SAMPLE_MEASURE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "SAR_ID": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "UNIT_OF_MEASURE": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            }
+        }
+    }
+}
