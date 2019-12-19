@@ -1,0 +1,780 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "version": "v1",
+        "title": "EPA Safe Drinking Water Information System API",
+        "description": "Safe Drinking Water Information System provides information on water system violations of EPA's drinking water regulations.",
+        "termsOfService": ""
+    },
+    "servers": [
+        "httpsiaspub.epa.gov\/enviro\/efservice\/"
+    ],
+    "paths": {
+        "\/ENFORCEMENT_ACTION\/ROWS\/{row_start}:{row_end}\/{output}": {
+            "get": {
+                "summary": "",
+                "description": "",
+                "operationId": "EnviroFactsENFORCEMENTACTION",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "output",
+                        "in": "path",
+                        "description": "which format to output (JSON,XML,CSV,Excel)"
+                    },
+                    {
+                        "name": "row_end",
+                        "in": "path",
+                        "description": "which row to end on"
+                    },
+                    {
+                        "name": "row_start",
+                        "in": "path",
+                        "description": "which row to start on"
+                    }
+                ]
+            }
+        },
+        "\/GEOGRAPHIC_AREA\/ROWS\/{row_start}:{row_end}\/{output}": {
+            "get": {
+                "summary": "",
+                "description": "",
+                "operationId": "EnviroFactsGEOGRAPHICAREA",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "output",
+                        "in": "path",
+                        "description": "which format to output (JSON,XML,CSV,Excel)"
+                    },
+                    {
+                        "name": "row_end",
+                        "in": "path",
+                        "description": "which row to end on"
+                    },
+                    {
+                        "name": "row_start",
+                        "in": "path",
+                        "description": "which row to start on"
+                    }
+                ]
+            }
+        },
+        "\/SERVICE_AREA\/ROWS\/{row_start}:{row_end}\/{output}": {
+            "get": {
+                "summary": "",
+                "description": "",
+                "operationId": "EnviroFactsSERVICEAREA",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "output",
+                        "in": "path",
+                        "description": "which format to output (JSON,XML,CSV,Excel)"
+                    },
+                    {
+                        "name": "row_end",
+                        "in": "path",
+                        "description": "which row to end on"
+                    },
+                    {
+                        "name": "row_start",
+                        "in": "path",
+                        "description": "which row to start on"
+                    }
+                ]
+            }
+        },
+        "\/VIOLATION\/ROWS\/{row_start}:{row_end}\/{output}": {
+            "get": {
+                "summary": "",
+                "description": "",
+                "operationId": "EnviroFactsVIOLATION",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "output",
+                        "in": "path",
+                        "description": "which format to output (JSON,XML,CSV,Excel)"
+                    },
+                    {
+                        "name": "row_end",
+                        "in": "path",
+                        "description": "which row to end on"
+                    },
+                    {
+                        "name": "row_start",
+                        "in": "path",
+                        "description": "which row to start on"
+                    }
+                ]
+            }
+        },
+        "\/VIOLATION_ENF_ASSOC\/ROWS\/{row_start}:{row_end}\/{output}": {
+            "get": {
+                "summary": "",
+                "description": "",
+                "operationId": "EnviroFactsVIOLATIONENFASSOC",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "output",
+                        "in": "path",
+                        "description": "which format to output (JSON,XML,CSV,Excel)"
+                    },
+                    {
+                        "name": "row_end",
+                        "in": "path",
+                        "description": "which row to end on"
+                    },
+                    {
+                        "name": "row_start",
+                        "in": "path",
+                        "description": "which row to start on"
+                    }
+                ]
+            }
+        },
+        "\/WATER_SYSTEM\/ROWS\/{row_start}:{row_end}\/{output}": {
+            "get": {
+                "summary": "",
+                "description": "",
+                "operationId": "EnviroFactsWATERSYSTEM",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "output",
+                        "in": "path",
+                        "description": "which format to output (JSON,XML,CSV,Excel)"
+                    },
+                    {
+                        "name": "row_end",
+                        "in": "path",
+                        "description": "which row to end on"
+                    },
+                    {
+                        "name": "row_start",
+                        "in": "path",
+                        "description": "which row to start on"
+                    }
+                ]
+            }
+        },
+        "\/WATER_SYSTEM_FACILITY\/ROWS\/{row_start}:{row_end}\/{output}": {
+            "get": {
+                "summary": "",
+                "description": "",
+                "operationId": "EnviroFactsWATERSYSTEMFACILITY",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "output",
+                        "in": "path",
+                        "description": "which format to output (JSON,XML,CSV,Excel)"
+                    },
+                    {
+                        "name": "row_end",
+                        "in": "path",
+                        "description": "which row to end on"
+                    },
+                    {
+                        "name": "row_start",
+                        "in": "path",
+                        "description": "which row to start on"
+                    }
+                ]
+            }
+        }
+    },
+    "components": {
+        "schemas": {
+            "water_system": {
+                "type": "object",
+                "properties": {
+                    "": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "ADDRESS_LINE1": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "ADDRESS_LINE2": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "ADMIN_NAME": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "ALT_PHONE_NUMBER": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "CDS_ID": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "CITIES_SERVED": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "CITY_NAME": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "COUNTIES_SERVED": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "COUNTRY_CODE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "DBPR_SCHEDULE_CAT_CODE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "EMAIL_ADDR": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "EPA_REGION": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "FAX_NUMBER": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "GW_SW_CODE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "IS_GRANT_ELIGIBLE_IND": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "IS_SCHOOL_OR_DAYCARE_IND": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "IS_WHOLESALER_IND": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "LT2_SCHEDULE_CAT_CODE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "NPM_CANDIDATE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "ORG_NAME": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "OUTSTANDING_PERFORMER": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "OUTSTANDING_PERFORM_BEGIN_DATE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "OWNER_TYPE_CODE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "PHONE_EXT_NUMBER": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "PHONE_NUMBER": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "POPULATION_SERVED_COUNT": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "POP_CAT_11_CODE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "POP_CAT_2_CODE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "POP_CAT_3_CODE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "POP_CAT_4_CODE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "POP_CAT_5_CODE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "PRIMACY_AGENCY_CODE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "PRIMACY_TYPE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "PRIMARY_SOURCE_CODE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "PWSID": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "PWS_ACTIVITY_CODE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "PWS_DEACTIVATION_DATE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "PWS_NAME": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "PWS_TYPE_CODE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "SEASON_BEGIN_DATE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "SEASON_END_DATE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "SERVICE_CONNECTIONS_COUNT": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "SOURCE_PROTECTION_BEGIN_DATE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "SOURCE_WATER_PROTECTION_CODE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "STATE_CODE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "SUBMISSION_STATUS_CODE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "ZIP_CODE": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "water_system_facility": {
+                "type": "object",
+                "properties": {
+                    "": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "AVAILABILITY_CODE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "EPA_REGION": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "FACILITY_ACTIVITY_CODE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "FACILITY_DEACTIVATION_DATE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "FACILITY_ID": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "FACILITY_NAME": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "FACILITY_TYPE_CODE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "FILTRATION_STATUS_CODE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "IS_SOURCE_IND": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "IS_SOURCE_TREATED_IND": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "PRIMACY_AGENCY_CODE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "PWSID": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "PWS_ACTIVITY_CODE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "PWS_DEACTIVATION_DATE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "PWS_TYPE_CODE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "SELLER_PWSID": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "SELLER_PWS_NAME": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "SELLER_TREATMENT_CODE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "STATE_FACILITY_ID": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "SUBMISSION_STATUS_CODE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "WATER_TYPE_CODE": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "violation": {
+                "type": "object",
+                "properties": {
+                    "": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "COMPLIANCE_STATUS_CODE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "COMPL_PER_BEGIN_DATE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "COMPL_PER_END_DATE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "CONTAMINANT_CODE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "CORRECTIVE_ACTION_ID": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "EPA_REGION": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "FACILITY_ID": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "IS_HEALTH_BASED_IND": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "IS_MAJOR_VIOL_IND": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "LATEST_ENFORCEMENT_ID": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "NPM_CANDIDATE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "ORIGINATOR_CODE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "POPULATION_SERVED_COUNT": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "POP_CAT_5_CODE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "PRIMACY_AGENCY_CODE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "PRIMARY_SOURCE_CODE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "PUBLIC_NOTIFICATION_TIER": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "PWSID": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "PWS_ACTIVITY_CODE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "PWS_DEACTIVATION_DATE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "PWS_TYPE_CODE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "RTC_DATE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "RTC_ENFORCEMENT_ID": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "RULE_CODE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "RULE_FAMILY_CODE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "RULE_GROUP_CODE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "SAMPLE_RESULT_ID": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "SEVERITY_IND_CNT": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "STATE_MCL": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "UNIT_OF_MEASURE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "VIOLATION_CATEGORY_CODE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "VIOLATION_CODE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "VIOLATION_ID": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "VIOL_MEASURE": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "violation_enf_assoc": {
+                "type": "object",
+                "properties": {
+                    "": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "ENFORCEMENT_ID": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "PWSID": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "VIOLATION_ID": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "enforcement_action": {
+                "type": "object",
+                "properties": {
+                    "": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "ENFORCEMENT_ACTION_TYPE_CODE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "ENFORCEMENT_COMMENT_TEXT": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "ENFORCEMENT_DATE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "ENFORCEMENT_ID": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "ORIGINATOR_CODE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "PWSID": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "geographic_area": {
+                "type": "object",
+                "properties": {
+                    "": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "ANSI_ENTITY_CODE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "AREA_TYPE_CODE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "CITY_SERVED": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "COUNTY_SERVED": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "EPA_REGION": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "GEO_ID": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "PRIMACY_AGENCY_CODE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "PWSID": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "PWS_ACTIVITY_CODE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "PWS_TYPE_CODE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "STATE_SERVED": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "TRIBAL_CODE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "ZIP_CODE_SERVED": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "service_area": {
+                "type": "object",
+                "properties": {
+                    "": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "EPA_REGION": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "IS_PRIMARY_SERVICE_AREA_CODE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "PRIMACY_AGENCY_CODE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "PWSID": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "PWS_ACTIVITY_CODE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "PWS_TYPE_CODE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "SERVICE_AREA_TYPE_CODE": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            }
+        }
+    }
+}
