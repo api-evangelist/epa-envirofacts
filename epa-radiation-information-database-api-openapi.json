@@ -1,0 +1,472 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "version": "v1",
+        "title": "EPA Radiation Information Database API",
+        "description": "The Radiation Information Database provides information aobut certain facilities that EPA regulates for radiation and radioactivity.",
+        "termsOfService": ""
+    },
+    "servers": [
+        "httpsiaspub.epa.gov\/enviro\/efservice\/"
+    ],
+    "paths": {
+        "\/RAD_FACILITY\/ROWS\/{row_start}:{row_end}\/{output}": {
+            "get": {
+                "summary": "",
+                "description": "",
+                "operationId": "EnviroFactsRADFACILITY",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "output",
+                        "in": "path",
+                        "description": "which format to output (JSON,XML,CSV,Excel)"
+                    },
+                    {
+                        "name": "row_end",
+                        "in": "path",
+                        "description": "which row to end on"
+                    },
+                    {
+                        "name": "row_start",
+                        "in": "path",
+                        "description": "which row to start on"
+                    }
+                ]
+            }
+        },
+        "\/RAD_FACILITY_TYPE\/ROWS\/{row_start}:{row_end}\/{output}": {
+            "get": {
+                "summary": "",
+                "description": "",
+                "operationId": "EnviroFactsRADFACILITYTYPE",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "output",
+                        "in": "path",
+                        "description": "which format to output (JSON,XML,CSV,Excel)"
+                    },
+                    {
+                        "name": "row_end",
+                        "in": "path",
+                        "description": "which row to end on"
+                    },
+                    {
+                        "name": "row_start",
+                        "in": "path",
+                        "description": "which row to start on"
+                    }
+                ]
+            }
+        },
+        "\/RAD_GEO_LOCATION\/ROWS\/{row_start}:{row_end}\/{output}": {
+            "get": {
+                "summary": "",
+                "description": "",
+                "operationId": "EnviroFactsRADGEOLOCATION",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "output",
+                        "in": "path",
+                        "description": "which format to output (JSON,XML,CSV,Excel)"
+                    },
+                    {
+                        "name": "row_end",
+                        "in": "path",
+                        "description": "which row to end on"
+                    },
+                    {
+                        "name": "row_start",
+                        "in": "path",
+                        "description": "which row to start on"
+                    }
+                ]
+            }
+        },
+        "\/RAD_REGULATION\/ROWS\/{row_start}:{row_end}\/{output}": {
+            "get": {
+                "summary": "",
+                "description": "",
+                "operationId": "EnviroFactsRADREGULATION",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "output",
+                        "in": "path",
+                        "description": "which format to output (JSON,XML,CSV,Excel)"
+                    },
+                    {
+                        "name": "row_end",
+                        "in": "path",
+                        "description": "which row to end on"
+                    },
+                    {
+                        "name": "row_start",
+                        "in": "path",
+                        "description": "which row to start on"
+                    }
+                ]
+            }
+        },
+        "\/RAD_REGULATORY_PROG\/ROWS\/{row_start}:{row_end}\/{output}": {
+            "get": {
+                "summary": "",
+                "description": "",
+                "operationId": "EnviroFactsRADREGULATORYPROG",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "output",
+                        "in": "path",
+                        "description": "which format to output (JSON,XML,CSV,Excel)"
+                    },
+                    {
+                        "name": "row_end",
+                        "in": "path",
+                        "description": "which row to end on"
+                    },
+                    {
+                        "name": "row_start",
+                        "in": "path",
+                        "description": "which row to start on"
+                    }
+                ]
+            }
+        }
+    },
+    "components": {
+        "schemas": {
+            "rad_regulatory_prog": {
+                "type": "object",
+                "properties": {
+                    "": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "CIT_REF_CODE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "ENFORCEMENT_AGENCY": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "OPERATING_ORGANIZATION": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "OVERSIGHT_AGENCY": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "PROG_FAC_STATUS": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "PROG_FAC_TYPE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "RAD_CHANGE_DATE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "RAD_SYS_ID": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "SEC_CIT_REF_FLAG": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "SUBPART_ID": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "rad_facility": {
+                "type": "object",
+                "properties": {
+                    "": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "CITY_NAME": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "CONGRESSIONAL_DIST_NUM": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "COUNTRY_NAME": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "COUNTY_NAME": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "EF_PGM_SOURCE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "EPA_REGION_CODE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "FACILITY_REGISTRY_ID": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "FED_FACILITY_CODE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "FRS_UPDATE_DATE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "HUC_CODE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "LOCATION_ADDRESS": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "POSTAL_CODE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "PRIMARY_NAME": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "RAD_CHANGE_DATE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "RAD_SYS_ID": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "SOURCE_DATA": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "STATE_CODE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "STATE_NAME": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "SUPPLEMENTAL_LOCATION": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "TRIBAL_LAND_CODE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "TRIBAL_LAND_NAME": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "URL": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "URL_LINK_DESCRIPTION": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "rad_geo_location": {
+                "type": "object",
+                "properties": {
+                    "": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "COORDINATE_DATA_SOURCE_CODE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "DATA_COLLECTION_DATE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "EF_PGM_SOURCE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "GEOMETRIC_TYPE_CODE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "HORIZONTAL_ACCURACY_MEASURE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "HORIZONTAL_COLLECT_METHOD_CODE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "HORIZONTAL_REFER_DATUM_CODE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "LATITUDE_MEASURE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "LOCATION_COMMENTS_TEXT": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "LONGITUDE_MEASURE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "RAD_CHANGE_DATE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "RAD_OVERRIDE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "RAD_SYS_ID": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "REFERENCE_POINT_CODE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "SOURCE_MAP_SCALE_NUMBER": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "SUB_ID": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "SUB_TYPE_CODE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "VERTICAL_ACCURACY_MEASURE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "VERTICAL_COLLECT_METHOD_CODE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "VERTICAL_MEASURE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "VERTICAL_REFERENCE_DATA_CODE": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "rad_regulation": {
+                "type": "object",
+                "properties": {
+                    "": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "CFR_PART": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "CFR_SUBPART": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "CIT_REF_CODE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "CRF_SECTION": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "PART_ID": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "RAD_CHANGE_DATE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "REG_TITLE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "SECTION_ID": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "STATUTE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "STAT_ACRONYM": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "SUBPART_ID": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "TITLE_ID": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "URL": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "rad_facility_type": {
+                "type": "object",
+                "properties": {
+                    "": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "CIT_REF_CODE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "FACILITY_TYPE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "SEC_CIT_REF_FLAG": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "SUBPART_ID": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            }
+        }
+    }
+}
