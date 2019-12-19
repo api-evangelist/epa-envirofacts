@@ -1,0 +1,1014 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "version": "v1",
+        "title": "EPA Air Facility System (AFS) API",
+        "description": "Air Facility System (AFS) provides permit emissions and compliance data on air pollution point sources.",
+        "termsOfService": ""
+    },
+    "servers": [
+        "httpsiaspub.epa.gov\/enviro\/efservice\/"
+    ],
+    "paths": {
+        "\/EFFRS_AFSACT1\/ROWS\/{row_start}:{row_end}\/{output}": {
+            "get": {
+                "summary": "",
+                "description": "",
+                "operationId": "EnviroFactsEFFRSAFSACT1",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "output",
+                        "in": "path",
+                        "description": "which format to output (JSON,XML,CSV,Excel)"
+                    },
+                    {
+                        "name": "row_end",
+                        "in": "path",
+                        "description": "which row to end on"
+                    },
+                    {
+                        "name": "row_start",
+                        "in": "path",
+                        "description": "which row to start on"
+                    }
+                ]
+            }
+        },
+        "\/EFFRS_AFSACT2\/ROWS\/{row_start}:{row_end}\/{output}": {
+            "get": {
+                "summary": "",
+                "description": "",
+                "operationId": "EnviroFactsEFFRSAFSACT2",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "output",
+                        "in": "path",
+                        "description": "which format to output (JSON,XML,CSV,Excel)"
+                    },
+                    {
+                        "name": "row_end",
+                        "in": "path",
+                        "description": "which row to end on"
+                    },
+                    {
+                        "name": "row_start",
+                        "in": "path",
+                        "description": "which row to start on"
+                    }
+                ]
+            }
+        },
+        "\/EFFRS_AFSAP\/ROWS\/{row_start}:{row_end}\/{output}": {
+            "get": {
+                "summary": "",
+                "description": "",
+                "operationId": "EnviroFactsEFFRSAFSAP",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "output",
+                        "in": "path",
+                        "description": "which format to output (JSON,XML,CSV,Excel)"
+                    },
+                    {
+                        "name": "row_end",
+                        "in": "path",
+                        "description": "which row to end on"
+                    },
+                    {
+                        "name": "row_start",
+                        "in": "path",
+                        "description": "which row to start on"
+                    }
+                ]
+            }
+        },
+        "\/EFFRS_AFSAPP\/ROWS\/{row_start}:{row_end}\/{output}": {
+            "get": {
+                "summary": "",
+                "description": "",
+                "operationId": "EnviroFactsEFFRSAFSAPP",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "output",
+                        "in": "path",
+                        "description": "which format to output (JSON,XML,CSV,Excel)"
+                    },
+                    {
+                        "name": "row_end",
+                        "in": "path",
+                        "description": "which row to end on"
+                    },
+                    {
+                        "name": "row_start",
+                        "in": "path",
+                        "description": "which row to start on"
+                    }
+                ]
+            }
+        },
+        "\/EFFRS_AFSCMS\/ROWS\/{row_start}:{row_end}\/{output}": {
+            "get": {
+                "summary": "",
+                "description": "",
+                "operationId": "EnviroFactsEFFRSAFSCMS",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "output",
+                        "in": "path",
+                        "description": "which format to output (JSON,XML,CSV,Excel)"
+                    },
+                    {
+                        "name": "row_end",
+                        "in": "path",
+                        "description": "which row to end on"
+                    },
+                    {
+                        "name": "row_start",
+                        "in": "path",
+                        "description": "which row to start on"
+                    }
+                ]
+            }
+        },
+        "\/EFFRS_AFSPLT1\/ROWS\/{row_start}:{row_end}\/{output}": {
+            "get": {
+                "summary": "",
+                "description": "",
+                "operationId": "EnviroFactsEFFRSAFSPLT1",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "output",
+                        "in": "path",
+                        "description": "which format to output (JSON,XML,CSV,Excel)"
+                    },
+                    {
+                        "name": "row_end",
+                        "in": "path",
+                        "description": "which row to end on"
+                    },
+                    {
+                        "name": "row_start",
+                        "in": "path",
+                        "description": "which row to start on"
+                    }
+                ]
+            }
+        },
+        "\/EFFRS_AFSPLT2\/ROWS\/{row_start}:{row_end}\/{output}": {
+            "get": {
+                "summary": "",
+                "description": "",
+                "operationId": "EnviroFactsEFFRSAFSPLT2",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "output",
+                        "in": "path",
+                        "description": "which format to output (JSON,XML,CSV,Excel)"
+                    },
+                    {
+                        "name": "row_end",
+                        "in": "path",
+                        "description": "which row to end on"
+                    },
+                    {
+                        "name": "row_start",
+                        "in": "path",
+                        "description": "which row to start on"
+                    }
+                ]
+            }
+        },
+        "\/EFFRS_AFSSUBP\/ROWS\/{row_start}:{row_end}\/{output}": {
+            "get": {
+                "summary": "",
+                "description": "",
+                "operationId": "EnviroFactsEFFRSAFSSUBP",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "output",
+                        "in": "path",
+                        "description": "which format to output (JSON,XML,CSV,Excel)"
+                    },
+                    {
+                        "name": "row_end",
+                        "in": "path",
+                        "description": "which row to end on"
+                    },
+                    {
+                        "name": "row_start",
+                        "in": "path",
+                        "description": "which row to start on"
+                    }
+                ]
+            }
+        }
+    },
+    "components": {
+        "schemas": {
+            "effrs_afsact1": {
+                "type": "object",
+                "properties": {
+                    "ACTION_DESC": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "ACTION_NUMBER": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "ACTION_TYPE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "AIR_PROGRAM_CODES": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "CREATION_DATE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "DATE_ACHIEVED": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "HPV_ADDRESSING_ACTION_DESC": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "KEY_ACTION_NUMBERS": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "NATIONAL_ACTION_DESC": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "NATIONAL_ACTION_TYPE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "PENALTY_AMT": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "POLLUTANT_CODE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "REGIONAL_DATA_ELEMENT": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "REGIONAL_DATA_ELEMENT_16": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "RESULTS_CODE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "RESULTS_CODE_DESC": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "STATE_COUNTY_COMPLIANCE_SOURCE": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "effrs_afsact2": {
+                "type": "object",
+                "properties": {
+                    "ACTION_NUMBER": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "ACTION_TYPE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "AIR_PROGRAM_CODES": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "DATE_ACHIEVED": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "DATE_CREATED": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "HPV_ADDRESSING_ACTION_DATE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "HPV_ADDRESSING_ACTION_DESC": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "HPV_ADDRESSING_ACTION_PENALTY": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "HPV_ADDRESSING_ACTION_TYPE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "HPV_DAY_ZERO_ACTION_DATE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "HPV_DAY_ZERO_ACTION_DESC": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "HPV_DAY_ZERO_ACTION_TYPE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "HPV_DISCOVERY_ACTION_DESC": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "HPV_DISCOVERY_ACTION_TYPE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "HPV_DISCOVERY_DATE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "HPV_RESOLUTION_ACTION_DESC": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "HPV_RESOLUTION_ACTION_TYPE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "HPV_RESOLUTION_DATE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "LEAD_AGENCY": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "LEAD_AGENCY_DESC": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "NATIONAL_ACTION_TYPE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "STATE_COUNTY_COMPLIANCE_SOURCE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "VIOLATION_IDENTIFIER": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "VIOLATION_POLLUTANTS": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "VIOLATION_TYPE_CODES": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "effrs_afsap": {
+                "type": "object",
+                "properties": {
+                    "AIR_PROGRAMS": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "AIR_PROGRAM_CODE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "AIR_PROGRAM_DESC": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "AIR_PROGRAM_STATUS": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "AIR_PROGRAM_STATUS_DESC": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "AIR_PROGRAM_SUBPART": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "AIR_PROGRAM_SUBPART_DESC": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "EPA_CLASS_CODE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "EPA_CLASS_CODE_DESC": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "EPA_COMPLIANCE_STATUS": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "EPA_COMPLIANCE_STATUS_DESC": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "ES_CLASS_CODE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "ES_CLASS_CODE_DESC": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "ES_COMPLIANCE_STATUS": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "ES_COMPLIANCE_STATUS_DESC": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "STATE_CLASS_CODE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "STATE_CLASS_CODE_DESC": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "STATE_COMPLIANCE_STATUS": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "STATE_COMPLIANCE_STATUS_DESC": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "STATE_COUNTY_COMPLIANCE_SOURCE": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "effrs_afsapp": {
+                "type": "object",
+                "properties": {
+                    "AIR_PROGRAMS": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "AIR_PROGRAM_CODE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "CHEMICAL_ABSTRACT_SERVICE_DESC": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "CHEMICAL_ABSTRACT_SERVICE_NUM": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "DATE_RECORD_UPDATED": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "EPA_ATTAIN_IND": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "EPA_ATTAIN_IND_DESC": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "EPA_PLLT_CLASS_CODE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "EPA_PLLT_CLASS_DESC": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "EPA_PLLT_COMPLIANCE_DESC": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "EPA_PLLT_COMPLIANCE_STATUS": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "ES_ATTAIN_IND": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "ES_ATTAIN_IND_DESC": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "ES_PLLT_CLASS_CODE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "ES_PLLT_CLASS_DESC": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "ES_PLLT_COMPLIANCE_DESC": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "ES_PLLT_COMPLIANCE_STATUS": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "POLLUTANT_CODE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "POLLUTANT_CODE_DESC": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "STATE_ATTAIN_IND": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "STATE_ATTAIN_IND_DESC": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "STATE_COUNTY_COMPLIANCE_SOURCE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "STATE_PLLT_CLASS_CODE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "STATE_PLLT_CLASS_DESC": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "STATE_PLLT_COMPLIANCE_DESC": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "STATE_PLLT_COMPLIANCE_STATUS": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "effrs_afscms": {
+                "type": "object",
+                "properties": {
+                    "CMS_SOURCE_CATEGORY": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "CMS_START_DATE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "COUNTY_NAME": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "DUN_BRADSTREET_NUMBER": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "EPA_PLANT_ID": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "FY2008_CMS_IND": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "FY2008_CMS_IND_DESC": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "FY2009_CMS_IND": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "FY2009_CMS_IND_DESC": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "FY2010_CMS_IND": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "FY2010_CMS_IND_DESC": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "FY2011_CMS_IND": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "FY2011_CMS_IND_DESC": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "FY2012_CMS_IND": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "FY2012_CMS_IND_DESC": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "FY2013_CMS_IND": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "FY2013_CMS_IND_DESC": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "FY2014_CMS_IND": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "FY2014_CMS_IND_DESC": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "FY2015_CMS_IND": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "FY2015_CMS_IND_DESC": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "PLANT_ID": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "REGION_CODE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "STATE_ABBREV": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "STATE_COUNTY_COMPLIANCE_SOURCE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "STATE_NAME": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "effrs_afsplt1": {
+                "type": "object",
+                "properties": {
+                    "AFS_PLANT_ID": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "CDS_PLANT_ID": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "COUNTY_CODE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "COUNTY_NAME": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "DATE_PLANT_INFO_LAST_UPDATED": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "DUN_BRADSTREET_NUMBER": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "EPA_PLANT_ID": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "GOVT_FACILITY_CODE_DESC": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "HPV_FLAG": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "LOCAL_CONTROL_REGION": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "LOCAL_CONTROL_REGION_DESC": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "NAICS_CODE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "NAICS_CODE_DESCRIPTION": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "NAICS_EQUIVALENT_SIC": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "NAT_INIT_AIR_TOXICS": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "NAT_INIT_AIR_TOXICS_DESC": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "OPERATING_STATUS": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "OPERATING_STATUS_DESCRIPTION": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "PLANT_CITY": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "PLANT_ID": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "PLANT_NAME": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "PLANT_STREET_ADDRESS": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "PRIMARY_SIC_CODE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "PRIMARY_SIC_DESCRIPTION": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "REGION_CODE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "SECONDARY_SIC_CODE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "SIC_EQUIVALENT_NAICS": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "STATE_ABBREV": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "STATE_CODE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "STATE_COUNTY_COMPLIANCE_SOURCE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "STATE_NAME": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "STATE_REGISTRATION_NUMBER": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "TERTIARY_SIC_CODE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "ZIP_CODE": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "effrs_afsplt2": {
+                "type": "object",
+                "properties": {
+                    "CONTACT_PERSION_COMPLIANCE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "EPA_CLASS_CODE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "EPA_CLASS_CODE_DESC": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "EPA_COMPLIANCE_STATUS": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "EPA_COMPLIANCE_STATUS_DESC": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "EPA_LATEST_FCE_ACTION_TYPE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "EPA_LATEST_FCE_DATE_ACHIEVED": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "ES_CLASS_CODE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "ES_CLASS_CODE_DESC": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "ES_COMPLIANCE_STATUS": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "ES_COMPLIANCE_STATUS_DESC": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "ES_LATEST_FCE_ACTION_TYPE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "ES_LATEST_FCE_DATE_ACHIEVED": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "MAILING_CITY": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "MAILING_PLANT_NAME": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "MAILING_STATE_ABBREV": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "MAILING_STATE_NAME": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "MAILING_STREET_ADDRESS": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "MAILING_ZIP": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "PHONE_AREA_CODE_COMPLIANCE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "PHONE_COMPLIANCE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "STATE_CLASS_CODE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "STATE_CLASS_CODE_DESC": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "STATE_COMPLIANCE_STATUS": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "STATE_COMPLIANCE_STATUS_DESC": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "STATE_COUNTY_COMPLIANCE_SOURCE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "STATE_LATEST_FCE_ACTION_TYPE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "STATE_LATEST_FCE_DATE_ACHIEVED": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "effrs_afssubp": {
+                "type": "object",
+                "properties": {
+                    "AIR_PROGRAM_CODE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "CDS_PLANT_ID": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "COUNTY_CODE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "COUNTY_NAME": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "DUN_BRADSTREET_NUMBER": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "EPA_PLANT_ID": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "PLANT_ID": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "REGION_CODE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "STATE_ABBREV": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "STATE_CODE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "STATE_COUNTY_COMPLIANCE_SOURCE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "STATE_NAME": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "SUBPART_HORIZONTAL": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            }
+        }
+    }
+}
