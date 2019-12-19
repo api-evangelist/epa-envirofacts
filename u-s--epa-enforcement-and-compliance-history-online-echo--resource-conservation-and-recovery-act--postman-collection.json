@@ -1,0 +1,261 @@
+{
+    "id": "e8926ba3db7d439263ce63ccf70f7d7d",
+    "name": "U.S. EPA Enforcement and Compliance History Online (ECHO) - Resource Conservation and Recovery Act ",
+    "description": null,
+    "auth": null,
+    "events": null,
+    "variables": [],
+    "order": [],
+    "folders_order": [],
+    "folders": [],
+    "requests": [
+        {
+            "id": "2caf303416c07047faacd05d8414f493",
+            "name": "Resource Conservation and Recovery Act (RCRA) Download Data Service",
+            "url": "httpsofmpub.epa.gov\/echo\/rcra_rest_services.get_download",
+            "description": "Based on the QID obtained from a get_facilities or get_facility_info query, return a comma sepated vaule (CSV) file of the facilities found.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "output",
+                    "description": "Output Format Flag.  Enter one of the following keywords:\n- CSV = Facility results formatted as comma delimited file download (default).\n- GEOJSOND = Facility results formatted as GeoJSON feature collection download.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "e8926ba3db7d439263ce63ccf70f7d7d",
+            "rawModeData": ""
+        },
+        {
+            "id": "adbb63eed60b5056afd13f8c15a6f2dc",
+            "name": "Resource Conservation and Recovery Act (RCRA) Facility Search Service",
+            "url": "httpsofmpub.epa.gov\/echo\/rcra_rest_services.get_facilities",
+            "description": "Validates query search parameters and returns query identifier.  Use the responseset parameter to set the page size",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "output",
+                    "description": "Output Format Flag.  Enter one of the following keywords:\n- CSV = Facility results formatted as comma delimited file download (default).\n- GEOJSOND = Facility results formatted as GeoJSON feature collection download.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "e8926ba3db7d439263ce63ccf70f7d7d",
+            "rawModeData": ""
+        },
+        {
+            "id": "fb67a31abb49893eccab0aaff50f2d37",
+            "name": "Resource Conservation and Recovery Act (RCRA) Facility Enhanced Search Service",
+            "url": "httpsofmpub.epa.gov\/echo\/rcra_rest_services.get_facility_info",
+            "description": "Returns either an array of Facilities or an array of Clusters that meet the specified search criteria.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "output",
+                    "description": "Output Format Flag.  Enter one of the following keywords:\n- CSV = Facility results formatted as comma delimited file download (default).\n- GEOJSOND = Facility results formatted as GeoJSON feature collection download.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "e8926ba3db7d439263ce63ccf70f7d7d",
+            "rawModeData": ""
+        },
+        {
+            "id": "be240f7407ddba49c71261d171c8b5a9",
+            "name": "Resource Conservation and Recovery Act (RCRA) GeoJSON Service",
+            "url": "httpsofmpub.epa.gov\/echo\/rcra_rest_services.get_geojson",
+            "description": "Based on the QID obtained from a get_facilities or get_facility_info query, return GeoJSON of the facilities found.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "output",
+                    "description": "Output Format Flag.  Enter one of the following keywords:\n- CSV = Facility results formatted as comma delimited file download (default).\n- GEOJSOND = Facility results formatted as GeoJSON feature collection download.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "e8926ba3db7d439263ce63ccf70f7d7d",
+            "rawModeData": ""
+        },
+        {
+            "id": "7a719598bc0d5fa55d631b01fe374cd7",
+            "name": "Resource Conservation and Recovery Act (RCRA) Info Clusters Service",
+            "url": "httpsofmpub.epa.gov\/echo\/rcra_rest_services.get_info_clusters",
+            "description": "Based on the QID obtained from a clustered get_facility_info query, download cluster facility information as either a CSV or GEOJSON file.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "output",
+                    "description": "Output Format Flag.  Enter one of the following keywords:\n- CSV = Facility results formatted as comma delimited file download (default).\n- GEOJSOND = Facility results formatted as GeoJSON feature collection download.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "e8926ba3db7d439263ce63ccf70f7d7d",
+            "rawModeData": ""
+        },
+        {
+            "id": "3c609a2248608147c154f7f13aad2147",
+            "name": "Resource Conservation and Recovery Act (RCRA) Map Service",
+            "url": "httpsofmpub.epa.gov\/echo\/rcra_rest_services.get_map",
+            "description": "The purpose of the GET_MAP service is to display facility coordinates and facility clusters related to a get_facilities facility query. Currently, the maximum number of coordinates returned is 500. GET_MAP performs automatic clustering at the state, county, and zip code levels to maximize the number of coordinates returned.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "output",
+                    "description": "Output Format Flag.  Enter one of the following keywords:\n- CSV = Facility results formatted as comma delimited file download (default).\n- GEOJSOND = Facility results formatted as GeoJSON feature collection download.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "e8926ba3db7d439263ce63ccf70f7d7d",
+            "rawModeData": ""
+        },
+        {
+            "id": "b8e87a317caf8f35a9f3071a4b63f5a4",
+            "name": "Resource Conservation and Recovery Act (RCRA) Paginated Results Service",
+            "url": "httpsofmpub.epa.gov\/echo\/rcra_rest_services.get_qid",
+            "description": "GET_QID is passed with a query ID corresponding to a previously run get_facilities query. It then returns a Facility object containing all matching facilities. The main purpose of GET_QID is for large querysets that contain multiple pages (responsesets) of output. GET_QID allows for pagination and for the selection and sorting of columns. ",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "output",
+                    "description": "Output Format Flag.  Enter one of the following keywords:\n- CSV = Facility results formatted as comma delimited file download (default).\n- GEOJSOND = Facility results formatted as GeoJSON feature collection download.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "e8926ba3db7d439263ce63ccf70f7d7d",
+            "rawModeData": ""
+        },
+        {
+            "id": "51d15805f771d43e22b3f55cb0570630",
+            "name": "Resource Conservation and Recovery Act (RCRA) Metadata Service",
+            "url": "httpsofmpub.epa.gov\/echo\/rcra_rest_services.metadata",
+            "description": "Returns the JSON Object Name and ColumnId for usage with the qcolumns parameter for get_qid, get_facility_info and other service endpoints.",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "output",
+                    "description": "Output Format Flag.  Enter one of the following keywords:\n- CSV = Facility results formatted as comma delimited file download (default).\n- GEOJSOND = Facility results formatted as GeoJSON feature collection download.",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "e8926ba3db7d439263ce63ccf70f7d7d",
+            "rawModeData": ""
+        }
+    ]
+}
