@@ -1,0 +1,1408 @@
+{
+    "id": "e3924c2589f50a3d03d3c4a4104804cc",
+    "name": "EPA Comprehensive Environmental Response, Compensation, and Liability Information System API",
+    "description": null,
+    "auth": null,
+    "events": null,
+    "variables": [],
+    "order": [],
+    "folders_order": [],
+    "folders": [],
+    "requests": [
+        {
+            "id": "e335580ca0cb2d2950715c400d81c48c",
+            "name": "",
+            "url": "httpsiaspub.epa.gov\/enviro\/efservice\/\/CER_ACTION\/ROWS\/{row_start}:{row_end}\/{output}",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "output",
+                    "description": "which format to output (JSON,XML,CSV,Excel)",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "row_end",
+                    "description": "which row to end on",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "row_start",
+                    "description": "which row to start on",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "e3924c2589f50a3d03d3c4a4104804cc",
+            "rawModeData": ""
+        },
+        {
+            "id": "40f30d5dcb36caa74a5b62091b599939",
+            "name": "",
+            "url": "httpsiaspub.epa.gov\/enviro\/efservice\/\/CER_CMT_SITE\/ROWS\/{row_start}:{row_end}\/{output}",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "output",
+                    "description": "which format to output (JSON,XML,CSV,Excel)",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "row_end",
+                    "description": "which row to end on",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "row_start",
+                    "description": "which row to start on",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "e3924c2589f50a3d03d3c4a4104804cc",
+            "rawModeData": ""
+        },
+        {
+            "id": "ccc710be25206a5bcc17313204a53cb8",
+            "name": "",
+            "url": "httpsiaspub.epa.gov\/enviro\/efservice\/\/CER_CMT_SITE_ALIAS\/ROWS\/{row_start}:{row_end}\/{output}",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "output",
+                    "description": "which format to output (JSON,XML,CSV,Excel)",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "row_end",
+                    "description": "which row to end on",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "row_start",
+                    "description": "which row to start on",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "e3924c2589f50a3d03d3c4a4104804cc",
+            "rawModeData": ""
+        },
+        {
+            "id": "89dac9d2ca9b01ef2c164df68960e170",
+            "name": "",
+            "url": "httpsiaspub.epa.gov\/enviro\/efservice\/\/CER_CONTACT\/ROWS\/{row_start}:{row_end}\/{output}",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "output",
+                    "description": "which format to output (JSON,XML,CSV,Excel)",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "row_end",
+                    "description": "which row to end on",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "row_start",
+                    "description": "which row to start on",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "e3924c2589f50a3d03d3c4a4104804cc",
+            "rawModeData": ""
+        },
+        {
+            "id": "b5d3e2cd99a11117d83d7e915d6606df",
+            "name": "",
+            "url": "httpsiaspub.epa.gov\/enviro\/efservice\/\/CER_FEDERAL_REGISTER\/ROWS\/{row_start}:{row_end}\/{output}",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "output",
+                    "description": "which format to output (JSON,XML,CSV,Excel)",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "row_end",
+                    "description": "which row to end on",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "row_start",
+                    "description": "which row to start on",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "e3924c2589f50a3d03d3c4a4104804cc",
+            "rawModeData": ""
+        },
+        {
+            "id": "aeb87777e1d7803860986415b577b55f",
+            "name": "",
+            "url": "httpsiaspub.epa.gov\/enviro\/efservice\/\/CER_FINANCIAL_TRANSACTION\/ROWS\/{row_start}:{row_end}\/{output}",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "output",
+                    "description": "which format to output (JSON,XML,CSV,Excel)",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "row_end",
+                    "description": "which row to end on",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "row_start",
+                    "description": "which row to start on",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "e3924c2589f50a3d03d3c4a4104804cc",
+            "rawModeData": ""
+        },
+        {
+            "id": "2a9607441f727d00392412709add85b6",
+            "name": "",
+            "url": "httpsiaspub.epa.gov\/enviro\/efservice\/\/CER_LOCATION\/ROWS\/{row_start}:{row_end}\/{output}",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "output",
+                    "description": "which format to output (JSON,XML,CSV,Excel)",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "row_end",
+                    "description": "which row to end on",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "row_start",
+                    "description": "which row to start on",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "e3924c2589f50a3d03d3c4a4104804cc",
+            "rawModeData": ""
+        },
+        {
+            "id": "f245586d6c8c0ce44d1726d687d1829b",
+            "name": "",
+            "url": "httpsiaspub.epa.gov\/enviro\/efservice\/\/CER_OPERABLE_UNIT\/ROWS\/{row_start}:{row_end}\/{output}",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "output",
+                    "description": "which format to output (JSON,XML,CSV,Excel)",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "row_end",
+                    "description": "which row to end on",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "row_start",
+                    "description": "which row to start on",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "e3924c2589f50a3d03d3c4a4104804cc",
+            "rawModeData": ""
+        },
+        {
+            "id": "ce0b078c6b1a42b1f75d9112a77bc58a",
+            "name": "",
+            "url": "httpsiaspub.epa.gov\/enviro\/efservice\/\/CER_REF_ACTION_ANOMALY\/ROWS\/{row_start}:{row_end}\/{output}",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "output",
+                    "description": "which format to output (JSON,XML,CSV,Excel)",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "row_end",
+                    "description": "which row to end on",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "row_start",
+                    "description": "which row to start on",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "e3924c2589f50a3d03d3c4a4104804cc",
+            "rawModeData": ""
+        },
+        {
+            "id": "74de65659c12afdaa07ddeae9f4fbe54",
+            "name": "",
+            "url": "httpsiaspub.epa.gov\/enviro\/efservice\/\/CER_REF_ACTION_CRITICAL_FLAG\/{row_start}:{row_end}\/{output}",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "output",
+                    "description": "which format to output (JSON,XML,CSV,Excel)",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "row_end",
+                    "description": "which row to end on",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "row_start",
+                    "description": "which row to start on",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "e3924c2589f50a3d03d3c4a4104804cc",
+            "rawModeData": ""
+        },
+        {
+            "id": "8c6cd228233df3a6183424305b47b8b7",
+            "name": "",
+            "url": "httpsiaspub.epa.gov\/enviro\/efservice\/\/CER_REF_ACTION_LEAD_TYPE\/ROWS\/{row_start}:{row_end}\/{output}",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "output",
+                    "description": "which format to output (JSON,XML,CSV,Excel)",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "row_end",
+                    "description": "which row to end on",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "row_start",
+                    "description": "which row to start on",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "e3924c2589f50a3d03d3c4a4104804cc",
+            "rawModeData": ""
+        },
+        {
+            "id": "56f1be3590f7ee58df638723713d5264",
+            "name": "",
+            "url": "httpsiaspub.epa.gov\/enviro\/efservice\/\/CER_REF_ACTION_QUALIFIER\/ROWS\/{row_start}:{row_end}\/{output}",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "output",
+                    "description": "which format to output (JSON,XML,CSV,Excel)",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "row_end",
+                    "description": "which row to end on",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "row_start",
+                    "description": "which row to start on",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "e3924c2589f50a3d03d3c4a4104804cc",
+            "rawModeData": ""
+        },
+        {
+            "id": "39d6e366792a7645d0ea3dc10d169b5f",
+            "name": "",
+            "url": "httpsiaspub.epa.gov\/enviro\/efservice\/\/CER_REF_ACTION_TYPE\/ROWS\/{row_start}:{row_end}\/{output}",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "output",
+                    "description": "which format to output (JSON,XML,CSV,Excel)",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "row_end",
+                    "description": "which row to end on",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "row_start",
+                    "description": "which row to start on",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "e3924c2589f50a3d03d3c4a4104804cc",
+            "rawModeData": ""
+        },
+        {
+            "id": "e513eae807716659d1fea98f8b088c38",
+            "name": "",
+            "url": "httpsiaspub.epa.gov\/enviro\/efservice\/\/CER_REF_CMT_SITE\/ROWS\/{row_start}:{row_end}\/{output}",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "output",
+                    "description": "which format to output (JSON,XML,CSV,Excel)",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "row_end",
+                    "description": "which row to end on",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "row_start",
+                    "description": "which row to start on",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "e3924c2589f50a3d03d3c4a4104804cc",
+            "rawModeData": ""
+        },
+        {
+            "id": "913bcf0ae10565ba5b2067d63c3537d0",
+            "name": "",
+            "url": "httpsiaspub.epa.gov\/enviro\/efservice\/\/CER_REF_FDRL_RGSTR_ACTN\/ROWS\/{row_start}:{row_end}\/{output}",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "output",
+                    "description": "which format to output (JSON,XML,CSV,Excel)",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "row_end",
+                    "description": "which row to end on",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "row_start",
+                    "description": "which row to start on",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "e3924c2589f50a3d03d3c4a4104804cc",
+            "rawModeData": ""
+        },
+        {
+            "id": "a4cc3e6df397c694be4c435749532293",
+            "name": "",
+            "url": "httpsiaspub.epa.gov\/enviro\/efservice\/\/CER_REF_FEDERAL_FACILITY\/ROWS\/{row_start}:{row_end}\/{output}",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "output",
+                    "description": "which format to output (JSON,XML,CSV,Excel)",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "row_end",
+                    "description": "which row to end on",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "row_start",
+                    "description": "which row to start on",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "e3924c2589f50a3d03d3c4a4104804cc",
+            "rawModeData": ""
+        },
+        {
+            "id": "280d15291da07188b59b3bbb696e47c3",
+            "name": "",
+            "url": "httpsiaspub.epa.gov\/enviro\/efservice\/\/CER_REF_FINAN_TRANSACTION_TYPE\/ROWS\/{row_start}:{row_end}\/{output}",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "output",
+                    "description": "which format to output (JSON,XML,CSV,Excel)",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "row_end",
+                    "description": "which row to end on",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "row_start",
+                    "description": "which row to start on",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "e3924c2589f50a3d03d3c4a4104804cc",
+            "rawModeData": ""
+        },
+        {
+            "id": "947feaa93ae49ec5d45ed11509f6f04d",
+            "name": "",
+            "url": "httpsiaspub.epa.gov\/enviro\/efservice\/\/CER_REF_NON_NPL_STATUS\/ROWS\/{row_start}:{row_end}\/{output}",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "output",
+                    "description": "which format to output (JSON,XML,CSV,Excel)",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "row_end",
+                    "description": "which row to end on",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "row_start",
+                    "description": "which row to start on",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "e3924c2589f50a3d03d3c4a4104804cc",
+            "rawModeData": ""
+        },
+        {
+            "id": "1685412f77b1269c84ebbd30ae7b834d",
+            "name": "",
+            "url": "httpsiaspub.epa.gov\/enviro\/efservice\/\/CER_REF_NPL_STATUS\/ROWS\/{row_start}:{row_end}\/{output}",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "output",
+                    "description": "which format to output (JSON,XML,CSV,Excel)",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "row_end",
+                    "description": "which row to end on",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "row_start",
+                    "description": "which row to start on",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "e3924c2589f50a3d03d3c4a4104804cc",
+            "rawModeData": ""
+        },
+        {
+            "id": "3ebc47c1692612df12d5454a7eeb9cfa",
+            "name": "",
+            "url": "httpsiaspub.epa.gov\/enviro\/efservice\/\/CER_REF_OWNERSHIP_TYPE\/ROWS\/{row_start}:{row_end}\/{output}",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "output",
+                    "description": "which format to output (JSON,XML,CSV,Excel)",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "row_end",
+                    "description": "which row to end on",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "row_start",
+                    "description": "which row to start on",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "e3924c2589f50a3d03d3c4a4104804cc",
+            "rawModeData": ""
+        },
+        {
+            "id": "f7af47ecf556864be15faa7f9ac99963",
+            "name": "",
+            "url": "httpsiaspub.epa.gov\/enviro\/efservice\/\/CER_REF_PLANNING_STATUS\/ROWS\/{row_start}:{row_end}\/{output}",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "output",
+                    "description": "which format to output (JSON,XML,CSV,Excel)",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "row_end",
+                    "description": "which row to end on",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "row_start",
+                    "description": "which row to start on",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "e3924c2589f50a3d03d3c4a4104804cc",
+            "rawModeData": ""
+        },
+        {
+            "id": "3c70d6a005cee5ed82219a4dadde723f",
+            "name": "",
+            "url": "httpsiaspub.epa.gov\/enviro\/efservice\/\/CER_REF_REGION\/ROWS\/{row_start}:{row_end}\/{output}",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "output",
+                    "description": "which format to output (JSON,XML,CSV,Excel)",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "row_end",
+                    "description": "which row to end on",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "row_start",
+                    "description": "which row to start on",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "e3924c2589f50a3d03d3c4a4104804cc",
+            "rawModeData": ""
+        },
+        {
+            "id": "9f576ed539066fa876bfbded91012747",
+            "name": "",
+            "url": "httpsiaspub.epa.gov\/enviro\/efservice\/\/CER_REF_SIC\/ROWS\/{row_start}:{row_end}\/{output}",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "output",
+                    "description": "which format to output (JSON,XML,CSV,Excel)",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "row_end",
+                    "description": "which row to end on",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "row_start",
+                    "description": "which row to start on",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "e3924c2589f50a3d03d3c4a4104804cc",
+            "rawModeData": ""
+        },
+        {
+            "id": "69e374ee4e771fdfe3bc206ecce34040",
+            "name": "",
+            "url": "httpsiaspub.epa.gov\/enviro\/efservice\/\/CER_REF_SITE_INCIDENT_CATEGORY\/ROWS\/{row_start}:{row_end}\/{output}",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "output",
+                    "description": "which format to output (JSON,XML,CSV,Excel)",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "row_end",
+                    "description": "which row to end on",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "row_start",
+                    "description": "which row to start on",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "e3924c2589f50a3d03d3c4a4104804cc",
+            "rawModeData": ""
+        },
+        {
+            "id": "d433bce0a72e74dfe4d3ccb1324c29e1",
+            "name": "",
+            "url": "httpsiaspub.epa.gov\/enviro\/efservice\/\/CER_REF_SITE_INCIDENT_TYPE\/ROWS\/{row_start}:{row_end}\/{output}",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "output",
+                    "description": "which format to output (JSON,XML,CSV,Excel)",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "row_end",
+                    "description": "which row to end on",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "row_start",
+                    "description": "which row to start on",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "e3924c2589f50a3d03d3c4a4104804cc",
+            "rawModeData": ""
+        },
+        {
+            "id": "17dac1fb75a103e23e5e04c81b6430c1",
+            "name": "",
+            "url": "httpsiaspub.epa.gov\/enviro\/efservice\/\/CER_REF_STATE\/ROWS\/{row_start}:{row_end}\/{output}",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "output",
+                    "description": "which format to output (JSON,XML,CSV,Excel)",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "row_end",
+                    "description": "which row to end on",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "row_start",
+                    "description": "which row to start on",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "e3924c2589f50a3d03d3c4a4104804cc",
+            "rawModeData": ""
+        },
+        {
+            "id": "ad055726f7852af4b109af8a90fa4b8d",
+            "name": "",
+            "url": "httpsiaspub.epa.gov\/enviro\/efservice\/\/CER_SITE\/ROWS\/{row_start}:{row_end}\/{output}",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "output",
+                    "description": "which format to output (JSON,XML,CSV,Excel)",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "row_end",
+                    "description": "which row to end on",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "row_start",
+                    "description": "which row to start on",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "e3924c2589f50a3d03d3c4a4104804cc",
+            "rawModeData": ""
+        },
+        {
+            "id": "15b10d6f892187cd7ce8707db06cf305",
+            "name": "",
+            "url": "httpsiaspub.epa.gov\/enviro\/efservice\/\/CER_SITE_ALIAS\/ROWS\/{row_start}:{row_end}\/{output}",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "output",
+                    "description": "which format to output (JSON,XML,CSV,Excel)",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "row_end",
+                    "description": "which row to end on",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "row_start",
+                    "description": "which row to start on",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "e3924c2589f50a3d03d3c4a4104804cc",
+            "rawModeData": ""
+        },
+        {
+            "id": "212b3f336da5c7070bc034efd5e4ee7f",
+            "name": "",
+            "url": "httpsiaspub.epa.gov\/enviro\/efservice\/\/CER_SITE_ROT_REF\/ROWS\/{row_start}:{row_end}\/{output}",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "output",
+                    "description": "which format to output (JSON,XML,CSV,Excel)",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "row_end",
+                    "description": "which row to end on",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "row_start",
+                    "description": "which row to start on",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "e3924c2589f50a3d03d3c4a4104804cc",
+            "rawModeData": ""
+        },
+        {
+            "id": "ed48fac7ec9c05f7ece0728bf35c7646",
+            "name": "",
+            "url": "httpsiaspub.epa.gov\/enviro\/efservice\/\/CER_WSMC_CROSS_LINK\/ROWS\/{row_start}:{row_end}\/{output}",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "output",
+                    "description": "which format to output (JSON,XML,CSV,Excel)",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "row_end",
+                    "description": "which row to end on",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "row_start",
+                    "description": "which row to start on",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "e3924c2589f50a3d03d3c4a4104804cc",
+            "rawModeData": ""
+        },
+        {
+            "id": "77f9cc6a8974704320d02a078984d97f",
+            "name": "",
+            "url": "httpsiaspub.epa.gov\/enviro\/efservice\/\/CER_WST_SRC_MEDIA_CONTAMINATED\/ROWS\/{row_start}:{row_end}\/{output}",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "output",
+                    "description": "which format to output (JSON,XML,CSV,Excel)",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "row_end",
+                    "description": "which row to end on",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "row_start",
+                    "description": "which row to start on",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "e3924c2589f50a3d03d3c4a4104804cc",
+            "rawModeData": ""
+        }
+    ]
+}
