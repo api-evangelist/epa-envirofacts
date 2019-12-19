@@ -1,0 +1,643 @@
+{
+    "id": "de744a5aa0669fb630a66e7dadcf2d6b",
+    "name": "EPA Radiation Ambient Monitoring API",
+    "description": null,
+    "auth": null,
+    "events": null,
+    "variables": [],
+    "order": [],
+    "folders_order": [],
+    "folders": [],
+    "requests": [
+        {
+            "id": "deca4652595cfc1f3fb7c45a139ce57d",
+            "name": "",
+            "url": "httpsiaspub.epa.gov\/enviro\/efservice\/\/BGM_ONSITE_TREATMENT\/ROWS\/{row_start}:{row_end}\/{output}",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "output",
+                    "description": "which format to output (JSON,XML,CSV,Excel)",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "row_end",
+                    "description": "which row to end on",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "row_start",
+                    "description": "which row to start on",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "de744a5aa0669fb630a66e7dadcf2d6b",
+            "rawModeData": ""
+        },
+        {
+            "id": "8ee7d7dc30a9159a9800961c419ce89f",
+            "name": "",
+            "url": "httpsiaspub.epa.gov\/enviro\/efservice\/\/ERM_ANALYSIS\/ROWS\/{row_start}:{row_end}\/{output}",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "output",
+                    "description": "which format to output (JSON,XML,CSV,Excel)",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "row_end",
+                    "description": "which row to end on",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "row_start",
+                    "description": "which row to start on",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "de744a5aa0669fb630a66e7dadcf2d6b",
+            "rawModeData": ""
+        },
+        {
+            "id": "f9e4270f6d252210e74f4433e1f12665",
+            "name": "",
+            "url": "httpsiaspub.epa.gov\/enviro\/efservice\/\/ERM_ANALYTE\/ROWS\/{row_start}:{row_end}\/{output}",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "output",
+                    "description": "which format to output (JSON,XML,CSV,Excel)",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "row_end",
+                    "description": "which row to end on",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "row_start",
+                    "description": "which row to start on",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "de744a5aa0669fb630a66e7dadcf2d6b",
+            "rawModeData": ""
+        },
+        {
+            "id": "a01c93eff7a65cf726823548aef4a9cd",
+            "name": "",
+            "url": "httpsiaspub.epa.gov\/enviro\/efservice\/\/ERM_ANA_PROC\/ROWS\/{row_start}:{row_end}\/{output}",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "output",
+                    "description": "which format to output (JSON,XML,CSV,Excel)",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "row_end",
+                    "description": "which row to end on",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "row_start",
+                    "description": "which row to start on",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "de744a5aa0669fb630a66e7dadcf2d6b",
+            "rawModeData": ""
+        },
+        {
+            "id": "f020804c3cf06b9b1213e1bbc642d795",
+            "name": "",
+            "url": "httpsiaspub.epa.gov\/enviro\/efservice\/\/ERM_COUNT\/ROWS\/{row_start}:{row_end}\/{output}",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "output",
+                    "description": "which format to output (JSON,XML,CSV,Excel)",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "row_end",
+                    "description": "which row to end on",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "row_start",
+                    "description": "which row to start on",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "de744a5aa0669fb630a66e7dadcf2d6b",
+            "rawModeData": ""
+        },
+        {
+            "id": "73b4f6b8d56384a7d4149042ee4f9bae",
+            "name": "",
+            "url": "httpsiaspub.epa.gov\/enviro\/efservice\/\/ERM_DET_TYPE\/ROWS\/{row_start}:{row_end}\/{output}",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "output",
+                    "description": "which format to output (JSON,XML,CSV,Excel)",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "row_end",
+                    "description": "which row to end on",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "row_start",
+                    "description": "which row to start on",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "de744a5aa0669fb630a66e7dadcf2d6b",
+            "rawModeData": ""
+        },
+        {
+            "id": "cb705e9c0b67fd3ce60052750e0fe347",
+            "name": "",
+            "url": "httpsiaspub.epa.gov\/enviro\/efservice\/\/ERM_LOCATION\/ROWS\/{row_start}:{row_end}\/{output}",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "output",
+                    "description": "which format to output (JSON,XML,CSV,Excel)",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "row_end",
+                    "description": "which row to end on",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "row_start",
+                    "description": "which row to start on",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "de744a5aa0669fb630a66e7dadcf2d6b",
+            "rawModeData": ""
+        },
+        {
+            "id": "ec79cc88b37b25dc7e19254c03ce91d5",
+            "name": "",
+            "url": "httpsiaspub.epa.gov\/enviro\/efservice\/\/ERM_MATRIX\/ROWS\/{row_start}:{row_end}\/{output}",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "output",
+                    "description": "which format to output (JSON,XML,CSV,Excel)",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "row_end",
+                    "description": "which row to end on",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "row_start",
+                    "description": "which row to start on",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "de744a5aa0669fb630a66e7dadcf2d6b",
+            "rawModeData": ""
+        },
+        {
+            "id": "a5788864302338eaa5b06c4f19d9406d",
+            "name": "",
+            "url": "httpsiaspub.epa.gov\/enviro\/efservice\/\/ERM_PROJECT\/ROWS\/{row_start}:{row_end}\/{output}",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "output",
+                    "description": "which format to output (JSON,XML,CSV,Excel)",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "row_end",
+                    "description": "which row to end on",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "row_start",
+                    "description": "which row to start on",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "de744a5aa0669fb630a66e7dadcf2d6b",
+            "rawModeData": ""
+        },
+        {
+            "id": "769b7f0a8531be8ca7a4297710cea05e",
+            "name": "",
+            "url": "httpsiaspub.epa.gov\/enviro\/efservice\/\/ERM_RESULT\/ROWS\/{row_start}:{row_end}\/{output}",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "output",
+                    "description": "which format to output (JSON,XML,CSV,Excel)",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "row_end",
+                    "description": "which row to end on",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "row_start",
+                    "description": "which row to start on",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "de744a5aa0669fb630a66e7dadcf2d6b",
+            "rawModeData": ""
+        },
+        {
+            "id": "1773222fb4d7b6349901f56fcca51644",
+            "name": "",
+            "url": "httpsiaspub.epa.gov\/enviro\/efservice\/\/ERM_SAMPLE\/ROWS\/{row_start}:{row_end}\/{output}",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "output",
+                    "description": "which format to output (JSON,XML,CSV,Excel)",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "row_end",
+                    "description": "which row to end on",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "row_start",
+                    "description": "which row to start on",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "de744a5aa0669fb630a66e7dadcf2d6b",
+            "rawModeData": ""
+        },
+        {
+            "id": "69e3cc98f74885756ab30b6cd1512627",
+            "name": "",
+            "url": "httpsiaspub.epa.gov\/enviro\/efservice\/\/ERM_STUDY\/ROWS\/{row_start}:{row_end}\/{output}",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "output",
+                    "description": "which format to output (JSON,XML,CSV,Excel)",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "row_end",
+                    "description": "which row to end on",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "row_start",
+                    "description": "which row to start on",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "de744a5aa0669fb630a66e7dadcf2d6b",
+            "rawModeData": ""
+        },
+        {
+            "id": "8c0088258330d043755fe27a2ecb9f52",
+            "name": "",
+            "url": "httpsiaspub.epa.gov\/enviro\/efservice\/\/LCR_SAMPLE\/ROWS\/{row_start}:{row_end}\/{output}",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "output",
+                    "description": "which format to output (JSON,XML,CSV,Excel)",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "row_end",
+                    "description": "which row to end on",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "row_start",
+                    "description": "which row to start on",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "de744a5aa0669fb630a66e7dadcf2d6b",
+            "rawModeData": ""
+        },
+        {
+            "id": "b6a10899ce3c558d861377f24031bd02",
+            "name": "",
+            "url": "httpsiaspub.epa.gov\/enviro\/efservice\/\/LCR_SAMPLE_RESULT\/ROWS\/{row_start}:{row_end}\/{output}",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "output",
+                    "description": "which format to output (JSON,XML,CSV,Excel)",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "row_end",
+                    "description": "which row to end on",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "row_start",
+                    "description": "which row to start on",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "de744a5aa0669fb630a66e7dadcf2d6b",
+            "rawModeData": ""
+        }
+    ]
+}
