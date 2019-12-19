@@ -1,0 +1,1806 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "version": "v1",
+        "title": "EPA Facility Registry System API",
+        "description": "The Facility Registry System provides facility identification information via facility linkages across several program systems.",
+        "termsOfService": ""
+    },
+    "servers": [
+        "httpsiaspub.epa.gov\/enviro\/efservice\/"
+    ],
+    "paths": {
+        "\/AA_CEMS_DETAILS\/ROWS\/{row_start}:{row_end}\/{output}": {
+            "get": {
+                "summary": "",
+                "description": "",
+                "operationId": "EnviroFactsAACEMSDETAILS",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "output",
+                        "in": "path",
+                        "description": "which format to output (JSON,XML,CSV,Excel)"
+                    },
+                    {
+                        "name": "row_end",
+                        "in": "path",
+                        "description": "which row to end on"
+                    },
+                    {
+                        "name": "row_start",
+                        "in": "path",
+                        "description": "which row to start on"
+                    }
+                ]
+            }
+        },
+        "\/FRS_AFFILIATION\/ROWS\/{row_start}:{row_end}\/{output}": {
+            "get": {
+                "summary": "",
+                "description": "",
+                "operationId": "EnviroFactsFRSAFFILIATION",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "output",
+                        "in": "path",
+                        "description": "which format to output (JSON,XML,CSV,Excel)"
+                    },
+                    {
+                        "name": "row_end",
+                        "in": "path",
+                        "description": "which row to end on"
+                    },
+                    {
+                        "name": "row_start",
+                        "in": "path",
+                        "description": "which row to start on"
+                    }
+                ]
+            }
+        },
+        "\/FRS_AGENCY_REF\/ROWS\/{row_start}:{row_end}\/{output}": {
+            "get": {
+                "summary": "",
+                "description": "",
+                "operationId": "EnviroFactsFRSAGENCYREF",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "output",
+                        "in": "path",
+                        "description": "which format to output (JSON,XML,CSV,Excel)"
+                    },
+                    {
+                        "name": "row_end",
+                        "in": "path",
+                        "description": "which row to end on"
+                    },
+                    {
+                        "name": "row_start",
+                        "in": "path",
+                        "description": "which row to start on"
+                    }
+                ]
+            }
+        },
+        "\/FRS_ALTERNATIVE_ID\/ROWS\/{row_start}:{row_end}\/{output}": {
+            "get": {
+                "summary": "",
+                "description": "",
+                "operationId": "EnviroFactsFRSALTERNATIVEID",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "output",
+                        "in": "path",
+                        "description": "which format to output (JSON,XML,CSV,Excel)"
+                    },
+                    {
+                        "name": "row_end",
+                        "in": "path",
+                        "description": "which row to end on"
+                    },
+                    {
+                        "name": "row_start",
+                        "in": "path",
+                        "description": "which row to start on"
+                    }
+                ]
+            }
+        },
+        "\/FRS_ALT_NAME\/ROWS\/{row_start}:{row_end}\/{output}": {
+            "get": {
+                "summary": "",
+                "description": "",
+                "operationId": "EnviroFactsFRSALTNAME",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "output",
+                        "in": "path",
+                        "description": "which format to output (JSON,XML,CSV,Excel)"
+                    },
+                    {
+                        "name": "row_end",
+                        "in": "path",
+                        "description": "which row to end on"
+                    },
+                    {
+                        "name": "row_start",
+                        "in": "path",
+                        "description": "which row to start on"
+                    }
+                ]
+            }
+        },
+        "\/FRS_CODE_DESCRIPTION\/ROWS\/{row_start}:{row_end}\/{output}": {
+            "get": {
+                "summary": "",
+                "description": "",
+                "operationId": "EnviroFactsFRSCODEDESCRIPTION",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "output",
+                        "in": "path",
+                        "description": "which format to output (JSON,XML,CSV,Excel)"
+                    },
+                    {
+                        "name": "row_end",
+                        "in": "path",
+                        "description": "which row to end on"
+                    },
+                    {
+                        "name": "row_start",
+                        "in": "path",
+                        "description": "which row to start on"
+                    }
+                ]
+            }
+        },
+        "\/FRS_CONTACT\/ROWS\/{row_start}:{row_end}\/{output}": {
+            "get": {
+                "summary": "",
+                "description": "",
+                "operationId": "EnviroFactsFRSCONTACT",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "output",
+                        "in": "path",
+                        "description": "which format to output (JSON,XML,CSV,Excel)"
+                    },
+                    {
+                        "name": "row_end",
+                        "in": "path",
+                        "description": "which row to end on"
+                    },
+                    {
+                        "name": "row_start",
+                        "in": "path",
+                        "description": "which row to start on"
+                    }
+                ]
+            }
+        },
+        "\/FRS_FACILITY_SITE\/ROWS\/{row_start}:{row_end}\/{output}": {
+            "get": {
+                "summary": "",
+                "description": "",
+                "operationId": "EnviroFactsFRSFACILITYSITE",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "output",
+                        "in": "path",
+                        "description": "which format to output (JSON,XML,CSV,Excel)"
+                    },
+                    {
+                        "name": "row_end",
+                        "in": "path",
+                        "description": "which row to end on"
+                    },
+                    {
+                        "name": "row_start",
+                        "in": "path",
+                        "description": "which row to start on"
+                    }
+                ]
+            }
+        },
+        "\/FRS_INTEREST\/ROWS\/{row_start}:{row_end}\/{output}": {
+            "get": {
+                "summary": "",
+                "description": "",
+                "operationId": "EnviroFactsFRSINTEREST",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "output",
+                        "in": "path",
+                        "description": "which format to output (JSON,XML,CSV,Excel)"
+                    },
+                    {
+                        "name": "row_end",
+                        "in": "path",
+                        "description": "which row to end on"
+                    },
+                    {
+                        "name": "row_start",
+                        "in": "path",
+                        "description": "which row to start on"
+                    }
+                ]
+            }
+        },
+        "\/FRS_INTEREST_REF\/ROWS\/{row_start}:{row_end}\/{output}": {
+            "get": {
+                "summary": "",
+                "description": "",
+                "operationId": "EnviroFactsFRSINTERESTREF",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "output",
+                        "in": "path",
+                        "description": "which format to output (JSON,XML,CSV,Excel)"
+                    },
+                    {
+                        "name": "row_end",
+                        "in": "path",
+                        "description": "which row to end on"
+                    },
+                    {
+                        "name": "row_start",
+                        "in": "path",
+                        "description": "which row to start on"
+                    }
+                ]
+            }
+        },
+        "\/FRS_MAILING_ADDRESS\/ROWS\/{row_start}:{row_end}\/{output}": {
+            "get": {
+                "summary": "",
+                "description": "",
+                "operationId": "EnviroFactsFRSMAILINGADDRESS",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "output",
+                        "in": "path",
+                        "description": "which format to output (JSON,XML,CSV,Excel)"
+                    },
+                    {
+                        "name": "row_end",
+                        "in": "path",
+                        "description": "which row to end on"
+                    },
+                    {
+                        "name": "row_start",
+                        "in": "path",
+                        "description": "which row to start on"
+                    }
+                ]
+            }
+        },
+        "\/FRS_NAICS\/ROWS\/{row_start}:{row_end}\/{output}": {
+            "get": {
+                "summary": "",
+                "description": "",
+                "operationId": "EnviroFactsFRSNAICS",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "output",
+                        "in": "path",
+                        "description": "which format to output (JSON,XML,CSV,Excel)"
+                    },
+                    {
+                        "name": "row_end",
+                        "in": "path",
+                        "description": "which row to end on"
+                    },
+                    {
+                        "name": "row_start",
+                        "in": "path",
+                        "description": "which row to start on"
+                    }
+                ]
+            }
+        },
+        "\/FRS_ORGANIZATION\/ROWS\/{row_start}:{row_end}\/{output}": {
+            "get": {
+                "summary": "",
+                "description": "",
+                "operationId": "EnviroFactsFRSORGANIZATION",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "output",
+                        "in": "path",
+                        "description": "which format to output (JSON,XML,CSV,Excel)"
+                    },
+                    {
+                        "name": "row_end",
+                        "in": "path",
+                        "description": "which row to end on"
+                    },
+                    {
+                        "name": "row_start",
+                        "in": "path",
+                        "description": "which row to start on"
+                    }
+                ]
+            }
+        },
+        "\/FRS_PROGRAM_FACILITY\/ROWS\/{row_start}:{row_end}\/{output}": {
+            "get": {
+                "summary": "",
+                "description": "",
+                "operationId": "EnviroFactsFRSPROGRAMFACILITY",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "output",
+                        "in": "path",
+                        "description": "which format to output (JSON,XML,CSV,Excel)"
+                    },
+                    {
+                        "name": "row_end",
+                        "in": "path",
+                        "description": "which row to end on"
+                    },
+                    {
+                        "name": "row_start",
+                        "in": "path",
+                        "description": "which row to start on"
+                    }
+                ]
+            }
+        },
+        "\/FRS_SIC\/ROWS\/{row_start}:{row_end}\/{output}": {
+            "get": {
+                "summary": "",
+                "description": "",
+                "operationId": "EnviroFactsFRSSIC",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "output",
+                        "in": "path",
+                        "description": "which format to output (JSON,XML,CSV,Excel)"
+                    },
+                    {
+                        "name": "row_end",
+                        "in": "path",
+                        "description": "which row to end on"
+                    },
+                    {
+                        "name": "row_start",
+                        "in": "path",
+                        "description": "which row to start on"
+                    }
+                ]
+            }
+        },
+        "\/FRS_SUPPLEMENTAL_INTEREST\/ROWS\/{row_start}:{row_end}\/{output}": {
+            "get": {
+                "summary": "",
+                "description": "",
+                "operationId": "EnviroFactsFRSSUPPLEMENTALINTEREST",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "output",
+                        "in": "path",
+                        "description": "which format to output (JSON,XML,CSV,Excel)"
+                    },
+                    {
+                        "name": "row_end",
+                        "in": "path",
+                        "description": "which row to end on"
+                    },
+                    {
+                        "name": "row_start",
+                        "in": "path",
+                        "description": "which row to start on"
+                    }
+                ]
+            }
+        },
+        "\/FRS_SYSTEM_REF\/ROWS\/{row_start}:{row_end}\/{output}": {
+            "get": {
+                "summary": "",
+                "description": "",
+                "operationId": "EnviroFactsFRSSYSTEMREF",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "output",
+                        "in": "path",
+                        "description": "which format to output (JSON,XML,CSV,Excel)"
+                    },
+                    {
+                        "name": "row_end",
+                        "in": "path",
+                        "description": "which row to end on"
+                    },
+                    {
+                        "name": "row_start",
+                        "in": "path",
+                        "description": "which row to start on"
+                    }
+                ]
+            }
+        },
+        "\/FRS_TRIBAL_ENTITY_REF\/ROWS\/{row_start}:{row_end}\/{output}": {
+            "get": {
+                "summary": "",
+                "description": "",
+                "operationId": "EnviroFactsFRSTRIBALENTITYREF",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "output",
+                        "in": "path",
+                        "description": "which format to output (JSON,XML,CSV,Excel)"
+                    },
+                    {
+                        "name": "row_end",
+                        "in": "path",
+                        "description": "which row to end on"
+                    },
+                    {
+                        "name": "row_start",
+                        "in": "path",
+                        "description": "which row to start on"
+                    }
+                ]
+            }
+        },
+        "\/FRS_TRIBAL_LAND_REF\/ROWS\/{row_start}:{row_end}\/{output}": {
+            "get": {
+                "summary": "",
+                "description": "",
+                "operationId": "EnviroFactsFRSTRIBALLANDREF",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "output",
+                        "in": "path",
+                        "description": "which format to output (JSON,XML,CSV,Excel)"
+                    },
+                    {
+                        "name": "row_end",
+                        "in": "path",
+                        "description": "which row to end on"
+                    },
+                    {
+                        "name": "row_start",
+                        "in": "path",
+                        "description": "which row to start on"
+                    }
+                ]
+            }
+        },
+        "\/G_INFO\/ROWS\/{row_start}:{row_end}\/{output}": {
+            "get": {
+                "summary": "",
+                "description": "",
+                "operationId": "EnviroFactsGINFO",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "output",
+                        "in": "path",
+                        "description": "which format to output (JSON,XML,CSV,Excel)"
+                    },
+                    {
+                        "name": "row_end",
+                        "in": "path",
+                        "description": "which row to end on"
+                    },
+                    {
+                        "name": "row_start",
+                        "in": "path",
+                        "description": "which row to start on"
+                    }
+                ]
+            }
+        }
+    },
+    "components": {
+        "schemas": {
+            "frs_contact": {
+                "type": "object",
+                "properties": {
+                    "ALTERNATE_PHONE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "CONTACT_UIN": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "CREATE_DATE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "DIVISION_NAME": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "EMAIL_ADDRESS": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "FAX_NUMBER": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "FULL_NAME": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "LAST_REPORTED_DATE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "PHONE_NUMBER": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "PUBLIC_IND": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "SENSITIVE_IND": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "SOURCE_OF_DATA": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "STD_FULL_NAME": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "TITLE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "UPDATE_DATE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "USER_ID": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "frs_mailing_address": {
+                "type": "object",
+                "properties": {
+                    "CITY_NAME": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "COUNTRY_NAME": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "CREATE_DATE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "LAST_REPORTED_DATE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "MAILING_ADDRESS": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "MAIL_UIN": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "POSTAL_CODE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "PUBLIC_IND": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "SENSITIVE_IND": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "SOURCE_OF_DATA": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "STATE_CODE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "STATE_NAME": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "STD_CITY_NAME": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "STD_MAIL_ADDRESS": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "STD_SUPPLEMENTAL_ADDRESS": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "SUPPLEMENTAL_ADDRESS": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "UPDATE_DATE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "USER_ID": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "frs_organization": {
+                "type": "object",
+                "properties": {
+                    "ALTERNATE_PHONE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "CREATE_DATE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "DIVISION_NAME": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "DUNS_NUMBER": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "EIN": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "EMAIL_ADDRESS": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "FAX_NUMBER": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "LAST_REPORTED_DATE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "ORG_NAME": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "ORG_TYPE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "ORG_UIN": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "PHONE_NUMBER": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "PUBLIC_IND": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "SENSITIVE_IND": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "SOURCE_OF_DATA": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "STATE_BUSINESS_ID": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "STD_ORG_NAME": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "UPDATE_DATE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "USER_ID": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "frs_code_description": {
+                "type": "object",
+                "properties": {
+                    "CODE_DESCRIPTION": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "CODE_TYPE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "CODE_VALUE": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "frs_tribal_entity_ref": {
+                "type": "object",
+                "properties": {
+                    "FEDERAL_REGISTER": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "ORGANIZATION_CODE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "TRIBAL_ENTITY_NAME": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "TRIBAL_LAND_R_CODE": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "frs_tribal_land_ref": {
+                "type": "object",
+                "properties": {
+                    "TRIBAL_LAND_NAME": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "TRIBAL_LAND_R_CODE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "USBC_TRIBAL_LAND_CODE": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "frs_agency_ref": {
+                "type": "object",
+                "properties": {
+                    "FEDERAL_AGENCY_CODE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "FEDERAL_AGENCY_NAME": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "frs_facility_site": {
+                "type": "object",
+                "properties": {
+                    "ADDR_TYPE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "CITY_NAME": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "COUNTRY_NAME": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "COUNTY_NAME": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "CREATE_DATE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "DATA_QUALITY_CODE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "ENV_JUSTICE_CODE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "EPA_REGION_CODE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "FEDERAL_AGENCY_CODE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "FEDERAL_FACILITY_CODE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "FIPS_CODE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "ICIS_IDENTIFIER": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "INTEREST_STATUS_CODE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "LAST_REPORTED_DATE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "LEGISLATIVE_DIST_NUM": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "LOCATION_ADDRESS": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "LOCATION_DESCRIPTION": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "PARENT_REGISTRY_ID": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "POSTAL_CODE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "PRIMARY_NAME": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "PUBLIC_IND": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "REFRESH_DATE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "REGISTRY_ID": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "REVIEW_FLAG": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "REVIEW_REASON": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "SENSITIVE_IND": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "SITE_TYPE_NAME": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "SMALL_BUS_IND": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "STAND_ALONE_FLAG": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "STATE_CODE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "STATE_NAME": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "STD_BASE_NAME": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "STD_CITY_NAME": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "STD_COUNTRY": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "STD_COUNTY_FIPS": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "STD_COUNTY_NAME": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "STD_FULL_ADDRESS": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "STD_HOUSE_NUMBER": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "STD_LOC_ADDRESS": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "STD_NAME": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "STD_POSTAL_CODE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "STD_PREFIX": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "STD_STATE_CODE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "STD_STREET_NAME": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "STD_STYPE_AFTER": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "STD_STYPE_BEFORE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "STD_SUFFIX": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "SUPPLEMENTAL_LOCATION": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "TRIBAL_LAND_CODE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "TRIBAL_LAND_NAME": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "UPDATE_DATE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "USER_ID": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "frs_alt_name": {
+                "type": "object",
+                "properties": {
+                    "ALTERNATIVE_NAME": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "ALTERNATIVE_NAME_TYPE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "CREATE_DATE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "LAST_REPORTED_DATE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "PGM_SYS_ACRNM": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "PGM_SYS_ID": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "PUBLIC_IND": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "REGISTRY_ID": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "SENSITIVE_IND": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "SOURCE_OF_DATA": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "STD_ALT_NAME": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "UPDATE_DATE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "USER_ID": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "frs_program_facility": {
+                "type": "object",
+                "properties": {
+                    "ADDR_TYPE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "CITY_NAME": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "COUNTRY_NAME": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "COUNTY_NAME": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "CREATE_DATE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "DATA_QUALITY_CODE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "ENV_JUSTICE_CODE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "EPA_REGION_CODE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "FEDERAL_AGENCY_CODE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "FEDERAL_FACILITY_CODE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "FIPS_CODE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "HUC_CODE_12": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "HUC_CODE_8": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "LAST_REPORTED_DATE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "LEGISLATIVE_DIST_NUM": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "LINK_MTHD": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "LOCATION_ADDRESS": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "LOCATION_DESCRIPTION": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "PARENT_PGM_SYS_ID": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "PGM_SYS_ACRNM": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "PGM_SYS_ID": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "POSTAL_CODE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "PRIMARY_NAME": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "PUBLIC_IND": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "REFRESH_DATE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "REGISTRY_ID": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "SENSITIVE_IND": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "SITE_TYPE_NAME": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "SMALL_BUS_IND": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "SOURCE_OF_DATA": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "STAND_ALONE_FLAG": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "STATE_CODE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "STATE_NAME": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "STD_BASE_NAME": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "STD_CITY_NAME": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "STD_COUNTRY": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "STD_COUNTY_FIPS": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "STD_COUNTY_NAME": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "STD_FULL_ADDRESS": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "STD_HOUSE_NUMBER": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "STD_LOC_ADDRESS": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "STD_NAME": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "STD_POSTAL_CODE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "STD_PREFIX": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "STD_STATE_CODE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "STD_STREET_NAME": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "STD_STYPE_AFTER": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "STD_STYPE_BEFORE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "STD_SUFFIX": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "SUPPLEMENTAL_LOCATION": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "TRIBAL_LAND_CODE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "TRIBAL_LAND_NAME": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "UPDATE_DATE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "USER_COMMENT": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "USER_ID": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "frs_system_ref": {
+                "type": "object",
+                "properties": {
+                    "CREATE_DATE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "FED_STATE_CODE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "PGM_SYS_ACRNM": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "PGM_SYS_DESC": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "PGM_SYS_NAME": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "PUBLIC_IND": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "UPDATE_DATE": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "frs_affiliation": {
+                "type": "object",
+                "properties": {
+                    "AFFILIATION_TYPE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "AFFILIATION_UIN": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "CONTACT_UIN": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "CREATE_DATE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "END_DATE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "LAST_REPORTED_DATE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "MAIL_UIN": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "ORG_UIN": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "PGM_SYS_ACRNM": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "PGM_SYS_ID": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "PUBLIC_IND": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "REGISTRY_ID": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "SENSITIVE_IND": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "SOURCE_OF_DATA": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "START_DATE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "SUP_INTEREST_ID": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "UPDATE_DATE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "USER_ID": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "frs_naics": {
+                "type": "object",
+                "properties": {
+                    "CREATE_DATE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "LAST_REPORTED_DATE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "NAICS_CODE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "NAICS_UIN": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "PGM_SYS_ACRNM": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "PGM_SYS_ID": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "PRIMARY_INDICATOR": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "PUBLIC_IND": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "SENSITIVE_IND": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "SOURCE_OF_DATA": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "SUP_INTEREST_ID": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "UPDATE_DATE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "USER_ID": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "frs_sic": {
+                "type": "object",
+                "properties": {
+                    "CREATE_DATE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "LAST_REPORTED_DATE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "PGM_SYS_ACRNM": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "PGM_SYS_ID": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "PRIMARY_INDICATOR": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "PUBLIC_IND": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "SENSITIVE_IND": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "SIC_CODE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "SIC_UIN": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "SOURCE_OF_DATA": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "SUP_INTEREST_ID": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "UPDATE_DATE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "USER_ID": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "frs_supplemental_interest": {
+                "type": "object",
+                "properties": {
+                    "CREATE_DATE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "END_DATE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "END_DATE_QUALIFIER": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "LAST_REPORTED_DATE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "PGM_SYS_ACRNM": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "PGM_SYS_ID": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "PUBLIC_IND": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "REPORTED_SUP_INTEREST_TYPE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "SENSITIVE_IND": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "SOURCE_OF_DATA": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "START_DATE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "START_DATE_QUALIFIER": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "SUP_INTEREST_ID": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "SUP_INTEREST_TYPE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "SUP_PGM_SYS_ACRNM": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "SUP_PGM_SYS_ID": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "UPDATE_DATE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "USER_ID": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "frs_alternative_id": {
+                "type": "object",
+                "properties": {
+                    "ALTERNATIVE_ID": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "ALTERNATIVE_ID_TYPE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "CREATE_DATE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "FIPS_CODE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "LAST_REPORTED_DATE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "PGM_SYS_ACRNM": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "PGM_SYS_ID": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "PUBLIC_IND": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "SENSITIVE_IND": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "SOURCE_OF_DATA": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "USER_ID": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "frs_interest": {
+                "type": "object",
+                "properties": {
+                    "ACTIVE_STATUS": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "CREATE_DATE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "END_DATE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "END_DATE_QUALIFIER": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "FED_STATE_CODE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "INTEREST_TYPE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "LAST_REPORTED_DATE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "PGM_SYS_ACRNM": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "PGM_SYS_ID": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "PUBLIC_IND": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "SENSITIVE_IND": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "SOURCE_OF_DATA": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "START_DATE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "START_DATE_QUALIFIER": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "UPDATE_DATE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "USER_ID": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "frs_interest_ref": {
+                "type": "object",
+                "properties": {
+                    "CREATE_DATE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "INTEREST_DESC": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "INTEREST_TYPE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "PROGRAM_CATEGORY": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "PROGRAM_CATEGORY_DESC": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "PUBLIC_IND": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "QUERY_FLAG": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "UPDATE_DATE": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "aa_cems_details": {
+                "type": "object",
+                "properties": {
+                    "filler": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "g_info": {
+                "type": "object",
+                "properties": {
+                    "": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "CO2_CONSUMED_METHOD": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "CO2_CONSUMED_OTHER_METHOD": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "FACILITY_ID": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "REPORTING_YEAR": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "UREA_PRODUCED_METHOD": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "UREA_PRODUCED_OTHER_METHOD": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            }
+        }
+    }
+}
