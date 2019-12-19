@@ -1,0 +1,238 @@
+{
+    "id": "76bc60abcfa8e2b5c31851f805b52835",
+    "name": "EPA Radiation Information Database API",
+    "description": null,
+    "auth": null,
+    "events": null,
+    "variables": [],
+    "order": [],
+    "folders_order": [],
+    "folders": [],
+    "requests": [
+        {
+            "id": "50fadb14a576be56bca1b2c0002471fc",
+            "name": "",
+            "url": "httpsiaspub.epa.gov\/enviro\/efservice\/\/RAD_FACILITY\/ROWS\/{row_start}:{row_end}\/{output}",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "output",
+                    "description": "which format to output (JSON,XML,CSV,Excel)",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "row_end",
+                    "description": "which row to end on",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "row_start",
+                    "description": "which row to start on",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "76bc60abcfa8e2b5c31851f805b52835",
+            "rawModeData": ""
+        },
+        {
+            "id": "21742d7e3314efe8afce5c3216415044",
+            "name": "",
+            "url": "httpsiaspub.epa.gov\/enviro\/efservice\/\/RAD_FACILITY_TYPE\/ROWS\/{row_start}:{row_end}\/{output}",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "output",
+                    "description": "which format to output (JSON,XML,CSV,Excel)",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "row_end",
+                    "description": "which row to end on",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "row_start",
+                    "description": "which row to start on",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "76bc60abcfa8e2b5c31851f805b52835",
+            "rawModeData": ""
+        },
+        {
+            "id": "a9eed4ebebffd94827224ba021dffee7",
+            "name": "",
+            "url": "httpsiaspub.epa.gov\/enviro\/efservice\/\/RAD_GEO_LOCATION\/ROWS\/{row_start}:{row_end}\/{output}",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "output",
+                    "description": "which format to output (JSON,XML,CSV,Excel)",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "row_end",
+                    "description": "which row to end on",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "row_start",
+                    "description": "which row to start on",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "76bc60abcfa8e2b5c31851f805b52835",
+            "rawModeData": ""
+        },
+        {
+            "id": "fef0a1eba7dbbc49ffbe89b22d1a5e12",
+            "name": "",
+            "url": "httpsiaspub.epa.gov\/enviro\/efservice\/\/RAD_REGULATION\/ROWS\/{row_start}:{row_end}\/{output}",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "output",
+                    "description": "which format to output (JSON,XML,CSV,Excel)",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "row_end",
+                    "description": "which row to end on",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "row_start",
+                    "description": "which row to start on",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "76bc60abcfa8e2b5c31851f805b52835",
+            "rawModeData": ""
+        },
+        {
+            "id": "71a725a54940ef27d94c9098bf540e61",
+            "name": "",
+            "url": "httpsiaspub.epa.gov\/enviro\/efservice\/\/RAD_REGULATORY_PROG\/ROWS\/{row_start}:{row_end}\/{output}",
+            "description": "",
+            "data": [],
+            "dataMode": "raw",
+            "headerData": null,
+            "method": "get",
+            "pathVariableData": [],
+            "queryParams": [
+                {
+                    "key": "output",
+                    "description": "which format to output (JSON,XML,CSV,Excel)",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "row_end",
+                    "description": "which row to end on",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                },
+                {
+                    "key": "row_start",
+                    "description": "which row to start on",
+                    "value": "",
+                    "equals": true,
+                    "enabled": true
+                }
+            ],
+            "auth": null,
+            "events": null,
+            "folder": null,
+            "protocolProfileBehavior": {
+                "disableBodyPruning": true
+            },
+            "responses": [],
+            "currentHelper": null,
+            "helperAttributes": null,
+            "collectionId": "76bc60abcfa8e2b5c31851f805b52835",
+            "rawModeData": ""
+        }
+    ]
+}
