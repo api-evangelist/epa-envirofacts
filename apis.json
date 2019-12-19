@@ -1,0 +1,467 @@
+{
+    "name": "EPA Envirofacts",
+    "description": "EPA's purpose is to ensure that:    -  all Americans are protected from significant risks to human health and the environment where they live, learn and work;    -  national efforts to reduce environmental risk are based on the best available scientifi...",
+    "image": "http:\/\/kinlane-productions.s3.amazonaws.com\/screen-capture-api\/773-epa-envirofacts.jpg",
+    "tags": [
+        "api provider",
+        "dead",
+        "environmental database",
+        "general data",
+        "have api",
+        "historical data api",
+        "profile"
+    ],
+    "created": "2019-12-19",
+    "modified": "2019-12-19",
+    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/epa-envirofacts\/master\/apis.json",
+    "specificationVersion": "0.14",
+    "apis": [
+        {
+            "name": "U.S. EPA Enforcement and Compliance History Online (ECHO) - Resource Conservation and Recovery Act",
+            "description": null,
+            "image": "http:\/\/kinlane-productions.s3.amazonaws.com\/screen-capture-api\/773-epa-envirofacts.jpg",
+            "humanURL": "http:\/\/epa.gov",
+            "baseURL": "",
+            "tags": [],
+            "properties": [
+                {
+                    "type": "x-openapi",
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/u-s--epa-enforcement-and-compliance-history-online-echo--resource-conservation-and-recovery-act--openapi.json"
+                },
+                {
+                    "type": "x-openapi",
+                    "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/openapis\/u-s--epa-enforcement-and-compliance-history-online-echo--resource-conservation-and-recovery-act.json"
+                }
+            ]
+        },
+        {
+            "name": "EPA Permit Compliance System API",
+            "description": null,
+            "image": "http:\/\/kinlane-productions.s3.amazonaws.com\/screen-capture-api\/773-epa-envirofacts.jpg",
+            "humanURL": "http:\/\/epa.gov",
+            "baseURL": "",
+            "tags": [],
+            "properties": [
+                {
+                    "type": "x-openapi",
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/epa-permit-compliance-system-api-openapi.json"
+                },
+                {
+                    "type": "x-openapi",
+                    "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/openapis\/epa-permit-compliance-system-api.json"
+                },
+                {
+                    "type": "x-postman-collecction",
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/epa-permit-compliance-system-api-postman-collection.json"
+                }
+            ]
+        },
+        {
+            "name": "U.S. EPA Enforcement and Compliance History Online (ECHO) - Effluent Charting and Reporting",
+            "description": null,
+            "image": "http:\/\/kinlane-productions.s3.amazonaws.com\/screen-capture-api\/773-epa-envirofacts.jpg",
+            "humanURL": "http:\/\/epa.gov",
+            "baseURL": "",
+            "tags": [],
+            "properties": [
+                {
+                    "type": "x-openapi",
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/u-s--epa-enforcement-and-compliance-history-online-echo--effluent-charting-and-reporting-openapi.json"
+                },
+                {
+                    "type": "x-openapi",
+                    "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/openapis\/u-s--epa-enforcement-and-compliance-history-online-echo--effluent-charting-and-reporting.json"
+                }
+            ]
+        },
+        {
+            "name": "U.S. EPA Enforcement and Compliance History Online (ECHO) - Enforcement Case Search",
+            "description": null,
+            "image": "http:\/\/kinlane-productions.s3.amazonaws.com\/screen-capture-api\/773-epa-envirofacts.jpg",
+            "humanURL": "http:\/\/epa.gov",
+            "baseURL": "",
+            "tags": [],
+            "properties": [
+                {
+                    "type": "x-openapi",
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/u-s--epa-enforcement-and-compliance-history-online-echo--enforcement-case-search-openapi.json"
+                },
+                {
+                    "type": "x-openapi",
+                    "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/openapis\/u-s--epa-enforcement-and-compliance-history-online-echo--enforcement-case-search.json"
+                }
+            ]
+        },
+        {
+            "name": "U.S. EPA Enforcement and Compliance History Online (ECHO) - Clean Water Act (CWA) Rest Services",
+            "description": null,
+            "image": "http:\/\/kinlane-productions.s3.amazonaws.com\/screen-capture-api\/773-epa-envirofacts.jpg",
+            "humanURL": "http:\/\/epa.gov",
+            "baseURL": "",
+            "tags": [],
+            "properties": [
+                {
+                    "type": "x-openapi",
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/u-s--epa-enforcement-and-compliance-history-online-echo--clean-water-act-cwa-rest-services-openapi.json"
+                },
+                {
+                    "type": "x-openapi",
+                    "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/openapis\/u-s--epa-enforcement-and-compliance-history-online-echo--clean-water-act-cwa-rest-services.json"
+                }
+            ]
+        },
+        {
+            "name": "EPA Radiation Ambient Monitoring API",
+            "description": null,
+            "image": "http:\/\/kinlane-productions.s3.amazonaws.com\/screen-capture-api\/773-epa-envirofacts.jpg",
+            "humanURL": "http:\/\/epa.gov",
+            "baseURL": "",
+            "tags": [],
+            "properties": [
+                {
+                    "type": "x-openapi",
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/epa-radiation-ambient-monitoring-api-openapi.json"
+                },
+                {
+                    "type": "x-openapi",
+                    "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/openapis\/epa-radiation-ambient-monitoring-api.json"
+                },
+                {
+                    "type": "x-postman-collecction",
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/epa-radiation-ambient-monitoring-api-postman-collection.json"
+                }
+            ]
+        },
+        {
+            "name": "EPA Facility Registry System API",
+            "description": null,
+            "image": "http:\/\/kinlane-productions.s3.amazonaws.com\/screen-capture-api\/773-epa-envirofacts.jpg",
+            "humanURL": "http:\/\/epa.gov",
+            "baseURL": "",
+            "tags": [],
+            "properties": [
+                {
+                    "type": "x-openapi",
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/epa-facility-registry-system-api-openapi.json"
+                },
+                {
+                    "type": "x-openapi",
+                    "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/openapis\/epa-facility-registry-system-api.json"
+                },
+                {
+                    "type": "x-postman-collecction",
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/epa-facility-registry-system-api-postman-collection.json"
+                }
+            ]
+        },
+        {
+            "name": "EPA Biennial Report API",
+            "description": null,
+            "image": "http:\/\/kinlane-productions.s3.amazonaws.com\/screen-capture-api\/773-epa-envirofacts.jpg",
+            "humanURL": "http:\/\/epa.gov",
+            "baseURL": "",
+            "tags": [],
+            "properties": [
+                {
+                    "type": "x-openapi",
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/epa-biennial-report-api-openapi.json"
+                },
+                {
+                    "type": "x-openapi",
+                    "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/openapis\/epa-biennial-report-api.json"
+                },
+                {
+                    "type": "x-postman-collecction",
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/epa-biennial-report-api-postman-collection.json"
+                }
+            ]
+        },
+        {
+            "name": "EPA Comprehensive Environmental Response, Compensation, and Liability Information System API",
+            "description": null,
+            "image": "http:\/\/kinlane-productions.s3.amazonaws.com\/screen-capture-api\/773-epa-envirofacts.jpg",
+            "humanURL": "http:\/\/epa.gov",
+            "baseURL": "",
+            "tags": [],
+            "properties": [
+                {
+                    "type": "x-openapi",
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/epa-comprehensive-environmental-response-compensation-and-liability-information-system-api-openapi.json"
+                },
+                {
+                    "type": "x-openapi",
+                    "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/openapis\/epa-comprehensive-environmental-response-compensation-and-liability-information-system-api.json"
+                },
+                {
+                    "type": "x-postman-collecction",
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/epa-comprehensive-environmental-response-compensation-and-liability-information-system-api-postman-collection.json"
+                }
+            ]
+        },
+        {
+            "name": "U.S. EPA Enforcement and Compliance History Online (ECHO) - Safe Drinking Water Act",
+            "description": null,
+            "image": "http:\/\/kinlane-productions.s3.amazonaws.com\/screen-capture-api\/773-epa-envirofacts.jpg",
+            "humanURL": "http:\/\/epa.gov",
+            "baseURL": "",
+            "tags": [],
+            "properties": [
+                {
+                    "type": "x-openapi",
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/u-s--epa-enforcement-and-compliance-history-online-echo--safe-drinking-water-act-openapi.json"
+                },
+                {
+                    "type": "x-openapi",
+                    "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/openapis\/u-s--epa-enforcement-and-compliance-history-online-echo--safe-drinking-water-act.json"
+                }
+            ]
+        },
+        {
+            "name": "EPA Toxics Release Inventory API",
+            "description": null,
+            "image": "http:\/\/kinlane-productions.s3.amazonaws.com\/screen-capture-api\/773-epa-envirofacts.jpg",
+            "humanURL": "http:\/\/epa.gov",
+            "baseURL": "",
+            "tags": [],
+            "properties": [
+                {
+                    "type": "x-openapi",
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/epa-toxics-release-inventory-api-openapi.json"
+                },
+                {
+                    "type": "x-openapi",
+                    "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/openapis\/epa-toxics-release-inventory-api.json"
+                },
+                {
+                    "type": "x-postman-collecction",
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/epa-toxics-release-inventory-api-postman-collection.json"
+                }
+            ]
+        },
+        {
+            "name": "EPA Radiation Information Database API",
+            "description": null,
+            "image": "http:\/\/kinlane-productions.s3.amazonaws.com\/screen-capture-api\/773-epa-envirofacts.jpg",
+            "humanURL": "http:\/\/epa.gov",
+            "baseURL": "",
+            "tags": [],
+            "properties": [
+                {
+                    "type": "x-openapi",
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/epa-radiation-information-database-api-openapi.json"
+                },
+                {
+                    "type": "x-openapi",
+                    "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/openapis\/epa-radiation-information-database-api.json"
+                },
+                {
+                    "type": "x-postman-collecction",
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/epa-radiation-information-database-api-postman-collection.json"
+                }
+            ]
+        },
+        {
+            "name": "EPA Greenhouse Gas API",
+            "description": null,
+            "image": "http:\/\/kinlane-productions.s3.amazonaws.com\/screen-capture-api\/773-epa-envirofacts.jpg",
+            "humanURL": "http:\/\/epa.gov",
+            "baseURL": "",
+            "tags": [],
+            "properties": [
+                {
+                    "type": "x-openapi",
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/epa-greenhouse-gas-api-openapi.json"
+                },
+                {
+                    "type": "x-openapi",
+                    "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/openapis\/epa-greenhouse-gas-api.json"
+                },
+                {
+                    "type": "x-postman-collecction",
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/epa-greenhouse-gas-api-postman-collection.json"
+                }
+            ]
+        },
+        {
+            "name": "EPA Safe Drinking Water Information System API",
+            "description": null,
+            "image": "http:\/\/kinlane-productions.s3.amazonaws.com\/screen-capture-api\/773-epa-envirofacts.jpg",
+            "humanURL": "http:\/\/epa.gov",
+            "baseURL": "",
+            "tags": [],
+            "properties": [
+                {
+                    "type": "x-openapi",
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/epa-safe-drinking-water-information-system-api-openapi.json"
+                },
+                {
+                    "type": "x-openapi",
+                    "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/openapis\/epa-safe-drinking-water-information-system-api.json"
+                },
+                {
+                    "type": "x-postman-collecction",
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/epa-safe-drinking-water-information-system-api-postman-collection.json"
+                }
+            ]
+        },
+        {
+            "name": "EPA Resource Conservation and Recovery Act Information API",
+            "description": null,
+            "image": "http:\/\/kinlane-productions.s3.amazonaws.com\/screen-capture-api\/773-epa-envirofacts.jpg",
+            "humanURL": "http:\/\/epa.gov",
+            "baseURL": "",
+            "tags": [],
+            "properties": [
+                {
+                    "type": "x-openapi",
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/epa-resource-conservation-and-recovery-act-information-api-openapi.json"
+                },
+                {
+                    "type": "x-openapi",
+                    "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/openapis\/epa-resource-conservation-and-recovery-act-information-api.json"
+                },
+                {
+                    "type": "x-postman-collecction",
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/epa-resource-conservation-and-recovery-act-information-api-postman-collection.json"
+                }
+            ]
+        },
+        {
+            "name": "EPA Air Facility System (AFS) API",
+            "description": null,
+            "image": "http:\/\/kinlane-productions.s3.amazonaws.com\/screen-capture-api\/773-epa-envirofacts.jpg",
+            "humanURL": "http:\/\/epa.gov",
+            "baseURL": "",
+            "tags": [],
+            "properties": [
+                {
+                    "type": "x-openapi",
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/epa-air-facility-system-afs-api-openapi.json"
+                },
+                {
+                    "type": "x-openapi",
+                    "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/openapis\/epa-air-facility-system-afs-api.json"
+                },
+                {
+                    "type": "x-postman-collecction",
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/epa-air-facility-system-afs-api-postman-collection.json"
+                }
+            ]
+        },
+        {
+            "name": "EPA Locational information API",
+            "description": null,
+            "image": "http:\/\/kinlane-productions.s3.amazonaws.com\/screen-capture-api\/773-epa-envirofacts.jpg",
+            "humanURL": "http:\/\/epa.gov",
+            "baseURL": "",
+            "tags": [],
+            "properties": [
+                {
+                    "type": "x-openapi",
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/epa-locational-information-api-openapi.json"
+                },
+                {
+                    "type": "x-openapi",
+                    "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/openapis\/epa-locational-information-api.json"
+                },
+                {
+                    "type": "x-postman-collecction",
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/epa-locational-information-api-postman-collection.json"
+                }
+            ]
+        },
+        {
+            "name": "EPA Integrated Grants Management System API",
+            "description": null,
+            "image": "http:\/\/kinlane-productions.s3.amazonaws.com\/screen-capture-api\/773-epa-envirofacts.jpg",
+            "humanURL": "http:\/\/epa.gov",
+            "baseURL": "",
+            "tags": [],
+            "properties": [
+                {
+                    "type": "x-openapi",
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/epa-integrated-grants-management-system-api-openapi.json"
+                },
+                {
+                    "type": "x-openapi",
+                    "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/openapis\/epa-integrated-grants-management-system-api.json"
+                },
+                {
+                    "type": "x-postman-collecction",
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/epa-integrated-grants-management-system-api-postman-collection.json"
+                }
+            ]
+        }
+    ],
+    "include": [],
+    "x-common": [
+        {
+            "type": "Base",
+            "url": "http:\/\/iaspub.epa.gov\/enviro\/efservice\/"
+        },
+        {
+            "type": "Crunchbase",
+            "url": "http:\/\/www.crunchbase.com\/company\/us-epa"
+        },
+        {
+            "type": "Crunchbase",
+            "url": "https:\/\/crunchbase.com\/organization\/u-s-environmental-protection-agency"
+        },
+        {
+            "type": "Developers",
+            "url": "http:\/\/www.epa.gov\/enviro\/facts\/services.html"
+        },
+        {
+            "type": "Email",
+            "url": "breen.barry@epa.gov"
+        },
+        {
+            "type": "Email",
+            "url": "stanich.ted@epa.gov"
+        },
+        {
+            "type": "Email",
+            "url": "brennan.thomas@epa.gov"
+        },
+        {
+            "type": "Email",
+            "url": "R3_RA@epa.gov"
+        },
+        {
+            "type": "Email",
+            "url": "dunn.alexandra@epa.gov"
+        },
+        {
+            "type": "Email",
+            "url": "EPA-region01-RA@epa.gov"
+        },
+        {
+            "type": "Email",
+            "url": "hladick.christopher@epa.gov"
+        },
+        {
+            "type": "Email",
+            "url": "r7actionline@epa.gov"
+        },
+        {
+            "type": "Email",
+            "url": "vette.alan@epa.gov"
+        },
+        {
+            "type": "Email",
+            "url": "baxter.lisa@epa.gov"
+        },
+        {
+            "type": "Twitter",
+            "url": "https:\/\/twitter.com\/EPA"
+        },
+        {
+            "type": "Website",
+            "url": "http:\/\/www.epa.gov"
+        },
+        {
+            "type": "Website",
+            "url": "http:\/\/epa.gov"
+        }
+    ]
+}
