@@ -1,0 +1,2750 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "version": "v1",
+        "title": "EPA Toxics Release Inventory API",
+        "description": "Toxics Release Inventory contains information about the annual release of toxic chemicals to the air, land, and water.",
+        "termsOfService": ""
+    },
+    "servers": [
+        "httpsiaspub.epa.gov\/enviro\/efservice\/"
+    ],
+    "paths": {
+        "\/TRI_CHEM_ACTIVITY\/ROWS\/{row_start}:{row_end}\/{output}": {
+            "get": {
+                "summary": "",
+                "description": "",
+                "operationId": "EnviroFactsTRICHEMACTIVITY",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "output",
+                        "in": "path",
+                        "description": "which format to output (JSON,XML,CSV,Excel)"
+                    },
+                    {
+                        "name": "row_end",
+                        "in": "path",
+                        "description": "which row to end on"
+                    },
+                    {
+                        "name": "row_start",
+                        "in": "path",
+                        "description": "which row to start on"
+                    }
+                ]
+            }
+        },
+        "\/TRI_CHEM_INFO\/ROWS\/{row_start}:{row_end}\/{output}": {
+            "get": {
+                "summary": "",
+                "description": "",
+                "operationId": "EnviroFactsTRICHEMINFO",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "output",
+                        "in": "path",
+                        "description": "which format to output (JSON,XML,CSV,Excel)"
+                    },
+                    {
+                        "name": "row_end",
+                        "in": "path",
+                        "description": "which row to end on"
+                    },
+                    {
+                        "name": "row_start",
+                        "in": "path",
+                        "description": "which row to start on"
+                    }
+                ]
+            }
+        },
+        "\/TRI_CODE_DESC\/ROWS\/{row_start}:{row_end}\/{output}": {
+            "get": {
+                "summary": "",
+                "description": "",
+                "operationId": "EnviroFactsTRICODEDESC",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "output",
+                        "in": "path",
+                        "description": "which format to output (JSON,XML,CSV,Excel)"
+                    },
+                    {
+                        "name": "row_end",
+                        "in": "path",
+                        "description": "which row to end on"
+                    },
+                    {
+                        "name": "row_start",
+                        "in": "path",
+                        "description": "which row to start on"
+                    }
+                ]
+            }
+        },
+        "\/TRI_COUNTY\/ROWS\/{row_start}:{row_end}\/{output}": {
+            "get": {
+                "summary": "",
+                "description": "",
+                "operationId": "EnviroFactsTRICOUNTY",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "output",
+                        "in": "path",
+                        "description": "which format to output (JSON,XML,CSV,Excel)"
+                    },
+                    {
+                        "name": "row_end",
+                        "in": "path",
+                        "description": "which row to end on"
+                    },
+                    {
+                        "name": "row_start",
+                        "in": "path",
+                        "description": "which row to start on"
+                    }
+                ]
+            }
+        },
+        "\/TRI_ENERGY_RECOVERY\/ROWS\/{row_start}:{row_end}\/{output}": {
+            "get": {
+                "summary": "",
+                "description": "",
+                "operationId": "EnviroFactsTRIENERGYRECOVERY",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "output",
+                        "in": "path",
+                        "description": "which format to output (JSON,XML,CSV,Excel)"
+                    },
+                    {
+                        "name": "row_end",
+                        "in": "path",
+                        "description": "which row to end on"
+                    },
+                    {
+                        "name": "row_start",
+                        "in": "path",
+                        "description": "which row to start on"
+                    }
+                ]
+            }
+        },
+        "\/TRI_FACILITY\/ROWS\/{row_start}:{row_end}\/{output}": {
+            "get": {
+                "summary": "",
+                "description": "",
+                "operationId": "EnviroFactsTRIFACILITY",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "output",
+                        "in": "path",
+                        "description": "which format to output (JSON,XML,CSV,Excel)"
+                    },
+                    {
+                        "name": "row_end",
+                        "in": "path",
+                        "description": "which row to end on"
+                    },
+                    {
+                        "name": "row_start",
+                        "in": "path",
+                        "description": "which row to start on"
+                    }
+                ]
+            }
+        },
+        "\/TRI_FACILITY_DB\/ROWS\/{row_start}:{row_end}\/{output}": {
+            "get": {
+                "summary": "",
+                "description": "",
+                "operationId": "EnviroFactsTRIFACILITYDB",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "output",
+                        "in": "path",
+                        "description": "which format to output (JSON,XML,CSV,Excel)"
+                    },
+                    {
+                        "name": "row_end",
+                        "in": "path",
+                        "description": "which row to end on"
+                    },
+                    {
+                        "name": "row_start",
+                        "in": "path",
+                        "description": "which row to start on"
+                    }
+                ]
+            }
+        },
+        "\/TRI_FACILITY_DB_HISTORY\/ROWS\/{row_start}:{row_end}\/{output}": {
+            "get": {
+                "summary": "",
+                "description": "",
+                "operationId": "EnviroFactsTRIFACILITYDBHISTORY",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "output",
+                        "in": "path",
+                        "description": "which format to output (JSON,XML,CSV,Excel)"
+                    },
+                    {
+                        "name": "row_end",
+                        "in": "path",
+                        "description": "which row to end on"
+                    },
+                    {
+                        "name": "row_start",
+                        "in": "path",
+                        "description": "which row to start on"
+                    }
+                ]
+            }
+        },
+        "\/TRI_FACILITY_HISTORY\/ROWS\/{row_start}:{row_end}\/{output}": {
+            "get": {
+                "summary": "",
+                "description": "",
+                "operationId": "EnviroFactsTRIFACILITYHISTORY",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "output",
+                        "in": "path",
+                        "description": "which format to output (JSON,XML,CSV,Excel)"
+                    },
+                    {
+                        "name": "row_end",
+                        "in": "path",
+                        "description": "which row to end on"
+                    },
+                    {
+                        "name": "row_start",
+                        "in": "path",
+                        "description": "which row to start on"
+                    }
+                ]
+            }
+        },
+        "\/TRI_FACILITY_NPDES\/ROWS\/{row_start}:{row_end}\/{output}": {
+            "get": {
+                "summary": "",
+                "description": "",
+                "operationId": "EnviroFactsTRIFACILITYNPDES",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "output",
+                        "in": "path",
+                        "description": "which format to output (JSON,XML,CSV,Excel)"
+                    },
+                    {
+                        "name": "row_end",
+                        "in": "path",
+                        "description": "which row to end on"
+                    },
+                    {
+                        "name": "row_start",
+                        "in": "path",
+                        "description": "which row to start on"
+                    }
+                ]
+            }
+        },
+        "\/TRI_FACILITY_NPDES_HISTORY\/ROWS\/{row_start}:{row_end}\/{output}": {
+            "get": {
+                "summary": "",
+                "description": "",
+                "operationId": "EnviroFactsTRIFACILITYNPDESHISTORY",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "output",
+                        "in": "path",
+                        "description": "which format to output (JSON,XML,CSV,Excel)"
+                    },
+                    {
+                        "name": "row_end",
+                        "in": "path",
+                        "description": "which row to end on"
+                    },
+                    {
+                        "name": "row_start",
+                        "in": "path",
+                        "description": "which row to start on"
+                    }
+                ]
+            }
+        },
+        "\/TRI_FACILITY_RCRA\/ROWS\/{row_start}:{row_end}\/{output}": {
+            "get": {
+                "summary": "",
+                "description": "",
+                "operationId": "EnviroFactsTRIFACILITYRCRA",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "output",
+                        "in": "path",
+                        "description": "which format to output (JSON,XML,CSV,Excel)"
+                    },
+                    {
+                        "name": "row_end",
+                        "in": "path",
+                        "description": "which row to end on"
+                    },
+                    {
+                        "name": "row_start",
+                        "in": "path",
+                        "description": "which row to start on"
+                    }
+                ]
+            }
+        },
+        "\/TRI_FACILITY_SIC\/ROWS\/{row_start}:{row_end}\/{output}": {
+            "get": {
+                "summary": "",
+                "description": "",
+                "operationId": "EnviroFactsTRIFACILITYSIC",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "output",
+                        "in": "path",
+                        "description": "which format to output (JSON,XML,CSV,Excel)"
+                    },
+                    {
+                        "name": "row_end",
+                        "in": "path",
+                        "description": "which row to end on"
+                    },
+                    {
+                        "name": "row_start",
+                        "in": "path",
+                        "description": "which row to start on"
+                    }
+                ]
+            }
+        },
+        "\/TRI_FACILITY_SIC_HISTORY\/ROWS\/{row_start}:{row_end}\/{output}": {
+            "get": {
+                "summary": "",
+                "description": "",
+                "operationId": "EnviroFactsTRIFACILITYSICHISTORY",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "output",
+                        "in": "path",
+                        "description": "which format to output (JSON,XML,CSV,Excel)"
+                    },
+                    {
+                        "name": "row_end",
+                        "in": "path",
+                        "description": "which row to end on"
+                    },
+                    {
+                        "name": "row_start",
+                        "in": "path",
+                        "description": "which row to start on"
+                    }
+                ]
+            }
+        },
+        "\/TRI_FACILITY_UIC\/ROWS\/{row_start}:{row_end}\/{output}": {
+            "get": {
+                "summary": "",
+                "description": "",
+                "operationId": "EnviroFactsTRIFACILITYUIC",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "output",
+                        "in": "path",
+                        "description": "which format to output (JSON,XML,CSV,Excel)"
+                    },
+                    {
+                        "name": "row_end",
+                        "in": "path",
+                        "description": "which row to end on"
+                    },
+                    {
+                        "name": "row_start",
+                        "in": "path",
+                        "description": "which row to start on"
+                    }
+                ]
+            }
+        },
+        "\/TRI_FACILITY_UIC_HISTORY\/ROWS\/{row_start}:{row_end}\/{output}": {
+            "get": {
+                "summary": "",
+                "description": "",
+                "operationId": "EnviroFactsTRIFACILITYUICHISTORY",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "output",
+                        "in": "path",
+                        "description": "which format to output (JSON,XML,CSV,Excel)"
+                    },
+                    {
+                        "name": "row_end",
+                        "in": "path",
+                        "description": "which row to end on"
+                    },
+                    {
+                        "name": "row_start",
+                        "in": "path",
+                        "description": "which row to start on"
+                    }
+                ]
+            }
+        },
+        "\/TRI_FORM_R_SCHEDULE_ONE\/ROWS\/{row_start}:{row_end}\/{output}": {
+            "get": {
+                "summary": "",
+                "description": "",
+                "operationId": "EnviroFactsTRIFORMRSCHEDULEONE",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "output",
+                        "in": "path",
+                        "description": "which format to output (JSON,XML,CSV,Excel)"
+                    },
+                    {
+                        "name": "row_end",
+                        "in": "path",
+                        "description": "which row to end on"
+                    },
+                    {
+                        "name": "row_start",
+                        "in": "path",
+                        "description": "which row to start on"
+                    }
+                ]
+            }
+        },
+        "\/TRI_OFF_SITE_TRANSFER_LOCATION\/ROWS\/{row_start}:{row_end}\/{output}": {
+            "get": {
+                "summary": "",
+                "description": "",
+                "operationId": "EnviroFactsTRIOFFSITETRANSFERLOCATION",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "output",
+                        "in": "path",
+                        "description": "which format to output (JSON,XML,CSV,Excel)"
+                    },
+                    {
+                        "name": "row_end",
+                        "in": "path",
+                        "description": "which row to end on"
+                    },
+                    {
+                        "name": "row_start",
+                        "in": "path",
+                        "description": "which row to start on"
+                    }
+                ]
+            }
+        },
+        "\/TRI_ONSITE_WASTESTREAM\/ROWS\/{row_start}:{row_end}\/{output}": {
+            "get": {
+                "summary": "",
+                "description": "",
+                "operationId": "EnviroFactsTRIONSITEWASTESTREAM",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "output",
+                        "in": "path",
+                        "description": "which format to output (JSON,XML,CSV,Excel)"
+                    },
+                    {
+                        "name": "row_end",
+                        "in": "path",
+                        "description": "which row to end on"
+                    },
+                    {
+                        "name": "row_start",
+                        "in": "path",
+                        "description": "which row to start on"
+                    }
+                ]
+            }
+        },
+        "\/TRI_ONSITE_WASTE_TREATMENT_MET\/ROWS\/{row_start}:{row_end}\/{output}": {
+            "get": {
+                "summary": "",
+                "description": "",
+                "operationId": "EnviroFactsTRIONSITEWASTETREATMENTMET",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "output",
+                        "in": "path",
+                        "description": "which format to output (JSON,XML,CSV,Excel)"
+                    },
+                    {
+                        "name": "row_end",
+                        "in": "path",
+                        "description": "which row to end on"
+                    },
+                    {
+                        "name": "row_start",
+                        "in": "path",
+                        "description": "which row to start on"
+                    }
+                ]
+            }
+        },
+        "\/TRI_POTW_LOCATION\/ROWS\/{row_start}:{row_end}\/{output}": {
+            "get": {
+                "summary": "",
+                "description": "",
+                "operationId": "EnviroFactsTRIPOTWLOCATION",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "output",
+                        "in": "path",
+                        "description": "which format to output (JSON,XML,CSV,Excel)"
+                    },
+                    {
+                        "name": "row_end",
+                        "in": "path",
+                        "description": "which row to end on"
+                    },
+                    {
+                        "name": "row_start",
+                        "in": "path",
+                        "description": "which row to start on"
+                    }
+                ]
+            }
+        },
+        "\/TRI_RECYCLING_PROCESS\/ROWS\/{row_start}:{row_end}\/{output}": {
+            "get": {
+                "summary": "",
+                "description": "",
+                "operationId": "EnviroFactsTRIRECYCLINGPROCESS",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "output",
+                        "in": "path",
+                        "description": "which format to output (JSON,XML,CSV,Excel)"
+                    },
+                    {
+                        "name": "row_end",
+                        "in": "path",
+                        "description": "which row to end on"
+                    },
+                    {
+                        "name": "row_start",
+                        "in": "path",
+                        "description": "which row to start on"
+                    }
+                ]
+            }
+        },
+        "\/TRI_RELEASE_QTY\/ROWS\/{row_start}:{row_end}\/{output}": {
+            "get": {
+                "summary": "",
+                "description": "",
+                "operationId": "EnviroFactsTRIRELEASEQTY",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "output",
+                        "in": "path",
+                        "description": "which format to output (JSON,XML,CSV,Excel)"
+                    },
+                    {
+                        "name": "row_end",
+                        "in": "path",
+                        "description": "which row to end on"
+                    },
+                    {
+                        "name": "row_start",
+                        "in": "path",
+                        "description": "which row to start on"
+                    }
+                ]
+            }
+        },
+        "\/TRI_REPORTING_FORM\/ROWS\/{row_start}:{row_end}\/{output}": {
+            "get": {
+                "summary": "",
+                "description": "",
+                "operationId": "EnviroFactsTRIREPORTINGFORM",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "output",
+                        "in": "path",
+                        "description": "which format to output (JSON,XML,CSV,Excel)"
+                    },
+                    {
+                        "name": "row_end",
+                        "in": "path",
+                        "description": "which row to end on"
+                    },
+                    {
+                        "name": "row_start",
+                        "in": "path",
+                        "description": "which row to start on"
+                    }
+                ]
+            }
+        },
+        "\/TRI_SOURCE_REDUCTION_METHOD\/ROWS\/{row_start}:{row_end}\/{output}": {
+            "get": {
+                "summary": "",
+                "description": "",
+                "operationId": "EnviroFactsTRISOURCEREDUCTIONMETHOD",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "output",
+                        "in": "path",
+                        "description": "which format to output (JSON,XML,CSV,Excel)"
+                    },
+                    {
+                        "name": "row_end",
+                        "in": "path",
+                        "description": "which row to end on"
+                    },
+                    {
+                        "name": "row_start",
+                        "in": "path",
+                        "description": "which row to start on"
+                    }
+                ]
+            }
+        },
+        "\/TRI_SOURCE_REDUCT_QTY\/ROWS\/{row_start}:{row_end}\/{output}": {
+            "get": {
+                "summary": "",
+                "description": "",
+                "operationId": "EnviroFactsTRISOURCEREDUCTQTY",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "output",
+                        "in": "path",
+                        "description": "which format to output (JSON,XML,CSV,Excel)"
+                    },
+                    {
+                        "name": "row_end",
+                        "in": "path",
+                        "description": "which row to end on"
+                    },
+                    {
+                        "name": "row_start",
+                        "in": "path",
+                        "description": "which row to start on"
+                    }
+                ]
+            }
+        },
+        "\/TRI_SUBMISSION_NAICS\/ROWS\/{row_start}:{row_end}\/{output}": {
+            "get": {
+                "summary": "",
+                "description": "",
+                "operationId": "EnviroFactsTRISUBMISSIONNAICS",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "output",
+                        "in": "path",
+                        "description": "which format to output (JSON,XML,CSV,Excel)"
+                    },
+                    {
+                        "name": "row_end",
+                        "in": "path",
+                        "description": "which row to end on"
+                    },
+                    {
+                        "name": "row_start",
+                        "in": "path",
+                        "description": "which row to start on"
+                    }
+                ]
+            }
+        },
+        "\/TRI_SUBMISSION_SIC\/ROWS\/{row_start}:{row_end}\/{output}": {
+            "get": {
+                "summary": "",
+                "description": "",
+                "operationId": "EnviroFactsTRISUBMISSIONSIC",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "output",
+                        "in": "path",
+                        "description": "which format to output (JSON,XML,CSV,Excel)"
+                    },
+                    {
+                        "name": "row_end",
+                        "in": "path",
+                        "description": "which row to end on"
+                    },
+                    {
+                        "name": "row_start",
+                        "in": "path",
+                        "description": "which row to start on"
+                    }
+                ]
+            }
+        },
+        "\/TRI_TABLE_ID_NAME\/ROWS\/{row_start}:{row_end}\/{output}": {
+            "get": {
+                "summary": "",
+                "description": "",
+                "operationId": "EnviroFactsTRITABLEIDNAME",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "output",
+                        "in": "path",
+                        "description": "which format to output (JSON,XML,CSV,Excel)"
+                    },
+                    {
+                        "name": "row_end",
+                        "in": "path",
+                        "description": "which row to end on"
+                    },
+                    {
+                        "name": "row_start",
+                        "in": "path",
+                        "description": "which row to start on"
+                    }
+                ]
+            }
+        },
+        "\/TRI_TRANSFER_QTY\/ROWS\/{row_start}:{row_end}\/{output}": {
+            "get": {
+                "summary": "",
+                "description": "",
+                "operationId": "EnviroFactsTRITRANSFERQTY",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "output",
+                        "in": "path",
+                        "description": "which format to output (JSON,XML,CSV,Excel)"
+                    },
+                    {
+                        "name": "row_end",
+                        "in": "path",
+                        "description": "which row to end on"
+                    },
+                    {
+                        "name": "row_start",
+                        "in": "path",
+                        "description": "which row to start on"
+                    }
+                ]
+            }
+        },
+        "\/TRI_TRIBE_DESC\/ROWS\/{row_start}:{row_end}\/{output}": {
+            "get": {
+                "summary": "",
+                "description": "",
+                "operationId": "EnviroFactsTRITRIBEDESC",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "output",
+                        "in": "path",
+                        "description": "which format to output (JSON,XML,CSV,Excel)"
+                    },
+                    {
+                        "name": "row_end",
+                        "in": "path",
+                        "description": "which row to end on"
+                    },
+                    {
+                        "name": "row_start",
+                        "in": "path",
+                        "description": "which row to start on"
+                    }
+                ]
+            }
+        },
+        "\/TRI_WATER_STREAM\/ROWS\/{row_start}:{row_end}\/{output}": {
+            "get": {
+                "summary": "",
+                "description": "",
+                "operationId": "EnviroFactsTRIWATERSTREAM",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "output",
+                        "in": "path",
+                        "description": "which format to output (JSON,XML,CSV,Excel)"
+                    },
+                    {
+                        "name": "row_end",
+                        "in": "path",
+                        "description": "which row to end on"
+                    },
+                    {
+                        "name": "row_start",
+                        "in": "path",
+                        "description": "which row to start on"
+                    }
+                ]
+            }
+        },
+        "\/TRI_ZIP_CODE\/ROWS\/{row_start}:{row_end}\/{output}": {
+            "get": {
+                "summary": "",
+                "description": "",
+                "operationId": "EnviroFactsTRIZIPCODE",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "output",
+                        "in": "path",
+                        "description": "which format to output (JSON,XML,CSV,Excel)"
+                    },
+                    {
+                        "name": "row_end",
+                        "in": "path",
+                        "description": "which row to end on"
+                    },
+                    {
+                        "name": "row_start",
+                        "in": "path",
+                        "description": "which row to start on"
+                    }
+                ]
+            }
+        },
+        "\/TR_FACILITY_RCRA_HISTORY\/ROWS\/{row_start}:{row_end}\/{output}": {
+            "get": {
+                "summary": "",
+                "description": "",
+                "operationId": "EnviroFactsTRFACILITYRCRAHISTORY",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "output",
+                        "in": "path",
+                        "description": "which format to output (JSON,XML,CSV,Excel)"
+                    },
+                    {
+                        "name": "row_end",
+                        "in": "path",
+                        "description": "which row to end on"
+                    },
+                    {
+                        "name": "row_start",
+                        "in": "path",
+                        "description": "which row to start on"
+                    }
+                ]
+            }
+        }
+    },
+    "components": {
+        "schemas": {
+            "tri_facility_sic_history": {
+                "type": "object",
+                "properties": {
+                    "filler": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "tri_facility_db_history": {
+                "type": "object",
+                "properties": {
+                    "": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "ASGN_DB_IND": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "DB_NUM": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "REPORTING_YEAR": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "TRI_FACILITY_ID": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "tri_facility_npdes_history": {
+                "type": "object",
+                "properties": {
+                    "": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "ASGN_NPDES_IND": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "NPDES_NUM": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "REPORTING_YEAR": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "TRI_FACILITY_ID": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "tri_facility_uic_history": {
+                "type": "object",
+                "properties": {
+                    "": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "ASGN_UIC_IND": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "REPORTING_YEAR": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "TRI_FACILITY_ID": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "UIC_NUM": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "tri_facility_history": {
+                "type": "object",
+                "properties": {
+                    "": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "ASGN_AGENCY": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "ASGN_FEDERAL_IND": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "ASGN_PARTIAL_IND": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "ASGN_PUBLIC_CONTACT": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "ASGN_PUBLIC_CONTACT_EMAIL": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "ASGN_PUBLIC_PHONE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "ASGN_PUBLIC_PHONE_EXT": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "BIA_CODE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "CITY_NAME": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "COUNTY_NAME": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "FACILITY_NAME": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "FAC_LATITUDE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "FAC_LONGITUDE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "MAIL_CITY": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "MAIL_COUNTRY": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "MAIL_NAME": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "MAIL_PROVINCE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "MAIL_STATE_ABBR": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "MAIL_STREET_ADDRESS": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "MAIL_ZIP_CODE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "PARENT_CO_DB_NUM": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "PARENT_CO_NAME": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "PREF_ACCURACY": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "PREF_COLLECT_METH": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "PREF_DESC_CATEGORY": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "PREF_HORIZONTAL_DATUM": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "PREF_LATITUDE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "PREF_LONGITUDE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "PREF_QA_CODE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "PREF_SOURCE_SCALE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "REGION": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "REPORTING_YEAR": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "STANDARDIZED_PARENT_COMPANY": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "STATE_ABBR": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "STATE_COUNTY_FIPS_CODE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "STREET_ADDRESS": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "TRI_FACILITY_ID": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "ZIP_CODE": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "tri_facility": {
+                "type": "object",
+                "properties": {
+                    "": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "ASGN_AGENCY": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "ASGN_FEDERAL_IND": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "ASGN_PARTIAL_IND": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "ASGN_PUBLIC_CONTACT": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "ASGN_PUBLIC_CONTACT_EMAIL": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "ASGN_PUBLIC_PHONE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "ASGN_PUBLIC_PHONE_EXT": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "BIA_CODE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "CITY_NAME": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "COUNTY_NAME": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "FACILITY_NAME": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "FAC_CLOSED_IND": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "FAC_LATITUDE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "FAC_LONGITUDE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "FRS_ID": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "MAIL_CITY": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "MAIL_COUNTRY": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "MAIL_NAME": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "MAIL_PROVINCE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "MAIL_STATE_ABBR": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "MAIL_STREET_ADDRESS": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "MAIL_ZIP_CODE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "PARENT_CO_DB_NUM": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "PARENT_CO_NAME": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "PREF_ACCURACY": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "PREF_COLLECT_METH": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "PREF_DESC_CATEGORY": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "PREF_HORIZONTAL_DATUM": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "PREF_LATITUDE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "PREF_LONGITUDE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "PREF_QA_CODE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "PREF_SOURCE_SCALE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "REGION": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "STANDARDIZED_PARENT_COMPANY": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "STATE_ABBR": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "STATE_COUNTY_FIPS_CODE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "STREET_ADDRESS": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "TRI_FACILITY_ID": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "ZIP_CODE": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "tri_tribe_desc": {
+                "type": "object",
+                "properties": {
+                    "": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "BIA_CODE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "EPA_TRIBE_ID": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "REGION": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "STATE_ABBR": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "TRIBE": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "tri_submission_sic": {
+                "type": "object",
+                "properties": {
+                    "": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "DOC_CTRL_NUM": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "PRIMARY_IND": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "SIC_CODE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "SIC_SEQUENCE_NUM": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "TRI_FACILITY_ID": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "tri_submission_naics": {
+                "type": "object",
+                "properties": {
+                    "": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "DOC_CTRL_NUM": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "NAICS_CODE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "NAICS_SEQUENCE_NUM": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "PRIMARY_IND": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "TRI_FACILITY_ID": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "tri_facility_sic": {
+                "type": "object",
+                "properties": {
+                    "filler": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "tri_facility_db": {
+                "type": "object",
+                "properties": {
+                    "": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "ASGN_DB_IND": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "DB_NUM": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "TRI_FACILITY_ID": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "tri_facility_npdes": {
+                "type": "object",
+                "properties": {
+                    "": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "ASGN_NPDES_IND": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "NPDES_NUM": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "TRI_FACILITY_ID": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "tri_facility_rcra": {
+                "type": "object",
+                "properties": {
+                    "": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "ASGN_RCRA_IND": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "RCRA_NUM": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "TRI_FACILITY_ID": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "tri_facility_uic": {
+                "type": "object",
+                "properties": {
+                    "": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "ASGN_UIC_IND": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "TRI_FACILITY_ID": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "UIC_NUM": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "tri_chem_activity": {
+                "type": "object",
+                "properties": {
+                    "": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "ANCILLARY": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "ARTICLE_COMPONENT": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "BYPRODUCT": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "CHEM_PROCESSING_AID": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "DOC_CTRL_NUM": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "FORMULATION_COMPONENT": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "IMPORTED": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "MANUFACTURE_AID": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "MANUFACTURE_IMPURITY": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "PROCESS_IMPURITY": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "PRODUCE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "REACTANT": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "REPACKAGING": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "SALE_DISTRIBUTION": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "USED_PROCESSED": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "tri_reporting_form": {
+                "type": "object",
+                "properties": {
+                    "": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "ACTIVE_STATUS": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "ADDITIONAL_DATA_IND": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "CAS_CHEM_NAME": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "CERTIF_DATE_SIGNED": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "CERTIF_NAME": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "CERTIF_OFFICIAL_TITLE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "CERTIF_SIGNATURE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "DIOXIN_DISTRIBUTION_1": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "DIOXIN_DISTRIBUTION_10": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "DIOXIN_DISTRIBUTION_11": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "DIOXIN_DISTRIBUTION_12": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "DIOXIN_DISTRIBUTION_13": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "DIOXIN_DISTRIBUTION_14": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "DIOXIN_DISTRIBUTION_15": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "DIOXIN_DISTRIBUTION_16": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "DIOXIN_DISTRIBUTION_17": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "DIOXIN_DISTRIBUTION_2": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "DIOXIN_DISTRIBUTION_3": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "DIOXIN_DISTRIBUTION_4": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "DIOXIN_DISTRIBUTION_5": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "DIOXIN_DISTRIBUTION_6": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "DIOXIN_DISTRIBUTION_7": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "DIOXIN_DISTRIBUTION_8": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "DIOXIN_DISTRIBUTION_9": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "DIOXIN_DISTRIBUTION_NA": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "DOC_CTRL_NUM": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "ENTIRE_FAC": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "FEDERAL_FAC_IND": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "FORM_TYPE_IND": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "GENERIC_CHEM_NAME": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "GOCO_FLAG": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "MAX_AMOUNT_OF_CHEM": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "MEDIA_TYPE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "MIXTURE_NAME": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "ONE_TIME_RELEASE_QTY": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "ONE_TIME_RELEASE_QTY_NA": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "ORIG_POSTMARK": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "ORIG_RECEIVED": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "PARTIAL_FAC": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "POSTMARK_DATE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "PRODUCTION_RATIO": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "PRODUCTION_RATIO_NA": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "PROD_RATIO_OR_ACTIVITY": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "PUBLIC_CONTACT_EMAIL": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "PUBLIC_CONTACT_PERSON": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "PUBLIC_CONTACT_PHONE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "PUBLIC_PHONE_EXT": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "RECEIVED_DATE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "REPORTING_YEAR": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "REVISION_CODE_1": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "REVISION_CODE_2": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "REVISION_NA": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "SANITIZED_IND": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "TRADE_SECRET_IND": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "TRI_CHEM_ID": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "TRI_FACILITY_ID": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "tri_water_stream": {
+                "type": "object",
+                "properties": {
+                    "": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "DOC_CTRL_NUM": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "REACH_CODE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "STORM_WATER_NA": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "STORM_WATER_PERCENT": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "STREAM_NAME": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "WATER_SEQUENCE_NUM": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "tri_release_qty": {
+                "type": "object",
+                "properties": {
+                    "": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "DOC_CTRL_NUM": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "ENVIRONMENTAL_MEDIUM": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "RELEASE_BASIS_EST_CODE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "RELEASE_NA": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "RELEASE_RANGE_CODE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "TOTAL_RELEASE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "WATER_SEQUENCE_NUM": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "tri_potw_location": {
+                "type": "object",
+                "properties": {
+                    "": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "CITY_NAME": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "COUNTY_NAME": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "DOC_CTRL_NUM": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "POTW_LOC_NUM": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "POTW_NAME": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "POTW_STREET_ADDRESS": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "STATE_ABBR": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "ZIP_CODE": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "tri_transfer_qty": {
+                "type": "object",
+                "properties": {
+                    "": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "DOC_CTRL_NUM": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "OFF_SITE_AMOUNT_SEQUENCE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "POTW_PERCENTAGE_PROVIDED": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "POTW_PERCENTAGE_TO_81C": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "POTW_PERCENTAGE_TO_81D": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "POTW_PERCENTAGE_TO_87": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "TOTAL_TRANSFER": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "TRANSFER_BASIS_EST_CODE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "TRANSFER_EST_NA": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "TRANSFER_LOC_NUM": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "TRANSFER_RANGE_CODE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "TYPE_OF_WASTE_MANAGEMENT": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "tri_off_site_transfer_location": {
+                "type": "object",
+                "properties": {
+                    "": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "CITY_NAME": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "CONTROLLED_LOC": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "COUNTRY_CODE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "COUNTY_NAME": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "DOC_CTRL_NUM": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "OFF_SITE_NAME": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "OFF_SITE_STREET_ADDRESS": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "PROVINCE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "RCRA_NUM": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "STATE_ABBR": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "TRANSFER_LOC_NUM": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "ZIP_CODE": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "tri_energy_recovery": {
+                "type": "object",
+                "properties": {
+                    "": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "DOC_CTRL_NUM": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "ONSITE_ENERGY_PROC_CODE": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "tri_onsite_wastestream": {
+                "type": "object",
+                "properties": {
+                    "": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "DOC_CTRL_NUM": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "EFFICIENCY_RANGE_CODE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "INFLUENT_CONC_RANGE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "OPERATING_DATA_IND": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "SEQUENTIAL_TREAT_87_90": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "TREATMENT_EFFICIENCY_EST": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "TREATMENT_EFFICIENCY_EST_NA": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "WASTESTREAM_CODE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "WASTESTREAM_SEQ_NUM": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "tri_onsite_waste_treatment_met": {
+                "type": "object",
+                "properties": {
+                    "": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "DOC_CTRL_NUM": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "TREATMENT_METHOD_CODE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "TREATMENT_SEQUENCE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "WASTESTREAM_SEQ_NUM": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "tri_recycling_process": {
+                "type": "object",
+                "properties": {
+                    "": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "DOC_CTRL_NUM": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "ONSITE_RECYCLING_PROC_CODE": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "tri_source_reduct_qty": {
+                "type": "object",
+                "properties": {
+                    "": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "DOC_CTRL_NUM": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "ENERGY_OFFSITE_CURR_YR_NA": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "ENERGY_OFFSITE_CURR_YR_QTY": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "ENERGY_OFFSITE_FOLL_YR_NA": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "ENERGY_OFFSITE_FOLL_YR_QTY": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "ENERGY_OFFSITE_PREV_YR_NA": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "ENERGY_OFFSITE_PREV_YR_QTY": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "ENERGY_OFFSITE_SECD_YR_NA": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "ENERGY_OFFSITE_SECD_YR_QTY": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "ENERGY_ONSITE_CURR_YR_NA": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "ENERGY_ONSITE_CURR_YR_QTY": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "ENERGY_ONSITE_FOLL_YR_NA": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "ENERGY_ONSITE_FOLL_YR_QTY": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "ENERGY_ONSITE_PREV_YR_NA": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "ENERGY_ONSITE_PREV_YR_QTY": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "ENERGY_ONSITE_SECD_YR_NA": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "ENERGY_ONSITE_SECD_YR_QTY": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "RECYC_OFFSITE_CURR_YR_NA": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "RECYC_OFFSITE_CURR_YR_QTY": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "RECYC_OFFSITE_FOLL_YR_NA": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "RECYC_OFFSITE_FOLL_YR_QTY": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "RECYC_OFFSITE_PREV_YR_NA": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "RECYC_OFFSITE_PREV_YR_QTY": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "RECYC_OFFSITE_SECD_YR_NA": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "RECYC_OFFSITE_SECD_YR_QTY": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "RECYC_ONSITE_CURR_YR_NA": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "RECYC_ONSITE_CURR_YR_QTY": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "RECYC_ONSITE_FOLL_YR_NA": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "RECYC_ONSITE_FOLL_YR_QTY": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "RECYC_ONSITE_PREV_YR_NA": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "RECYC_ONSITE_PREV_YR_QTY": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "RECYC_ONSITE_SECD_YR_NA": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "RECYC_ONSITE_SECD_YR_QTY": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "REL_81A_CURR_YR_NA": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "REL_81A_CURR_YR_QTY": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "REL_81A_FOLL_YR_NA": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "REL_81A_FOLL_YR_QTY": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "REL_81A_PREV_YR_NA": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "REL_81A_PREV_YR_QTY": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "REL_81A_SECD_YR_NA": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "REL_81A_SECD_YR_QTY": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "REL_81B_CURR_YR_NA": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "REL_81B_CURR_YR_QTY": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "REL_81B_FOLL_YR_NA": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "REL_81B_FOLL_YR_QTY": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "REL_81B_PREV_YR_NA": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "REL_81B_PREV_YR_QTY": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "REL_81B_SECD_YR_NA": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "REL_81B_SECD_YR_QTY": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "REL_81C_CURR_YR_NA": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "REL_81C_CURR_YR_QTY": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "REL_81C_FOLL_YR_NA": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "REL_81C_FOLL_YR_QTY": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "REL_81C_PREV_YR_NA": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "REL_81C_PREV_YR_QTY": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "REL_81C_SECD_YR_NA": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "REL_81C_SECD_YR_QTY": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "REL_81D_CURR_YR_NA": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "REL_81D_CURR_YR_QTY": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "REL_81D_FOLL_YR_NA": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "REL_81D_FOLL_YR_QTY": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "REL_81D_PREV_YR_NA": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "REL_81D_PREV_YR_QTY": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "REL_81D_SECD_YR_NA": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "REL_81D_SECD_YR_QTY": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "REL_CURR_YR_NA": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "REL_CURR_YR_QTY": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "REL_FOLL_YR_NA": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "REL_FOLL_YR_QTY": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "REL_PREV_YR_NA": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "REL_PREV_YR_QTY": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "REL_SECD_YR_NA": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "REL_SECD_YR_QTY": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "TREATED_OFFSITE_CURR_YR_NA": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "TREATED_OFFSITE_CURR_YR_QTY": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "TREATED_OFFSITE_FOLL_YR_NA": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "TREATED_OFFSITE_FOLL_YR_QTY": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "TREATED_OFFSITE_PREV_YR_NA": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "TREATED_OFFSITE_PREV_YR_QTY": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "TREATED_OFFSITE_SECD_YR_NA": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "TREATED_OFFSITE_SECD_YR_QTY": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "TREATED_ONSITE_CURR_YR_NA": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "TREATED_ONSITE_CURR_YR_QTY": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "TREATED_ONSITE_FOLL_YR_NA": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "TREATED_ONSITE_FOLL_YR_QTY": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "TREATED_ONSITE_PREV_YR_NA": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "TREATED_ONSITE_PREV_YR_QTY": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "TREATED_ONSITE_SECD_YR_NA": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "TREATED_ONSITE_SECD_YR_QTY": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "tri_county": {
+                "type": "object",
+                "properties": {
+                    "": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "COUNTY_NAME": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "ZIP_CODE": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "tri_zip_code": {
+                "type": "object",
+                "properties": {
+                    "": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "CITY_NAME": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "COUNTRY_NAME": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "REGION": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "STATE_ABBR": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "TRI_CENTROID_LAT": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "TRI_CENTROID_LONG": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "ZIP_CODE": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "tri_chem_info": {
+                "type": "object",
+                "properties": {
+                    "": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "ACTIVE_DATE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "CAAC_IND": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "CARC_IND": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "CAS_REGISTRY_NUMBER": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "CHEM_NAME": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "CLASSIFICATION": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "DEFAULT_PERCENTAGE_TO_81C": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "DEFAULT_PERCENTAGE_TO_81D": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "DEFAULT_PERCENTAGE_TO_87": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "FEDS_IND": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "INACTIVE_DATE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "METAL_IND": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "NO_DECIMALS": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "PBT_END_YEAR": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "PBT_START_YEAR": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "R3350_IND": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "SRS_ID": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "TRI_CHEM_ID": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "UNIT_OF_MEASURE": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "tri_code_desc": {
+                "type": "object",
+                "properties": {
+                    "": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "CODE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "DESCRIPT": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "TABLE_ID": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "tri_table_id_name": {
+                "type": "object",
+                "properties": {
+                    "filler": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "tri_form_r_schedule_one": {
+                "type": "object",
+                "properties": {
+                    "CALCULATED_TEQ": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "DIOXIN_CONGENER1": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "DIOXIN_CONGENER10": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "DIOXIN_CONGENER11": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "DIOXIN_CONGENER12": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "DIOXIN_CONGENER13": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "DIOXIN_CONGENER14": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "DIOXIN_CONGENER15": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "DIOXIN_CONGENER16": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "DIOXIN_CONGENER17": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "DIOXIN_CONGENER2": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "DIOXIN_CONGENER3": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "DIOXIN_CONGENER4": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "DIOXIN_CONGENER5": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "DIOXIN_CONGENER6": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "DIOXIN_CONGENER7": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "DIOXIN_CONGENER8": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "DIOXIN_CONGENER9": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "DOC_CTRL_NUM": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "ENVIRONMENTAL_MEDIUM": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "OFF_SITE_AMOUNT_SEQUENCE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "RELEASE_NA": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "SEQUENCE_NUM": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "SHAPE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "TOTAL_RELEASE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "TYPE_OF_WASTE_MANAGEMENT": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "tri_source_reduction_method": {
+                "type": "object",
+                "properties": {
+                    "filler": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "tr_facility_rcra_history": {
+                "type": "object",
+                "properties": {
+                    "filler": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            }
+        }
+    }
+}
