@@ -1,0 +1,1539 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "version": "v1",
+        "title": "EPA Comprehensive Environmental Response, Compensation, and Liability Information System API",
+        "description": "The Comprehensive Environmental Response, Compensation, and Liability Information System provides information about Superfund (cleaning\/removal of hazardous waste) sites, from discovery to their listing on the National Priorities list.",
+        "termsOfService": ""
+    },
+    "servers": [
+        "httpsiaspub.epa.gov\/enviro\/efservice\/"
+    ],
+    "paths": {
+        "\/CER_ACTION\/ROWS\/{row_start}:{row_end}\/{output}": {
+            "get": {
+                "summary": "",
+                "description": "",
+                "operationId": "EnviroFactsCERACTION",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "output",
+                        "in": "path",
+                        "description": "which format to output (JSON,XML,CSV,Excel)"
+                    },
+                    {
+                        "name": "row_end",
+                        "in": "path",
+                        "description": "which row to end on"
+                    },
+                    {
+                        "name": "row_start",
+                        "in": "path",
+                        "description": "which row to start on"
+                    }
+                ]
+            }
+        },
+        "\/CER_CMT_SITE\/ROWS\/{row_start}:{row_end}\/{output}": {
+            "get": {
+                "summary": "",
+                "description": "",
+                "operationId": "EnviroFactsCERCMTSITE",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "output",
+                        "in": "path",
+                        "description": "which format to output (JSON,XML,CSV,Excel)"
+                    },
+                    {
+                        "name": "row_end",
+                        "in": "path",
+                        "description": "which row to end on"
+                    },
+                    {
+                        "name": "row_start",
+                        "in": "path",
+                        "description": "which row to start on"
+                    }
+                ]
+            }
+        },
+        "\/CER_CMT_SITE_ALIAS\/ROWS\/{row_start}:{row_end}\/{output}": {
+            "get": {
+                "summary": "",
+                "description": "",
+                "operationId": "EnviroFactsCERCMTSITEALIAS",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "output",
+                        "in": "path",
+                        "description": "which format to output (JSON,XML,CSV,Excel)"
+                    },
+                    {
+                        "name": "row_end",
+                        "in": "path",
+                        "description": "which row to end on"
+                    },
+                    {
+                        "name": "row_start",
+                        "in": "path",
+                        "description": "which row to start on"
+                    }
+                ]
+            }
+        },
+        "\/CER_CONTACT\/ROWS\/{row_start}:{row_end}\/{output}": {
+            "get": {
+                "summary": "",
+                "description": "",
+                "operationId": "EnviroFactsCERCONTACT",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "output",
+                        "in": "path",
+                        "description": "which format to output (JSON,XML,CSV,Excel)"
+                    },
+                    {
+                        "name": "row_end",
+                        "in": "path",
+                        "description": "which row to end on"
+                    },
+                    {
+                        "name": "row_start",
+                        "in": "path",
+                        "description": "which row to start on"
+                    }
+                ]
+            }
+        },
+        "\/CER_FEDERAL_REGISTER\/ROWS\/{row_start}:{row_end}\/{output}": {
+            "get": {
+                "summary": "",
+                "description": "",
+                "operationId": "EnviroFactsCERFEDERALREGISTER",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "output",
+                        "in": "path",
+                        "description": "which format to output (JSON,XML,CSV,Excel)"
+                    },
+                    {
+                        "name": "row_end",
+                        "in": "path",
+                        "description": "which row to end on"
+                    },
+                    {
+                        "name": "row_start",
+                        "in": "path",
+                        "description": "which row to start on"
+                    }
+                ]
+            }
+        },
+        "\/CER_FINANCIAL_TRANSACTION\/ROWS\/{row_start}:{row_end}\/{output}": {
+            "get": {
+                "summary": "",
+                "description": "",
+                "operationId": "EnviroFactsCERFINANCIALTRANSACTION",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "output",
+                        "in": "path",
+                        "description": "which format to output (JSON,XML,CSV,Excel)"
+                    },
+                    {
+                        "name": "row_end",
+                        "in": "path",
+                        "description": "which row to end on"
+                    },
+                    {
+                        "name": "row_start",
+                        "in": "path",
+                        "description": "which row to start on"
+                    }
+                ]
+            }
+        },
+        "\/CER_LOCATION\/ROWS\/{row_start}:{row_end}\/{output}": {
+            "get": {
+                "summary": "",
+                "description": "",
+                "operationId": "EnviroFactsCERLOCATION",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "output",
+                        "in": "path",
+                        "description": "which format to output (JSON,XML,CSV,Excel)"
+                    },
+                    {
+                        "name": "row_end",
+                        "in": "path",
+                        "description": "which row to end on"
+                    },
+                    {
+                        "name": "row_start",
+                        "in": "path",
+                        "description": "which row to start on"
+                    }
+                ]
+            }
+        },
+        "\/CER_OPERABLE_UNIT\/ROWS\/{row_start}:{row_end}\/{output}": {
+            "get": {
+                "summary": "",
+                "description": "",
+                "operationId": "EnviroFactsCEROPERABLEUNIT",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "output",
+                        "in": "path",
+                        "description": "which format to output (JSON,XML,CSV,Excel)"
+                    },
+                    {
+                        "name": "row_end",
+                        "in": "path",
+                        "description": "which row to end on"
+                    },
+                    {
+                        "name": "row_start",
+                        "in": "path",
+                        "description": "which row to start on"
+                    }
+                ]
+            }
+        },
+        "\/CER_REF_ACTION_ANOMALY\/ROWS\/{row_start}:{row_end}\/{output}": {
+            "get": {
+                "summary": "",
+                "description": "",
+                "operationId": "EnviroFactsCERREFACTIONANOMALY",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "output",
+                        "in": "path",
+                        "description": "which format to output (JSON,XML,CSV,Excel)"
+                    },
+                    {
+                        "name": "row_end",
+                        "in": "path",
+                        "description": "which row to end on"
+                    },
+                    {
+                        "name": "row_start",
+                        "in": "path",
+                        "description": "which row to start on"
+                    }
+                ]
+            }
+        },
+        "\/CER_REF_ACTION_CRITICAL_FLAG\/{row_start}:{row_end}\/{output}": {
+            "get": {
+                "summary": "",
+                "description": "",
+                "operationId": "EnviroFactsCERREFACTIONCRITICALFLAG",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "output",
+                        "in": "path",
+                        "description": "which format to output (JSON,XML,CSV,Excel)"
+                    },
+                    {
+                        "name": "row_end",
+                        "in": "path",
+                        "description": "which row to end on"
+                    },
+                    {
+                        "name": "row_start",
+                        "in": "path",
+                        "description": "which row to start on"
+                    }
+                ]
+            }
+        },
+        "\/CER_REF_ACTION_LEAD_TYPE\/ROWS\/{row_start}:{row_end}\/{output}": {
+            "get": {
+                "summary": "",
+                "description": "",
+                "operationId": "EnviroFactsCERREFACTIONLEADTYPE",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "output",
+                        "in": "path",
+                        "description": "which format to output (JSON,XML,CSV,Excel)"
+                    },
+                    {
+                        "name": "row_end",
+                        "in": "path",
+                        "description": "which row to end on"
+                    },
+                    {
+                        "name": "row_start",
+                        "in": "path",
+                        "description": "which row to start on"
+                    }
+                ]
+            }
+        },
+        "\/CER_REF_ACTION_QUALIFIER\/ROWS\/{row_start}:{row_end}\/{output}": {
+            "get": {
+                "summary": "",
+                "description": "",
+                "operationId": "EnviroFactsCERREFACTIONQUALIFIER",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "output",
+                        "in": "path",
+                        "description": "which format to output (JSON,XML,CSV,Excel)"
+                    },
+                    {
+                        "name": "row_end",
+                        "in": "path",
+                        "description": "which row to end on"
+                    },
+                    {
+                        "name": "row_start",
+                        "in": "path",
+                        "description": "which row to start on"
+                    }
+                ]
+            }
+        },
+        "\/CER_REF_ACTION_TYPE\/ROWS\/{row_start}:{row_end}\/{output}": {
+            "get": {
+                "summary": "",
+                "description": "",
+                "operationId": "EnviroFactsCERREFACTIONTYPE",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "output",
+                        "in": "path",
+                        "description": "which format to output (JSON,XML,CSV,Excel)"
+                    },
+                    {
+                        "name": "row_end",
+                        "in": "path",
+                        "description": "which row to end on"
+                    },
+                    {
+                        "name": "row_start",
+                        "in": "path",
+                        "description": "which row to start on"
+                    }
+                ]
+            }
+        },
+        "\/CER_REF_CMT_SITE\/ROWS\/{row_start}:{row_end}\/{output}": {
+            "get": {
+                "summary": "",
+                "description": "",
+                "operationId": "EnviroFactsCERREFCMTSITE",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "output",
+                        "in": "path",
+                        "description": "which format to output (JSON,XML,CSV,Excel)"
+                    },
+                    {
+                        "name": "row_end",
+                        "in": "path",
+                        "description": "which row to end on"
+                    },
+                    {
+                        "name": "row_start",
+                        "in": "path",
+                        "description": "which row to start on"
+                    }
+                ]
+            }
+        },
+        "\/CER_REF_FDRL_RGSTR_ACTN\/ROWS\/{row_start}:{row_end}\/{output}": {
+            "get": {
+                "summary": "",
+                "description": "",
+                "operationId": "EnviroFactsCERREFFDRLRGSTRACTN",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "output",
+                        "in": "path",
+                        "description": "which format to output (JSON,XML,CSV,Excel)"
+                    },
+                    {
+                        "name": "row_end",
+                        "in": "path",
+                        "description": "which row to end on"
+                    },
+                    {
+                        "name": "row_start",
+                        "in": "path",
+                        "description": "which row to start on"
+                    }
+                ]
+            }
+        },
+        "\/CER_REF_FEDERAL_FACILITY\/ROWS\/{row_start}:{row_end}\/{output}": {
+            "get": {
+                "summary": "",
+                "description": "",
+                "operationId": "EnviroFactsCERREFFEDERALFACILITY",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "output",
+                        "in": "path",
+                        "description": "which format to output (JSON,XML,CSV,Excel)"
+                    },
+                    {
+                        "name": "row_end",
+                        "in": "path",
+                        "description": "which row to end on"
+                    },
+                    {
+                        "name": "row_start",
+                        "in": "path",
+                        "description": "which row to start on"
+                    }
+                ]
+            }
+        },
+        "\/CER_REF_FINAN_TRANSACTION_TYPE\/ROWS\/{row_start}:{row_end}\/{output}": {
+            "get": {
+                "summary": "",
+                "description": "",
+                "operationId": "EnviroFactsCERREFFINANTRANSACTIONTYPE",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "output",
+                        "in": "path",
+                        "description": "which format to output (JSON,XML,CSV,Excel)"
+                    },
+                    {
+                        "name": "row_end",
+                        "in": "path",
+                        "description": "which row to end on"
+                    },
+                    {
+                        "name": "row_start",
+                        "in": "path",
+                        "description": "which row to start on"
+                    }
+                ]
+            }
+        },
+        "\/CER_REF_NON_NPL_STATUS\/ROWS\/{row_start}:{row_end}\/{output}": {
+            "get": {
+                "summary": "",
+                "description": "",
+                "operationId": "EnviroFactsCERREFNONNPLSTATUS",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "output",
+                        "in": "path",
+                        "description": "which format to output (JSON,XML,CSV,Excel)"
+                    },
+                    {
+                        "name": "row_end",
+                        "in": "path",
+                        "description": "which row to end on"
+                    },
+                    {
+                        "name": "row_start",
+                        "in": "path",
+                        "description": "which row to start on"
+                    }
+                ]
+            }
+        },
+        "\/CER_REF_NPL_STATUS\/ROWS\/{row_start}:{row_end}\/{output}": {
+            "get": {
+                "summary": "",
+                "description": "",
+                "operationId": "EnviroFactsCERREFNPLSTATUS",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "output",
+                        "in": "path",
+                        "description": "which format to output (JSON,XML,CSV,Excel)"
+                    },
+                    {
+                        "name": "row_end",
+                        "in": "path",
+                        "description": "which row to end on"
+                    },
+                    {
+                        "name": "row_start",
+                        "in": "path",
+                        "description": "which row to start on"
+                    }
+                ]
+            }
+        },
+        "\/CER_REF_OWNERSHIP_TYPE\/ROWS\/{row_start}:{row_end}\/{output}": {
+            "get": {
+                "summary": "",
+                "description": "",
+                "operationId": "EnviroFactsCERREFOWNERSHIPTYPE",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "output",
+                        "in": "path",
+                        "description": "which format to output (JSON,XML,CSV,Excel)"
+                    },
+                    {
+                        "name": "row_end",
+                        "in": "path",
+                        "description": "which row to end on"
+                    },
+                    {
+                        "name": "row_start",
+                        "in": "path",
+                        "description": "which row to start on"
+                    }
+                ]
+            }
+        },
+        "\/CER_REF_PLANNING_STATUS\/ROWS\/{row_start}:{row_end}\/{output}": {
+            "get": {
+                "summary": "",
+                "description": "",
+                "operationId": "EnviroFactsCERREFPLANNINGSTATUS",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "output",
+                        "in": "path",
+                        "description": "which format to output (JSON,XML,CSV,Excel)"
+                    },
+                    {
+                        "name": "row_end",
+                        "in": "path",
+                        "description": "which row to end on"
+                    },
+                    {
+                        "name": "row_start",
+                        "in": "path",
+                        "description": "which row to start on"
+                    }
+                ]
+            }
+        },
+        "\/CER_REF_REGION\/ROWS\/{row_start}:{row_end}\/{output}": {
+            "get": {
+                "summary": "",
+                "description": "",
+                "operationId": "EnviroFactsCERREFREGION",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "output",
+                        "in": "path",
+                        "description": "which format to output (JSON,XML,CSV,Excel)"
+                    },
+                    {
+                        "name": "row_end",
+                        "in": "path",
+                        "description": "which row to end on"
+                    },
+                    {
+                        "name": "row_start",
+                        "in": "path",
+                        "description": "which row to start on"
+                    }
+                ]
+            }
+        },
+        "\/CER_REF_SIC\/ROWS\/{row_start}:{row_end}\/{output}": {
+            "get": {
+                "summary": "",
+                "description": "",
+                "operationId": "EnviroFactsCERREFSIC",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "output",
+                        "in": "path",
+                        "description": "which format to output (JSON,XML,CSV,Excel)"
+                    },
+                    {
+                        "name": "row_end",
+                        "in": "path",
+                        "description": "which row to end on"
+                    },
+                    {
+                        "name": "row_start",
+                        "in": "path",
+                        "description": "which row to start on"
+                    }
+                ]
+            }
+        },
+        "\/CER_REF_SITE_INCIDENT_CATEGORY\/ROWS\/{row_start}:{row_end}\/{output}": {
+            "get": {
+                "summary": "",
+                "description": "",
+                "operationId": "EnviroFactsCERREFSITEINCIDENTCATEGORY",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "output",
+                        "in": "path",
+                        "description": "which format to output (JSON,XML,CSV,Excel)"
+                    },
+                    {
+                        "name": "row_end",
+                        "in": "path",
+                        "description": "which row to end on"
+                    },
+                    {
+                        "name": "row_start",
+                        "in": "path",
+                        "description": "which row to start on"
+                    }
+                ]
+            }
+        },
+        "\/CER_REF_SITE_INCIDENT_TYPE\/ROWS\/{row_start}:{row_end}\/{output}": {
+            "get": {
+                "summary": "",
+                "description": "",
+                "operationId": "EnviroFactsCERREFSITEINCIDENTTYPE",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "output",
+                        "in": "path",
+                        "description": "which format to output (JSON,XML,CSV,Excel)"
+                    },
+                    {
+                        "name": "row_end",
+                        "in": "path",
+                        "description": "which row to end on"
+                    },
+                    {
+                        "name": "row_start",
+                        "in": "path",
+                        "description": "which row to start on"
+                    }
+                ]
+            }
+        },
+        "\/CER_REF_STATE\/ROWS\/{row_start}:{row_end}\/{output}": {
+            "get": {
+                "summary": "",
+                "description": "",
+                "operationId": "EnviroFactsCERREFSTATE",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "output",
+                        "in": "path",
+                        "description": "which format to output (JSON,XML,CSV,Excel)"
+                    },
+                    {
+                        "name": "row_end",
+                        "in": "path",
+                        "description": "which row to end on"
+                    },
+                    {
+                        "name": "row_start",
+                        "in": "path",
+                        "description": "which row to start on"
+                    }
+                ]
+            }
+        },
+        "\/CER_SITE\/ROWS\/{row_start}:{row_end}\/{output}": {
+            "get": {
+                "summary": "",
+                "description": "",
+                "operationId": "EnviroFactsCERSITE",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "output",
+                        "in": "path",
+                        "description": "which format to output (JSON,XML,CSV,Excel)"
+                    },
+                    {
+                        "name": "row_end",
+                        "in": "path",
+                        "description": "which row to end on"
+                    },
+                    {
+                        "name": "row_start",
+                        "in": "path",
+                        "description": "which row to start on"
+                    }
+                ]
+            }
+        },
+        "\/CER_SITE_ALIAS\/ROWS\/{row_start}:{row_end}\/{output}": {
+            "get": {
+                "summary": "",
+                "description": "",
+                "operationId": "EnviroFactsCERSITEALIAS",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "output",
+                        "in": "path",
+                        "description": "which format to output (JSON,XML,CSV,Excel)"
+                    },
+                    {
+                        "name": "row_end",
+                        "in": "path",
+                        "description": "which row to end on"
+                    },
+                    {
+                        "name": "row_start",
+                        "in": "path",
+                        "description": "which row to start on"
+                    }
+                ]
+            }
+        },
+        "\/CER_SITE_ROT_REF\/ROWS\/{row_start}:{row_end}\/{output}": {
+            "get": {
+                "summary": "",
+                "description": "",
+                "operationId": "EnviroFactsCERSITEROTREF",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "output",
+                        "in": "path",
+                        "description": "which format to output (JSON,XML,CSV,Excel)"
+                    },
+                    {
+                        "name": "row_end",
+                        "in": "path",
+                        "description": "which row to end on"
+                    },
+                    {
+                        "name": "row_start",
+                        "in": "path",
+                        "description": "which row to start on"
+                    }
+                ]
+            }
+        },
+        "\/CER_WSMC_CROSS_LINK\/ROWS\/{row_start}:{row_end}\/{output}": {
+            "get": {
+                "summary": "",
+                "description": "",
+                "operationId": "EnviroFactsCERWSMCCROSSLINK",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "output",
+                        "in": "path",
+                        "description": "which format to output (JSON,XML,CSV,Excel)"
+                    },
+                    {
+                        "name": "row_end",
+                        "in": "path",
+                        "description": "which row to end on"
+                    },
+                    {
+                        "name": "row_start",
+                        "in": "path",
+                        "description": "which row to start on"
+                    }
+                ]
+            }
+        },
+        "\/CER_WST_SRC_MEDIA_CONTAMINATED\/ROWS\/{row_start}:{row_end}\/{output}": {
+            "get": {
+                "summary": "",
+                "description": "",
+                "operationId": "EnviroFactsCERWSTSRCMEDIACONTAMINATED",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "output",
+                        "in": "path",
+                        "description": "which format to output (JSON,XML,CSV,Excel)"
+                    },
+                    {
+                        "name": "row_end",
+                        "in": "path",
+                        "description": "which row to end on"
+                    },
+                    {
+                        "name": "row_start",
+                        "in": "path",
+                        "description": "which row to start on"
+                    }
+                ]
+            }
+        }
+    },
+    "components": {
+        "schemas": {
+            "cer_contact": {
+                "type": "object",
+                "properties": {
+                    "PERSON_FIRST_NAME": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "PERSON_LAST_NAME": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "PERSON_PHONE_NMBR1": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "RROLE_DESC": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "SITE_ID": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "cer_location": {
+                "type": "object",
+                "properties": {
+                    "ACCURACY_VALUE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "CITY_NAME": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "COLLECTION_DATE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "COLLECT_MTH_CODE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "COMMENT_TEXT": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "COUNTY_NAME": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "GEOMETRIC_TYPE_CODE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "HDATUM_CODE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "LATITUDE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "LOCATION_ADDRESS": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "LONGITUDE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "POSTAL_CODE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "PRIMARY_NAME": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "REF_POINT_CODE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "SCALE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "SITE_EPA_ID": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "SOURCE_CODE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "STATE_CODE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "SUB_ID": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "SUB_TYPE_CODE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "VACCURACY": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "VDATUM_CODE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "VERTICAL_MEASURE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "VMETHOD_CODE": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "cer_operable_unit": {
+                "type": "object",
+                "properties": {
+                    "OU_DESC_TEXT": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "OU_ID": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "OU_NAME": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "SITE_ID": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "cer_federal_register": {
+                "type": "object",
+                "properties": {
+                    "FR_DATE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "FR_NPL_UPDATE_NMBR": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "RFRA_CODE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "SITE_ID": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "cer_ref_fdrl_rgstr_actn": {
+                "type": "object",
+                "properties": {
+                    "RFRA_CODE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "RFRA_DESC": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "cer_ref_cmt_site": {
+                "type": "object",
+                "properties": {
+                    "RCST_CODE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "RCS_DESC": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "cer_cmt_site": {
+                "type": "object",
+                "properties": {
+                    "CSITE_SEQ_NMBR": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "CSITE_TEXT": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "RCST_CODE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "SITE_ID": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "cer_site": {
+                "type": "object",
+                "properties": {
+                    "RFED_FCLTY_CODE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "RNON_NPL_STATUS_CODE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "RNPL_STATUS_CODE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "RREGION_CODE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "RSITINC_CODE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "RSTATE_CODE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "SITE_CITY_NAME": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "SITE_CNGRSNL_DSTRCT_CODE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "SITE_CNTY_NAME": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "SITE_EPA_ID": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "SITE_FUDS_FLAG": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "SITE_ID": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "SITE_IFMS_SSID_CODE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "SITE_NAME": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "SITE_NFRAP_FLAG": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "SITE_RCRA_ID": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "SITE_SHORT_NAME": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "SITE_SMSA_NMBR": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "SITE_STRT_ADRS1": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "SITE_STRT_ADRS2": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "SITE_USGS_HYDRO_UNIT_NMBR": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "SITE_ZIP_CODE": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "cer_site_rot_ref": {
+                "type": "object",
+                "properties": {
+                    "CREATED_BY": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "CREATED_DATE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "LAST_UPDATED_BY": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "LAST_UPDATED_DATE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "M_ROW_x0024__x0024_": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "ROT_CODE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "SITE_ID": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "cer_wst_src_media_contaminated": {
+                "type": "object",
+                "properties": {
+                    "SITE_ID": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "WSMC_NMBR": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "cer_wsmc_cross_link": {
+                "type": "object",
+                "properties": {
+                    "SITE_ID": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "WCL_C2501": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "WSMC_NMBR": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "cer_ref_site_incident_type": {
+                "type": "object",
+                "properties": {
+                    "RSIT_CODE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "RSIT_DESC": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "cer_ref_ownership_type": {
+                "type": "object",
+                "properties": {
+                    "ROT_CODE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "ROT_DESC": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "cer_ref_region": {
+                "type": "object",
+                "properties": {
+                    "RREGION_CITY_NAME": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "RREGION_CODE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "RREGION_DESC": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "RREGION_STRT_ADRS1": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "RREGION_STRT_ADRS2": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "RREGION_ZIP_CODE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "RSTATE_CODE": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "cer_ref_state": {
+                "type": "object",
+                "properties": {
+                    "RREGION_CODE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "RSTATE_CODE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "RSTATE_NAME": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "cer_ref_sic": {
+                "type": "object",
+                "properties": {
+                    "RSIC_CODE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "RSIC_CODE_DESC": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "cer_ref_federal_facility": {
+                "type": "object",
+                "properties": {
+                    "RFED_FCLTY_CODE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "RFED_FCLTY_DESC": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "cer_ref_site_incident_category": {
+                "type": "object",
+                "properties": {
+                    "RSITINC_CODE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "RSITINC_DESC": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "cer_action": {
+                "type": "object",
+                "properties": {
+                    "ACT_ACTL_CMPLTN_DATE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "ACT_ACTL_STRT_DATE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "ACT_CODE_ID": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "OU_ID": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "RAA_CODE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "RACT_CRITICAL_FLAG_CODE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "RALT_CODE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "RAQ_ACTION_QUAL_CODE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "RAT_CODE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "RPS_CODE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "SITE_ID": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "cer_ref_action_lead_type": {
+                "type": "object",
+                "properties": {
+                    "RALT_CODE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "RALT_DESC": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "cer_ref_action_qualifier": {
+                "type": "object",
+                "properties": {
+                    "RAQ_ACTION_QUAL_CODE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "RAQ_ACTION_QUAL_DESC": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "cer_ref_planning_status": {
+                "type": "object",
+                "properties": {
+                    "RPS_CODE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "RPS_DESC": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "cer_ref_action_anomaly": {
+                "type": "object",
+                "properties": {
+                    "RAA_CODE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "RAA_DESC": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "cer_ref_action_type": {
+                "type": "object",
+                "properties": {
+                    "RAT_C2_CODE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "RAT_C2_TYPE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "RAT_CODE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "RAT_DEF": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "RAT_DEFAULT_PRED_ACT_TYPE_CODE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "RAT_DEF_OU": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "RAT_HISTORICAL_ONLY_FLAG": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "RAT_LEVEL": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "RAT_NAME": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "RAT_NSI_INDICATOR": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "RAT_SHORT_NAME": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "RAT_WITHOUT_START_FLAG": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "RFBS_CODE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "RIE_CODE": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "cer_financial_transaction": {
+                "type": "object",
+                "properties": {
+                    "ACT_CODE_ID": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "FT_AMT": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "FT_BUDGET_FY": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "FT_DATE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "FT_ID": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "RAT_CODE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "RFTT_CODE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "SITE_ID": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "cer_ref_finan_transaction_type": {
+                "type": "object",
+                "properties": {
+                    "RFTT_CODE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "RFTT_LONG_NAME": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "RFTT_ORDER": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "RFTT_PLAN_ACT": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "RFTT_SHORT_NAME": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "cer_ref_action_critical_flag": {
+                "type": "object",
+                "properties": {
+                    "filler": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "cer_ref_non_npl_status": {
+                "type": "object",
+                "properties": {
+                    "filler": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "cer_ref_npl_status": {
+                "type": "object",
+                "properties": {
+                    "filler": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "cer_site_alias": {
+                "type": "object",
+                "properties": {
+                    "filler": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            }
+        }
+    }
+}
