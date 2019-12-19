@@ -1,0 +1,581 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "version": "1.0.0",
+        "title": "U.S. EPA Enforcement and Compliance History Online (ECHO) - Effluent Charting and Reporting",
+        "description": "Enforcement and Compliance History Online (ECHO) is a tool developed and maintained by EPA's Office of Enforcement and Compliance Assurance for public use.\nECHO provides integrated compliance and enforcement information for about 800,000 regulated facilities nationwide.\n<BR><BR>EFF Rest Services provides the data for ECHO's Effluent Charts, a set of dynamic charts and tables of permitted effluent limits, releases, and violations over time for \nClean Water Act (CWA) wastewater discharge permits issued under the National Pollutant Discharge Elimination System (NPDES).  See Effluent Charts Help (https:\/\/echo.epa.gov\/help\/reports\/effluent-charts-help) for additional information.\n<BR><BR>\nThe are 3 service end points for Efffluent Charts:  get_summary_chart, get_effluent_chart, and download_effluent_chart.\n<br>\n<br><b>1)<\/b>&nbsp Use get_summary_chart to retrieve a summary matrix of effluent parameters by effluent outfall and an overall violation status for a provided NPDES Permit and date ",
+        "termsOfService": ""
+    },
+    "servers": [
+        "httpsofmpub.epa.gov\/echo"
+    ],
+    "paths": {
+        "\/eff_rest_services.download_effluent_chart": {
+            "get": {
+                "summary": "Effluent Charts Download Service",
+                "description": "Downloads tabular Discharge Monitoring Report (DMR) and compliance data for one NPDES permit as a CSV.",
+                "operationId": "DownloadsTabularDischargeMonitoringReportDmrAndComplianceDataForOneNpdesPermitAsACsv",
+                "deprecated": 0,
+                "parameters": []
+            }
+        },
+        "\/eff_rest_services.get_effluent_chart": {
+            "get": {
+                "summary": "Detailed Effluent Chart Service",
+                "description": "Discharge Monitoring Report (DMR) data supporting each effluent chart for one NPDES permit. Includes Discharge Monitoring Reports and NPDES Violations. \n\n",
+                "operationId": "DischargeMonitoringReportDmrDataSupportingEachEffluentChartForOneNpdesPermitIncludesD",
+                "deprecated": 0,
+                "parameters": []
+            }
+        },
+        "\/eff_rest_services.get_summary_chart": {
+            "get": {
+                "summary": "Summary Effluent Chart Service",
+                "description": "Summary of compliance status each outfall and parameter for one NPDES permit. Provides the current compliance status and overall compliance status for the date range of interest. This service supports the Summary Matrix on the Effluent Charts.",
+                "operationId": "SummaryOfComplianceStatusEachOutfallAndParameterForOneNpdesPermitProvidesTheCurrentC",
+                "deprecated": 0,
+                "parameters": []
+            }
+        },
+        "\/rest_lookups.cwa_parameters": {
+            "get": {
+                "summary": "ECHO CWA Parameter Lookup Service",
+                "description": "Look up Clean Water Act parameter codes and descriptions in the Integrated Compliance Information System - National Pollutant Discharge Elimination System (ICIS-NPDES) by code or term.",
+                "operationId": "LookUpCleanWaterActParameterCodesAndDescriptionsInTheIntegratedComplianceInformationSy",
+                "deprecated": 0,
+                "parameters": []
+            }
+        }
+    },
+    "components": {
+        "schemas": {
+            "eff1_DischargeMonitoringReports": {
+                "type": "object",
+                "properties": {
+                    "DMREventId": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "DMRFormValueId": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "DMRUnitCode": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "DMRUnitDesc": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "DMRValueId": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "DMRValueNmbr": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "DMRValueQualifierCode": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "DMRValueStdUnits": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "DaysLate": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "ExceedencePct": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "LimitBeginDate": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "LimitEndDate": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "LimitId": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "LimitSetId": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "LimitSetScheduleId": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "LimitUnitCode": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "LimitUnitDesc": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "LimitValueId": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "LimitValueNmbr": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "LimitValueQualifierCode": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "LimitValueStdUnits": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "LimitValueTypeCode": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "LimitValueTypeDesc": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "MonitoringPeriodEndDate": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "NODEDesc": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "NODICode": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "NPDESViolations": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "NmbrOfSubmission": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "PermFeatureId": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "StatisticalBaseCode": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "StatisticalBaseDesc": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "StatisticalBaseTypeCode": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "StatisticalBaseTypeDesc": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "StayValueNmbr": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "StdUnitCode": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "StdUnitDesc": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "ValueReceivedDate": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "ValueTypeCode": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "ValueTypeDesc": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "VersionNmbr": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "eff1_NPDESViolations": {
+                "type": "object",
+                "properties": {
+                    "NPDESViolationId": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "RNCDetectionCode": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "RNCDetectionDate": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "RNCDetectionDesc": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "RNCResolutionCode": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "RNCResolutionDate": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "RNCResolutionDesc": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "ViolationCode": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "ViolationDesc": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "ViolationSeverity": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "eff1_Parameters": {
+                "type": "object",
+                "properties": {
+                    "DischargeMonitoringReports": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "MonitoringLocationCode": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "MonitoringLocationDesc": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "ParameterCode": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "ParameterDesc": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "StayTypeCode": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "StayTypeDesc": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "eff1_PermFeatures": {
+                "type": "object",
+                "properties": {
+                    "Parameters": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "PermFeatureNmbr": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "PermFeatureTypeCode": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "PermFeatureTypeDesc": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "eff1_Results": {
+                "type": "object",
+                "properties": {
+                    "CWPCity": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "CWPCurrentSNCStatus": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "CWPMajorMinorStatusFlag": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "CWPName": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "CWPPermitStatusDesc": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "CWPPermitTypeDesc": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "CWPState": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "CWPStreet": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "CWPZip": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "EPASystem": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "EndDate": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "Message": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "PermFeatures": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "RegistryId": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "SourceId": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "StartDate": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "Statute": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "eff2_LinkedPermits": {
+                "type": "object",
+                "properties": {
+                    "CWPCity": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "CWPCurrentSNCStatus": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "CWPMajorMinorStatusFlag": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "CWPName": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "CWPPermitStatusDesc": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "CWPPermitTypeDesc": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "CWPState": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "CWPStreet": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "CWPZip": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "SourceId": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "eff2_Parameters": {
+                "type": "object",
+                "properties": {
+                    "CurrentVioStatus": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "MaxVioStatus": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "ParameterCode": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "ParameterDesc": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "eff2_PermFeatures": {
+                "type": "object",
+                "properties": {
+                    "Parameters": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "PermFeatureNmbr": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "PermFeatureTypeCode": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "PermFeatureTypeDesc": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "eff2_Results": {
+                "type": "object",
+                "properties": {
+                    "CWPCity": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "CWPCurrentSNCStatus": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "CWPMajorMinorStatusFlag": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "CWPName": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "CWPPermitStatusDesc": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "CWPPermitTypeDesc": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "CWPState": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "CWPStreet": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "CWPZip": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "EPASystem": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "EndDate": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "LinkedPermits": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "Message": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "PermFeatures": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "RegistryId": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "SourceId": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "StartDate": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "Statute": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "rlk0_LuValues": {
+                "type": "object",
+                "properties": {
+                    "ValueCode": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "ValueDescription": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "rlk9_Results": {
+                "type": "object",
+                "properties": {
+                    "LuValues": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "Message": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            }
+        }
+    }
+}
