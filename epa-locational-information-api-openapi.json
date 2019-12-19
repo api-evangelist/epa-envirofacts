@@ -1,0 +1,1074 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "version": "v1",
+        "title": "EPA Locational information API",
+        "description": "Locational information for EPA-regulated facilities in Envirofacts is cultivated from many sources, including EPA federal program systems, EPA regional offices, and the states.",
+        "termsOfService": ""
+    },
+    "servers": [
+        "httpsiaspub.epa.gov\/enviro\/efservice\/"
+    ],
+    "paths": {
+        "\/FRS_FACILITY_SITE\/ROWS\/{row_start}:{row_end}\/{output}": {
+            "get": {
+                "summary": "",
+                "description": "",
+                "operationId": "EnviroFactsFRSFACILITYSITE",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "output",
+                        "in": "path",
+                        "description": "which format to output (JSON,XML,CSV,Excel)"
+                    },
+                    {
+                        "name": "row_end",
+                        "in": "path",
+                        "description": "which row to end on"
+                    },
+                    {
+                        "name": "row_start",
+                        "in": "path",
+                        "description": "which row to start on"
+                    }
+                ]
+            }
+        },
+        "\/FRS_PROGRAM_FACILITY\/ROWS\/{row_start}:{row_end}\/{output}": {
+            "get": {
+                "summary": "",
+                "description": "",
+                "operationId": "EnviroFactsFRSPROGRAMFACILITY",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "output",
+                        "in": "path",
+                        "description": "which format to output (JSON,XML,CSV,Excel)"
+                    },
+                    {
+                        "name": "row_end",
+                        "in": "path",
+                        "description": "which row to end on"
+                    },
+                    {
+                        "name": "row_start",
+                        "in": "path",
+                        "description": "which row to start on"
+                    }
+                ]
+            }
+        },
+        "\/GEO_ASSIGN_ACC_LK\/ROWS\/{row_start}:{row_end}\/{output}": {
+            "get": {
+                "summary": "",
+                "description": "",
+                "operationId": "EnviroFactsGEOASSIGNACCLK",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "output",
+                        "in": "path",
+                        "description": "which format to output (JSON,XML,CSV,Excel)"
+                    },
+                    {
+                        "name": "row_end",
+                        "in": "path",
+                        "description": "which row to end on"
+                    },
+                    {
+                        "name": "row_start",
+                        "in": "path",
+                        "description": "which row to start on"
+                    }
+                ]
+            }
+        },
+        "\/GEO_COLLECT_MTH_LK\/ROWS\/{row_start}:{row_end}\/{output}": {
+            "get": {
+                "summary": "",
+                "description": "",
+                "operationId": "EnviroFactsGEOCOLLECTMTHLK",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "output",
+                        "in": "path",
+                        "description": "which format to output (JSON,XML,CSV,Excel)"
+                    },
+                    {
+                        "name": "row_end",
+                        "in": "path",
+                        "description": "which row to end on"
+                    },
+                    {
+                        "name": "row_start",
+                        "in": "path",
+                        "description": "which row to start on"
+                    }
+                ]
+            }
+        },
+        "\/GEO_CONVEYOR\/ROWS\/{row_start}:{row_end}\/{output}": {
+            "get": {
+                "summary": "",
+                "description": "",
+                "operationId": "EnviroFactsGEOCONVEYOR",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "output",
+                        "in": "path",
+                        "description": "which format to output (JSON,XML,CSV,Excel)"
+                    },
+                    {
+                        "name": "row_end",
+                        "in": "path",
+                        "description": "which row to end on"
+                    },
+                    {
+                        "name": "row_start",
+                        "in": "path",
+                        "description": "which row to start on"
+                    }
+                ]
+            }
+        },
+        "\/GEO_FACILITY_POINT\/ROWS\/{row_start}:{row_end}\/{output}": {
+            "get": {
+                "summary": "",
+                "description": "",
+                "operationId": "EnviroFactsGEOFACILITYPOINT",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "output",
+                        "in": "path",
+                        "description": "which format to output (JSON,XML,CSV,Excel)"
+                    },
+                    {
+                        "name": "row_end",
+                        "in": "path",
+                        "description": "which row to end on"
+                    },
+                    {
+                        "name": "row_start",
+                        "in": "path",
+                        "description": "which row to start on"
+                    }
+                ]
+            }
+        },
+        "\/GEO_GEOMETRIC_TYPE_LK\/ROWS\/{row_start}:{row_end}\/{output}": {
+            "get": {
+                "summary": "",
+                "description": "",
+                "operationId": "EnviroFactsGEOGEOMETRICTYPELK",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "output",
+                        "in": "path",
+                        "description": "which format to output (JSON,XML,CSV,Excel)"
+                    },
+                    {
+                        "name": "row_end",
+                        "in": "path",
+                        "description": "which row to end on"
+                    },
+                    {
+                        "name": "row_start",
+                        "in": "path",
+                        "description": "which row to start on"
+                    }
+                ]
+            }
+        },
+        "\/GEO_HORIZ_DATUM_LK\/ROWS\/{row_start}:{row_end}\/{output}": {
+            "get": {
+                "summary": "",
+                "description": "",
+                "operationId": "EnviroFactsGEOHORIZDATUMLK",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "output",
+                        "in": "path",
+                        "description": "which format to output (JSON,XML,CSV,Excel)"
+                    },
+                    {
+                        "name": "row_end",
+                        "in": "path",
+                        "description": "which row to end on"
+                    },
+                    {
+                        "name": "row_start",
+                        "in": "path",
+                        "description": "which row to start on"
+                    }
+                ]
+            }
+        },
+        "\/GEO_PHP_FACILITY_COORDINATE\/ROWS\/{row_start}:{row_end}\/{output}": {
+            "get": {
+                "summary": "",
+                "description": "",
+                "operationId": "EnviroFactsGEOPHPFACILITYCOORDINATE",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "output",
+                        "in": "path",
+                        "description": "which format to output (JSON,XML,CSV,Excel)"
+                    },
+                    {
+                        "name": "row_end",
+                        "in": "path",
+                        "description": "which row to end on"
+                    },
+                    {
+                        "name": "row_start",
+                        "in": "path",
+                        "description": "which row to start on"
+                    }
+                ]
+            }
+        },
+        "\/GEO_REF_POINT_LK\/ROWS\/{row_start}:{row_end}\/{output}": {
+            "get": {
+                "summary": "",
+                "description": "",
+                "operationId": "EnviroFactsGEOREFPOINTLK",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "output",
+                        "in": "path",
+                        "description": "which format to output (JSON,XML,CSV,Excel)"
+                    },
+                    {
+                        "name": "row_end",
+                        "in": "path",
+                        "description": "which row to end on"
+                    },
+                    {
+                        "name": "row_start",
+                        "in": "path",
+                        "description": "which row to start on"
+                    }
+                ]
+            }
+        },
+        "\/GEO_SOURCE_LK\/ROWS\/{row_start}:{row_end}\/{output}": {
+            "get": {
+                "summary": "",
+                "description": "",
+                "operationId": "EnviroFactsGEOSOURCELK",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "output",
+                        "in": "path",
+                        "description": "which format to output (JSON,XML,CSV,Excel)"
+                    },
+                    {
+                        "name": "row_end",
+                        "in": "path",
+                        "description": "which row to end on"
+                    },
+                    {
+                        "name": "row_start",
+                        "in": "path",
+                        "description": "which row to start on"
+                    }
+                ]
+            }
+        },
+        "\/GEO_SUB_ID_REF\/ROWS\/{row_start}:{row_end}\/{output}": {
+            "get": {
+                "summary": "",
+                "description": "",
+                "operationId": "EnviroFactsGEOSUBIDREF",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "output",
+                        "in": "path",
+                        "description": "which format to output (JSON,XML,CSV,Excel)"
+                    },
+                    {
+                        "name": "row_end",
+                        "in": "path",
+                        "description": "which row to end on"
+                    },
+                    {
+                        "name": "row_start",
+                        "in": "path",
+                        "description": "which row to start on"
+                    }
+                ]
+            }
+        },
+        "\/GEO_SUB_TYPE_LK\/ROWS\/{row_start}:{row_end}\/{output}": {
+            "get": {
+                "summary": "",
+                "description": "",
+                "operationId": "EnviroFactsGEOSUBTYPELK",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "output",
+                        "in": "path",
+                        "description": "which format to output (JSON,XML,CSV,Excel)"
+                    },
+                    {
+                        "name": "row_end",
+                        "in": "path",
+                        "description": "which row to end on"
+                    },
+                    {
+                        "name": "row_start",
+                        "in": "path",
+                        "description": "which row to start on"
+                    }
+                ]
+            }
+        },
+        "\/GEO_VERIFY_LK\/ROWS\/{row_start}:{row_end}\/{output}": {
+            "get": {
+                "summary": "",
+                "description": "",
+                "operationId": "EnviroFactsGEOVERIFYLK",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "output",
+                        "in": "path",
+                        "description": "which format to output (JSON,XML,CSV,Excel)"
+                    },
+                    {
+                        "name": "row_end",
+                        "in": "path",
+                        "description": "which row to end on"
+                    },
+                    {
+                        "name": "row_start",
+                        "in": "path",
+                        "description": "which row to start on"
+                    }
+                ]
+            }
+        },
+        "\/GEO_VERT_DATUM_LK\/ROWS\/{row_start}:{row_end}\/{output}": {
+            "get": {
+                "summary": "",
+                "description": "",
+                "operationId": "EnviroFactsGEOVERTDATUMLK",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "output",
+                        "in": "path",
+                        "description": "which format to output (JSON,XML,CSV,Excel)"
+                    },
+                    {
+                        "name": "row_end",
+                        "in": "path",
+                        "description": "which row to end on"
+                    },
+                    {
+                        "name": "row_start",
+                        "in": "path",
+                        "description": "which row to start on"
+                    }
+                ]
+            }
+        },
+        "\/GEO_VERT_METHOD_LK\/ROWS\/{row_start}:{row_end}\/{output}": {
+            "get": {
+                "summary": "",
+                "description": "",
+                "operationId": "EnviroFactsGEOVERTMETHODLK",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "output",
+                        "in": "path",
+                        "description": "which format to output (JSON,XML,CSV,Excel)"
+                    },
+                    {
+                        "name": "row_end",
+                        "in": "path",
+                        "description": "which row to end on"
+                    },
+                    {
+                        "name": "row_start",
+                        "in": "path",
+                        "description": "which row to start on"
+                    }
+                ]
+            }
+        },
+        "\/MV_GEO_FACILITY_POINT\/ROWS\/{row_start}:{row_end}\/{output}": {
+            "get": {
+                "summary": "",
+                "description": "",
+                "operationId": "EnviroFactsMVGEOFACILITYPOINT",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "output",
+                        "in": "path",
+                        "description": "which format to output (JSON,XML,CSV,Excel)"
+                    },
+                    {
+                        "name": "row_end",
+                        "in": "path",
+                        "description": "which row to end on"
+                    },
+                    {
+                        "name": "row_start",
+                        "in": "path",
+                        "description": "which row to start on"
+                    }
+                ]
+            }
+        },
+        "\/V_GEO_PGM_COORDINATE_ALL\/ROWS\/{row_start}:{row_end}\/{output}": {
+            "get": {
+                "summary": "",
+                "description": "",
+                "operationId": "EnviroFactsVGEOPGMCOORDINATEALL",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "output",
+                        "in": "path",
+                        "description": "which format to output (JSON,XML,CSV,Excel)"
+                    },
+                    {
+                        "name": "row_end",
+                        "in": "path",
+                        "description": "which row to end on"
+                    },
+                    {
+                        "name": "row_start",
+                        "in": "path",
+                        "description": "which row to start on"
+                    }
+                ]
+            }
+        }
+    },
+    "components": {
+        "schemas": {
+            "geo_conveyor": {
+                "type": "object",
+                "properties": {
+                    "filler": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "geo_vert_datum_lk": {
+                "type": "object",
+                "properties": {
+                    "filler": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "geo_horiz_datum_lk": {
+                "type": "object",
+                "properties": {
+                    "filler": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "geo_vert_method_lk": {
+                "type": "object",
+                "properties": {
+                    "filler": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "geo_ref_point_lk": {
+                "type": "object",
+                "properties": {
+                    "REF_POINT_CODE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "REF_POINT_DESC": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "SHAPE": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "geo_sub_type_lk": {
+                "type": "object",
+                "properties": {
+                    "filler": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "geo_source_lk": {
+                "type": "object",
+                "properties": {
+                    "filler": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "geo_geometric_type_lk": {
+                "type": "object",
+                "properties": {
+                    "filler": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "geo_collect_mth_lk": {
+                "type": "object",
+                "properties": {
+                    "filler": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "COLLECT_DESC": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "COLLECT_MTH_CODE": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "geo_verify_lk": {
+                "type": "object",
+                "properties": {
+                    "filler": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "geo_sub_id_ref": {
+                "type": "object",
+                "properties": {
+                    "filler": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "geo_assign_acc_lk": {
+                "type": "object",
+                "properties": {
+                    "filler": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "mv_geo_facility_point": {
+                "type": "object",
+                "properties": {
+                    "filler": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "frs_facility_site": {
+                "type": "object",
+                "properties": {
+                    "ADDR_TYPE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "CITY_NAME": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "COUNTRY_NAME": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "COUNTY_NAME": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "CREATE_DATE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "DATA_QUALITY_CODE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "ENV_JUSTICE_CODE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "EPA_REGION_CODE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "FEDERAL_AGENCY_CODE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "FEDERAL_FACILITY_CODE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "FIPS_CODE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "ICIS_IDENTIFIER": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "INTEREST_STATUS_CODE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "LAST_REPORTED_DATE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "LEGISLATIVE_DIST_NUM": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "LOCATION_ADDRESS": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "LOCATION_DESCRIPTION": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "PARENT_REGISTRY_ID": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "POSTAL_CODE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "PRIMARY_NAME": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "PUBLIC_IND": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "REFRESH_DATE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "REGISTRY_ID": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "REVIEW_FLAG": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "REVIEW_REASON": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "SENSITIVE_IND": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "SITE_TYPE_NAME": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "SMALL_BUS_IND": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "STAND_ALONE_FLAG": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "STATE_CODE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "STATE_NAME": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "STD_BASE_NAME": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "STD_CITY_NAME": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "STD_COUNTRY": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "STD_COUNTY_FIPS": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "STD_COUNTY_NAME": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "STD_FULL_ADDRESS": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "STD_HOUSE_NUMBER": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "STD_LOC_ADDRESS": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "STD_NAME": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "STD_POSTAL_CODE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "STD_PREFIX": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "STD_STATE_CODE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "STD_STREET_NAME": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "STD_STYPE_AFTER": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "STD_STYPE_BEFORE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "STD_SUFFIX": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "SUPPLEMENTAL_LOCATION": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "TRIBAL_LAND_CODE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "TRIBAL_LAND_NAME": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "UPDATE_DATE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "USER_ID": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "filler": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "frs_program_facility": {
+                "type": "object",
+                "properties": {
+                    "ADDR_TYPE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "CITY_NAME": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "COUNTRY_NAME": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "COUNTY_NAME": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "CREATE_DATE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "DATA_QUALITY_CODE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "ENV_JUSTICE_CODE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "EPA_REGION_CODE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "FEDERAL_AGENCY_CODE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "FEDERAL_FACILITY_CODE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "FIPS_CODE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "HUC_CODE_12": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "HUC_CODE_8": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "LAST_REPORTED_DATE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "LEGISLATIVE_DIST_NUM": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "LINK_MTHD": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "LOCATION_ADDRESS": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "LOCATION_DESCRIPTION": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "PARENT_PGM_SYS_ID": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "PGM_SYS_ACRNM": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "PGM_SYS_ID": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "POSTAL_CODE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "PRIMARY_NAME": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "PUBLIC_IND": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "REFRESH_DATE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "REGISTRY_ID": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "SENSITIVE_IND": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "SITE_TYPE_NAME": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "SMALL_BUS_IND": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "SOURCE_OF_DATA": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "STAND_ALONE_FLAG": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "STATE_CODE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "STATE_NAME": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "STD_BASE_NAME": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "STD_CITY_NAME": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "STD_COUNTRY": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "STD_COUNTY_FIPS": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "STD_COUNTY_NAME": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "STD_FULL_ADDRESS": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "STD_HOUSE_NUMBER": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "STD_LOC_ADDRESS": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "STD_NAME": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "STD_POSTAL_CODE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "STD_PREFIX": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "STD_STATE_CODE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "STD_STREET_NAME": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "STD_STYPE_AFTER": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "STD_STYPE_BEFORE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "STD_SUFFIX": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "SUPPLEMENTAL_LOCATION": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "TRIBAL_LAND_CODE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "TRIBAL_LAND_NAME": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "UPDATE_DATE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "USER_COMMENT": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "USER_ID": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "filler": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "geo_facility_point": {
+                "type": "object",
+                "properties": {
+                    "filler": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "geo_php_facility_coordinate": {
+                "type": "object",
+                "properties": {
+                    "filler": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "v_geo_pgm_coordinate_all": {
+                "type": "object",
+                "properties": {
+                    "filler": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            }
+        }
+    }
+}
