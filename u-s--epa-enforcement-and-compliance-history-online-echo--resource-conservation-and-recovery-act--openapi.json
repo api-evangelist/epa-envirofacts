@@ -1,0 +1,1880 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "version": "0.0.0",
+        "title": "U.S. EPA Enforcement and Compliance History Online (ECHO) - Resource Conservation and Recovery Act ",
+        "description": "Enforcement and Compliance History Online (ECHO) is a tool developed and maintained by EPA's Office of Enforcement and Compliance Assurance for public use. ECHO provides integrated compliance and enforcement information for about 800,000 regulated facilities nationwide.\n<BR><BR>RCRA Rest Services provides multiple service endpoints, each with specific capabilities, to search and retrieve data on hazardous waste handlers\/facilities regulated under the Resource Conservation and Recovery Act (RCRA).   The returned results reflect data drawn from EPA's RCRAInfo database.\n<BR><BR>\nThe get_facilities, get_map, get_qid, and get_download end points are meant to be used together, while the enhanced get_facility_info end point is self contained.\n  The get_facility_info end point returns either an array of state, county or zip clusters with summary statistics per cluster or an array of facilities.\n<BR><BR>\nThe recommended use scenario for get_facilities, get_qid, get_map, and get_downoad is:\n<br>",
+        "termsOfService": ""
+    },
+    "servers": [
+        "httpsofmpub.epa.gov\/echo"
+    ],
+    "paths": {
+        "\/rcra_rest_services.get_download": {
+            "get": {
+                "summary": "Resource Conservation and Recovery Act (RCRA) Download Data Service",
+                "description": "Based on the QID obtained from a get_facilities or get_facility_info query, return a comma sepated vaule (CSV) file of the facilities found.",
+                "operationId": "BasedOnTheQidObtainedFromAGetFacilitiesOrGetFacilityInfoQueryReturnACommaSepatedVa",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "output",
+                        "in": "query",
+                        "description": "Output Format Flag.  Enter one of the following keywords:\n- CSV = Facility results formatted as comma delimited file download (default).\n- GEOJSOND = Facility results formatted as GeoJSON feature collection download."
+                    }
+                ]
+            }
+        },
+        "\/rcra_rest_services.get_facilities": {
+            "get": {
+                "summary": "Resource Conservation and Recovery Act (RCRA) Facility Search Service",
+                "description": "Validates query search parameters and returns query identifier.  Use the responseset parameter to set the page size",
+                "operationId": "ValidatesQuerySearchParametersAndReturnsQueryIdentifierUseTheResponsesetParameterToSe",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "output",
+                        "in": "query",
+                        "description": "Output Format Flag.  Enter one of the following keywords:\n- CSV = Facility results formatted as comma delimited file download (default).\n- GEOJSOND = Facility results formatted as GeoJSON feature collection download."
+                    }
+                ]
+            }
+        },
+        "\/rcra_rest_services.get_facility_info": {
+            "get": {
+                "summary": "Resource Conservation and Recovery Act (RCRA) Facility Enhanced Search Service",
+                "description": "Returns either an array of Facilities or an array of Clusters that meet the specified search criteria.",
+                "operationId": "ReturnsEitherAnArrayOfFacilitiesOrAnArrayOfClustersThatMeetTheSpecifiedSearchCriteri",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "output",
+                        "in": "query",
+                        "description": "Output Format Flag.  Enter one of the following keywords:\n- CSV = Facility results formatted as comma delimited file download (default).\n- GEOJSOND = Facility results formatted as GeoJSON feature collection download."
+                    }
+                ]
+            }
+        },
+        "\/rcra_rest_services.get_geojson": {
+            "get": {
+                "summary": "Resource Conservation and Recovery Act (RCRA) GeoJSON Service",
+                "description": "Based on the QID obtained from a get_facilities or get_facility_info query, return GeoJSON of the facilities found.",
+                "operationId": "BasedOnTheQidObtainedFromAGetFacilitiesOrGetFacilityInfoQueryReturnGeojsonOfTheFac",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "output",
+                        "in": "query",
+                        "description": "Output Format Flag.  Enter one of the following keywords:\n- CSV = Facility results formatted as comma delimited file download (default).\n- GEOJSOND = Facility results formatted as GeoJSON feature collection download."
+                    }
+                ]
+            }
+        },
+        "\/rcra_rest_services.get_info_clusters": {
+            "get": {
+                "summary": "Resource Conservation and Recovery Act (RCRA) Info Clusters Service",
+                "description": "Based on the QID obtained from a clustered get_facility_info query, download cluster facility information as either a CSV or GEOJSON file.",
+                "operationId": "BasedOnTheQidObtainedFromAClusteredGetFacilityInfoQueryDownloadClusterFacilityInforma",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "output",
+                        "in": "query",
+                        "description": "Output Format Flag.  Enter one of the following keywords:\n- CSV = Facility results formatted as comma delimited file download (default).\n- GEOJSOND = Facility results formatted as GeoJSON feature collection download."
+                    }
+                ]
+            }
+        },
+        "\/rcra_rest_services.get_map": {
+            "get": {
+                "summary": "Resource Conservation and Recovery Act (RCRA) Map Service",
+                "description": "The purpose of the GET_MAP service is to display facility coordinates and facility clusters related to a get_facilities facility query. Currently, the maximum number of coordinates returned is 500. GET_MAP performs automatic clustering at the state, county, and zip code levels to maximize the number of coordinates returned.",
+                "operationId": "ThePurposeOfTheGetMapServiceIsToDisplayFacilityCoordinatesAndFacilityClustersRelated",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "output",
+                        "in": "query",
+                        "description": "Output Format Flag.  Enter one of the following keywords:\n- CSV = Facility results formatted as comma delimited file download (default).\n- GEOJSOND = Facility results formatted as GeoJSON feature collection download."
+                    }
+                ]
+            }
+        },
+        "\/rcra_rest_services.get_qid": {
+            "get": {
+                "summary": "Resource Conservation and Recovery Act (RCRA) Paginated Results Service",
+                "description": "GET_QID is passed with a query ID corresponding to a previously run get_facilities query. It then returns a Facility object containing all matching facilities. The main purpose of GET_QID is for large querysets that contain multiple pages (responsesets) of output. GET_QID allows for pagination and for the selection and sorting of columns. ",
+                "operationId": "GetQidIsPassedWithAQueryIdCorrespondingToAPreviouslyRunGetFacilitiesQueryItThenRe",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "output",
+                        "in": "query",
+                        "description": "Output Format Flag.  Enter one of the following keywords:\n- CSV = Facility results formatted as comma delimited file download (default).\n- GEOJSOND = Facility results formatted as GeoJSON feature collection download."
+                    }
+                ]
+            }
+        },
+        "\/rcra_rest_services.metadata": {
+            "get": {
+                "summary": "Resource Conservation and Recovery Act (RCRA) Metadata Service",
+                "description": "Returns the JSON Object Name and ColumnId for usage with the qcolumns parameter for get_qid, get_facility_info and other service endpoints.",
+                "operationId": "ReturnsTheJsonObjectNameAndColumnidForUsageWithTheQcolumnsParameterForGetQidGetFaci",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "output",
+                        "in": "query",
+                        "description": "Output Format Flag.  Enter one of the following keywords:\n- CSV = Facility results formatted as comma delimited file download (default).\n- GEOJSOND = Facility results formatted as GeoJSON feature collection download."
+                    }
+                ]
+            }
+        }
+    },
+    "components": {
+        "schemas": {
+            "Geometry": {
+                "type": "object",
+                "properties": {
+                    "coordinates": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "type": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "met_Results": {
+                "type": "object",
+                "properties": {
+                    "Message": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "ResultColumns": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "met_ResultsColumns": {
+                "type": "object",
+                "properties": {
+                    "ColumnID": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "ColumnName": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "DataLength": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "DataType": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "Description": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "ObjectName": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "qp0_QueryParameters": {
+                "type": "object",
+                "properties": {
+                    "QP": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "QV": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "rcr1_Facilities": {
+                "type": "object",
+                "properties": {
+                    "ActiveLower48": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "AirIDs": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "CWAIDs": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "CalculatedAccuracyMeters": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "CensusBlockGroup": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "ChesapeakeBayFlag": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "CollectionMethod": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "CurrSvFlag": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "CurrVioFlag": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "CurrentVioCnt": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "DateLastRecordReview": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "EPASystem": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "Ea5yrFlag": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "EjscreenFlag": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "EjscreenFlagUs": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "FacDerivedHuc": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "FacDerivedTRIbes": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "FacDerivedWBD": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "FacDerivedWBDName": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "FacFIPSCode": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "FacFederalAgencyCode": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "FacFederalAgencyName": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "FacIndianCntryFlg": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "FacIndianSpatialFlg": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "FacLat": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "FacLong": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "FacMapFlg": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "FacMapIcon": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "FacPercentMinority": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "FacPopulationDensity": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "FacSicCodes": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "FacTRILandReleases": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "FacTRIOffSiteTransfers": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "FacTRIOnSiteReleases": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "FacTRIReporter": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "FacUsMexBorderFlg": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "Infea5yrFlag": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "Insp5yrFlag": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "LastViolationDate": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "Lower48": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "Map": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "MaxPctileUs": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "MaxScore": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "Over80CountUs": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "PctileCancerUs": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "PctileDpmUs": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "PctileO3Us": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "PctilePctpre1960Us": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "PctilePmUs": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "PctileProximityNPDESUs": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "PctileProximityNplUs": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "PctileProximityRmpUs": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "PctileProximityTsdfUs": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "PctileRespUs": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "PctileTrafficScoreUs": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "RCRA3yrComplQtrsStatus": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "RCRACaseIDs": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "RCRACity": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "RCRACounty": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "RCRACurrComplStatus": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "RCRACurrSNC": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "RCRACurrViolationTypes": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "RCRADaysLastInspection": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "RCRAEPARegion": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "RCRAFIPSCode": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "RCRAFeaCnt": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "RCRAIDs": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "RCRAIeaCnt": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "RCRAImpWaterFlg": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "RCRAIndianCntryFlg": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "RCRAInspCnt": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "RCRALandTypeCode": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "RCRALastFeaDate": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "RCRALastFeaDateEPA": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "RCRALastFeaDateState": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "RCRALastIeaDate": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "RCRALastIeaDateEPA": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "RCRALastIeaDateState": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "RCRALastInspDateEPA": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "RCRALastInspDateState": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "RCRALastInspectionDate": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "RCRALastPenaltyDate": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "RCRAMapIcon": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "RCRANaics": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "RCRAName": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "RCRAOldestOpenVioDate": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "RCRAPenalties": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "RCRAQtrsInNC": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "RCRAQtrsInSNC": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "RCRAState": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "RCRAStateDistrict": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "RCRAStatus": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "RCRAStreet": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "RCRATRIbalLandCode": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "RCRAUniverse": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "RCRAZip": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "ReferencePoint": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "RegistryID": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "RmpIDs": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "SDWAIDs": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "Score": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "SourceID": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "Statute": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "TRIIDs": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "TRIbalFlag": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "ViolFlag": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "rcr1_MapData": {
+                "type": "object",
+                "properties": {
+                    "FormalCount": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "ICON": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "InformalCount": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "LAT": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "LON": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "LastInsp": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "NAME": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "PUV": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "RCRAStatus": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "type": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "rcr1_MapOutput": {
+                "type": "object",
+                "properties": {
+                    "IconBaseURL": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "MapData": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "PopUpBaseURL": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "QueryID": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "rcr1_Results": {
+                "type": "object",
+                "properties": {
+                    "CVRows": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "FEARows": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "Facilities": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "INSPRows": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "IndianCountryRows": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "InfFEARows": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "Message": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "PageNo": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "QueryID": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "QueryRows": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "SVRows": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "TotalPenalties": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "V3Rows": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "rcr2_ClusterData": {
+                "type": "object",
+                "properties": {
+                    "CVRows": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "ClusterCount": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "ClusterIcon": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "ClusterLatitude": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "ClusterLongitude": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "ClusterName": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "ClusterType": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "ClusterValue": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "EPARegionCode": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "FEARows": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "INSPRows": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "IndianCountryRows": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "InfFEARows": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "ObjectId": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "SVRows": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "TotalPenalties": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "V3Rows": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "rcr2_ClusterOutput": {
+                "type": "object",
+                "properties": {
+                    "ClusterData": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "rcr2_Facilities": {
+                "type": "object",
+                "properties": {
+                    "ActiveLower48": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "AirIDs": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "CWAIDs": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "CalculatedAccuracyMeters": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "CensusBlockGroup": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "ChesapeakeBayFlag": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "CollectionMethod": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "CurrSvFlag": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "CurrVioFlag": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "CurrentVioCnt": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "DateLastRecordReview": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "EPASystem": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "Ea5yrFlag": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "EjscreenFlag": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "EjscreenFlagUs": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "FacDerivedHuc": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "FacDerivedTRIbes": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "FacDerivedWBD": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "FacDerivedWBDName": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "FacFIPSCode": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "FacFederalAgencyCode": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "FacFederalAgencyName": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "FacIndianCntryFlg": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "FacIndianSpatialFlg": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "FacLat": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "FacLong": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "FacMapFlg": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "FacMapIcon": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "FacPercentMinority": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "FacPopulationDensity": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "FacSicCodes": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "FacTRILandReleases": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "FacTRIOffSiteTransfers": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "FacTRIOnSiteReleases": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "FacTRIReporter": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "FacUsMexBorderFlg": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "Infea5yrFlag": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "Insp5yrFlag": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "LastViolationDate": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "Lower48": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "Map": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "MaxPctileUs": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "MaxScore": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "ObjectId": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "Over80CountUs": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "PctileCancerUs": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "PctileDpmUs": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "PctileO3Us": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "PctilePctpre1960Us": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "PctilePmUs": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "PctileProximityNPDESUs": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "PctileProximityNplUs": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "PctileProximityRmpUs": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "PctileProximityTsdfUs": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "PctileRespUs": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "PctileTrafficScoreUs": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "RCRA3yrComplQtrsStatus": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "RCRACaseIDs": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "RCRACity": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "RCRACounty": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "RCRACurrComplStatus": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "RCRACurrSNC": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "RCRACurrViolationTypes": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "RCRADaysLastInspection": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "RCRAEPARegion": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "RCRAFIPSCode": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "RCRAFeaCnt": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "RCRAIDs": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "RCRAIeaCnt": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "RCRAImpWaterFlg": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "RCRAIndianCntryFlg": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "RCRAInspCnt": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "RCRALandTypeCode": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "RCRALastFeaDate": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "RCRALastFeaDateEPA": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "RCRALastFeaDateState": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "RCRALastIeaDate": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "RCRALastIeaDateEPA": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "RCRALastIeaDateState": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "RCRALastInspDateEPA": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "RCRALastInspDateState": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "RCRALastInspectionDate": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "RCRALastPenaltyDate": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "RCRAMapIcon": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "RCRANaics": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "RCRAName": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "RCRAOldestOpenVioDate": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "RCRAPenalties": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "RCRAQtrsInNC": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "RCRAQtrsInSNC": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "RCRAState": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "RCRAStateDistrict": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "RCRAStatus": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "RCRAStreet": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "RCRATRIbalLandCode": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "RCRAUniverse": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "RCRAZip": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "ReferencePoint": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "RegistryID": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "RmpIDs": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "SDWAIDs": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "Score": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "SourceID": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "Statute": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "TRIIDs": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "TRIbalFlag": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "ViolFlag": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "rcr2_Results": {
+                "type": "object",
+                "properties": {
+                    "CVRows": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "ClusterRecords": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "FEARows": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "Facilities": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "INSPRows": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "IconBaseURL": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "IndianCountryRows": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "InfFEARows": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "Message": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "PopUpBaseURL": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "QueryID": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "QueryParameters": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "QueryRows": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "SVRows": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "ServiceBaseURL": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "TotalPenalties": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "V3Rows": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "rcr3_MapData": {
+                "type": "object",
+                "properties": {
+                    "FormalCount": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "ICON": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "InformalCount": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "LAT": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "LON": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "LastInsp": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "NAME": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "PUV": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "RCRAStatus": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "type": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "rcr3_MapOutput": {
+                "type": "object",
+                "properties": {
+                    "IconBaseURL": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "MapData": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "PopUpBaseURL": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "QueryID": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "rcr4_Results": {
+                "type": "object",
+                "properties": {
+                    "Facilities": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "Message": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "PageNo": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "QueryID": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "QueryRows": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "rcr5_Feature": {
+                "type": "object",
+                "properties": {
+                    "type": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "rcr5_FeatureCollection": {
+                "type": "object",
+                "properties": {
+                    "features": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "type": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "rcr5_properties": {
+                "type": "object",
+                "properties": {
+                    "AirIDs": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "ActiveLower48": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "CWAIDs": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "CalculatedAccuracyMeters": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "CensusBlockGroup": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "ChesapeakeBayFlag": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "CollectionMethod": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "CurrSvFlag": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "CurrVioFlag": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "CurrentVioCnt": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "DateLastRecordReview": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "EPASystem": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "Ea5yrFlag": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "EjscreenFlag": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "EjscreenFlagUs": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "FacDerivedHuc": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "FacDerivedTRIbes": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "FacDerivedWBD": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "FacDerivedWBDName": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "FacFIPSCode": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "FacFederalAgencyCode": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "FacFederalAgencyName": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "FacIndianCntryFlg": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "FacIndianSpatialFlg": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "FacMapFlg": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "FacMapIcon": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "FacPercentMinority": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "FacPopulationDensity": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "FacSicCodes": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "FacTRILandReleases": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "FacTRIOffSiteTransfers": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "FacTRIOnSiteReleases": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "FacTRIReporter": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "FacUsMexBorderFlg": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "Infea5yrFlag": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "Insp5yrFlag": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "LastViolationDate": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "Lower48": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "Map": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "MaxPctileUs": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "MaxScore": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "Over80CountUs": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "PctileCancerUs": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "PctileDpmUs": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "PctileO3Us": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "PctilePctpre1960Us": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "PctilePmUs": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "PctileProximityNPDESUs": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "PctileProximityNplUs": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "PctileProximityRmpUs": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "PctileProximityTsdfUs": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "PctileRespUs": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "PctileTrafficScoreUs": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "RCRA3yrComplQtrsStatus": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "RCRACaseIDs": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "RCRACity": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "RCRACounty": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "RCRACurrComplStatus": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "RCRACurrSNC": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "RCRACurrViolationTypes": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "RCRADaysLastInspection": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "RCRAEPARegion": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "RCRAFIPSCode": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "RCRAFeaCnt": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "RCRAIDs": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "RCRAIeaCnt": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "RCRAImpWaterFlg": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "RCRAIndianCntryFlg": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "RCRAInspCnt": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "RCRALandTypeCode": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "RCRALastFeaDate": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "RCRALastFeaDateEPA": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "RCRALastFeaDateState": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "RCRALastIeaDate": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "RCRALastIeaDateEPA": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "RCRALastIeaDateState": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "RCRALastInspDateEPA": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "RCRALastInspDateState": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "RCRALastInspectionDate": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "RCRALastPenaltyDate": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "RCRAMapIcon": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "RCRANaics": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "RCRAName": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "RCRAOldestOpenVioDate": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "RCRAPenalties": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "RCRAQtrsInNC": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "RCRAQtrsInSNC": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "RCRAState": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "RCRAStateDistrict": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "RCRAStatus": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "RCRAStreet": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "RCRATRIbalLandCode": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "RCRAUniverse": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "RCRAZip": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "ReferencePoint": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "RegistryID": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "RmpIDs": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "SDWAIDs": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "Score": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "SourceID": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "Statute": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "TRIIDs": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "TRIbalFlag": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "ViolFlag": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            }
+        }
+    }
+}
