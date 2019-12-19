@@ -1,0 +1,1074 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "version": "1.0.0",
+        "title": "U.S. EPA Enforcement and Compliance History Online (ECHO) - Enforcement Case Search",
+        "description": "Enforcement and Compliance History Online (ECHO) is a tool developed and maintained by EPA's Office of Enforcement and Compliance Assurance for public use. ECHO provides integrated compliance and enforcement information for about 800,000 regulated facilities nationwide.\n<BR><BR>CASE Rest Services provide multiple service endpoints, each with specific capabilities, to search and retrieve data on civil cases entered into the \nIntegrated Compliance Information System (ICIS) and criminal cases entered into the Summary of Criminal Prosecutions database.  \nSee Enforcement Case Search Help (https:\/\/echo.epa.gov\/help\/enforcement-case-search-help) for additional information on searching civil and criminal cases. \n<BR><BR>\nThe get_cases, get_map, get_qid, and get_download end points are meant to be used together.<br>  \nThe recommended use scenario for get_cases, get_qid, get_map, and get_downoad is:\n<br>\n<br><b>1)<\/b>&nbsp Use get_cases to validate passed query parameters, obtain summary statist",
+        "termsOfService": ""
+    },
+    "servers": [
+        "httpsofmpub.epa.gov\/echo"
+    ],
+    "paths": {
+        "\/case_rest_services.get_case_report": {
+            "get": {
+                "summary": "Enforcement Case Summary Report Search",
+                "description": "The get_case_report service endpoint returns a complex object of civil enforcement case details based on the provided case id.",
+                "operationId": "TheGetCaseReportServiceEndpointReturnsAComplexObjectOfCivilEnforcementCaseDetailsBase",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "p_id",
+                        "in": "query",
+                        "description": "Case Number. Enter the case number identifier to retrieve the case report."
+                    },
+                    {
+                        "name": "output",
+                        "in": "query",
+                        "description": "Output Format Flag.  Enter one of the following keywords:\n- JSON = Data model formatted as Javascript Object Notation (default).\n- JSONP = Data model formatted as Javascript Object Notation with Padding.  \n- XML = Data model formatted as Extensible Markup Language."
+                    }
+                ]
+            }
+        },
+        "\/case_rest_services.get_cases": {
+            "get": {
+                "summary": "Enforcement Case Search",
+                "description": "The get_cases service end point searches for civil enforcement and criminal cases based on the provided selection criteria.",
+                "operationId": "TheGetCasesServiceEndPointSearchesForCivilEnforcementAndCriminalCasesBasedOnTheProvi",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "output",
+                        "in": "query",
+                        "description": "Output Format Flag.  Enter one of the following keywords:\n- JSON = Data model formatted as Javascript Object Notation (default).\n- JSONP = Data model formatted as Javascript Object Notation with Padding.  \n- XML = Data model formatted as Extensible Markup Language."
+                    }
+                ]
+            }
+        },
+        "\/case_rest_services.get_crcase_report": {
+            "get": {
+                "summary": "Enforcement Criminal Case Summary Report Search",
+                "description": "The get_crcase_report service end point returns a complex object of criminal case detials based on the provided criminal case id.",
+                "operationId": "TheGetCrcaseReportServiceEndPointReturnsAComplexObjectOfCriminalCaseDetialsBasedOnT",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "p_id",
+                        "in": "query",
+                        "description": "Case Number. Enter the case number identifier to retrieve the case report."
+                    },
+                    {
+                        "name": "output",
+                        "in": "query",
+                        "description": "Output Format Flag.  Enter one of the following keywords:\n- JSON = Data model formatted as Javascript Object Notation (default).\n- JSONP = Data model formatted as Javascript Object Notation with Padding.  \n- XML = Data model formatted as Extensible Markup Language."
+                    }
+                ]
+            }
+        },
+        "\/case_rest_services.get_download": {
+            "get": {
+                "summary": "Enforcement Case Download Data Service",
+                "description": "Based on the QID obtained from a get_cases query, return a comma sepated vaule (CSV) file of the cases found.",
+                "operationId": "BasedOnTheQidObtainedFromAGetCasesQueryReturnACommaSepatedVauleCsvFileOfTheCases",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "output",
+                        "in": "query",
+                        "description": "Output Format Flag.  Enter one of the following keywords:\n- JSON = Data model formatted as Javascript Object Notation (default).\n- JSONP = Data model formatted as Javascript Object Notation with Padding.  \n- XML = Data model formatted as Extensible Markup Language."
+                    }
+                ]
+            }
+        },
+        "\/case_rest_services.get_map": {
+            "get": {
+                "summary": "Enforcement Case Map Service",
+                "description": "The purpose of the GET_MAP service is to display facility coordinates and facility clusters related to a get_cases query. Currently, the maximum number of coordinates returned is 500. GET_MAP performs automatic clustering at the state, county, and zip code levels to maximize the number of coordinates returned.",
+                "operationId": "ThePurposeOfTheGetMapServiceIsToDisplayFacilityCoordinatesAndFacilityClustersRelated",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "output",
+                        "in": "query",
+                        "description": "Output Format Flag.  Enter one of the following keywords:\n- JSON = Data model formatted as Javascript Object Notation (default).\n- JSONP = Data model formatted as Javascript Object Notation with Padding.  \n- XML = Data model formatted as Extensible Markup Language."
+                    }
+                ]
+            }
+        },
+        "\/case_rest_services.get_qid": {
+            "get": {
+                "summary": "Enforcement Case Paginated Results Service",
+                "description": "GET_QID is passed with a query ID corresponding to a previously run get_cases query. It then returns a CASES object containing all matching cases. The main purpose of GET_QID is for large querysets that contain multiple pages (responsesets) of output. GET_QID allows for pagination and for the selection and sorting of columns. ",
+                "operationId": "GetQidIsPassedWithAQueryIdCorrespondingToAPreviouslyRunGetCasesQueryItThenReturns",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "output",
+                        "in": "query",
+                        "description": "Output Format Flag.  Enter one of the following keywords:\n- JSON = Data model formatted as Javascript Object Notation (default).\n- JSONP = Data model formatted as Javascript Object Notation with Padding.  \n- XML = Data model formatted as Extensible Markup Language."
+                    }
+                ]
+            }
+        },
+        "\/case_rest_services.metadata": {
+            "get": {
+                "summary": "Enforcement Case Metadata Service",
+                "description": "Returns the JSON Object Name and ColumnId for usage with the qcolumns parameter for get_cases endpoint.",
+                "operationId": "ReturnsTheJsonObjectNameAndColumnidForUsageWithTheQcolumnsParameterForGetCasesEndpoi",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "output",
+                        "in": "query",
+                        "description": "Output Format Flag.  Enter one of the following keywords:\n- JSON = Data model formatted as Javascript Object Notation (default).\n- JSONP = Data model formatted as Javascript Object Notation with Padding.  \n- XML = Data model formatted as Extensible Markup Language."
+                    }
+                ]
+            }
+        },
+        "\/rest_lookups.icis_law_sections": {
+            "get": {
+                "summary": "ECHO ICIS Law Sections Lookup Service",
+                "description": "Returns the ICIS Law Section Descriptions.",
+                "operationId": "ReturnsTheIcisLawSectionDescriptions",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "output",
+                        "in": "query",
+                        "description": "Output Format Flag.  Enter one of the following keywords:\n- JSON = Data model formatted as Javascript Object Notation (default).\n- JSONP = Data model formatted as Javascript Object Notation with Padding.  \n- XML = Data model formatted as Extensible Markup Language."
+                    }
+                ]
+            }
+        }
+    },
+    "components": {
+        "schemas": {
+            "crs0_Cases": {
+                "type": "object",
+                "properties": {
+                    "ActivityId": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "CaseCategoryCode": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "CaseCategoryDesc": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "CaseName": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "CaseNumber": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "CaseStatusCode": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "CaseStatusDesc": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "CivilCriminalIndicator": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "CostRecovery": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "DOJDocketNmbr": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "DateClosed": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "DateFiled": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "DateLodged": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "EnfOutcome": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "FedPenalty": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "MaxScore": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "PrimaryLaw": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "PrimaryNAICSCode": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "PrimarySICCode": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "PrimarySection": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "ProsecutionSummaryId": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "SEPCategories": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "SEPCost": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "SEPTexts": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "SettlementCnt": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "SettlementDate": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "TotalCompActionAmt": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "TribalLandFlag": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "crs0_MapData": {
+                "type": "object",
+                "properties": {
+                    "ICON": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "LAT": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "LON": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "NAME": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "PUV": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "TYPE": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "crs0_MapOutput": {
+                "type": "object",
+                "properties": {
+                    "IconBaseURL": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "MapData": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "PopUpBaseURL": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "QueryID": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "crs1_CaseInformation": {
+                "type": "object",
+                "properties": {
+                    "Branch": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "CaseName": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "CaseNumber": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "CaseStatus": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "CaseStatusDate": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "CaseSummary": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "CaseType": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "DOJDocketNumber": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "EnforcementOutcome": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "EnforcementType": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "HeadquartersDivision": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "Lead": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "MultiMediaCase": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "RegionalDocketNumber": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "ReliefSought": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "ResultVolDisclosure": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "TotalComplianceActionCost": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "TotalCostRecovery": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "TotalFederalPenalty": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "TotalSEPCost": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "TotalStatePenalty": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "Violations": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "crs1_CaseMilestones": {
+                "type": "object",
+                "properties": {
+                    "ActualDate": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "Event": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "crs1_Citations": {
+                "type": "object",
+                "properties": {
+                    "Programs": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "Sections": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "Title": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "crs1_ComplianceSchedules": {
+                "type": "object",
+                "properties": {
+                    "ActualDate": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "EventAmount.ComplianceSchedules": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "FacilityFRSID": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "ScheduleCommentText": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "ScheduleDate": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "ScheduleEventDescription": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "ScheduleNumber": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "crs1_ComplyingActions": {
+                "type": "object",
+                "properties": {
+                    "ComplyingActionCategory": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "ComplyingActionDescription": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "ComplyingActionId": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "ComplyingActionType": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "crs1_Defendants": {
+                "type": "object",
+                "properties": {
+                    "DefendantName": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "NamedInComplaint": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "NamedInSettlement": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "crs1_EnforcementConclusions": {
+                "type": "object",
+                "properties": {
+                    "ActualTerminationDate": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "ComplianceActionCost": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "ComplianceSchedules": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "ComplyingActions": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "CostRecovery": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "EnforcementActionClosedDate": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "EnforcementConclusionId": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "EnforcementConclusionName": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "EnforcementConclusionType": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "FacilitiesInSettlement": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "FederalPenalty": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "FinalOrderStatuses": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "PollutantReductions": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "SEPCost": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "SettlementEnteredDate": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "SettlementLodgedDate": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "StatePenalty": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "SupplementalEnvironmentalProjects": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "crs1_Facilities": {
+                "type": "object",
+                "properties": {
+                    "FRSNumber": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "FacilityAddress": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "FacilityCity": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "FacilityName": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "FacilityState": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "FacilityZip": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "NAICSCodes": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "SICCodes": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "crs1_FinalOrderStatuses": {
+                "type": "object",
+                "properties": {
+                    "FiscalYear": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "Q1StatusDescription": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "Q2StatusDescription": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "Q3StatusDescription": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "Q4StatusDescription": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "crs1_LawsAndSections": {
+                "type": "object",
+                "properties": {
+                    "Law": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "Programs": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "Sections": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "crs1_PollutantReductions": {
+                "type": "object",
+                "properties": {
+                    "AnnualAmount": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "ComplyingActionId": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "EnvironmentalImpactId": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "Media": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "Pollutant": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "SEPId": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "SEPorComp": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "Units": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "crs1_Pollutants": {
+                "type": "object",
+                "properties": {
+                    "ChemicalAbstractNumber": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "PollutantName": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "crs1_ProgramLinks": {
+                "type": "object",
+                "properties": {
+                    "FRSNumber": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "Program": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "ProgramID": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "crs1_RelatedActivities": {
+                "type": "object",
+                "properties": {
+                    "ActualDate": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "Description": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "crs1_Results": {
+                "type": "object",
+                "properties": {
+                    "CaseMilestones": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "Citations": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "Defendants": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "EnforcementConclusions": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "Facilities": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "LawsAndSections": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "Message": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "Pollutants": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "ProgramLinks": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "RelatedActivities": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "crs1_SupplementalEnvironmentalProjects": {
+                "type": "object",
+                "properties": {
+                    "Category": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "Description": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "SEPAmount": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "SEPId": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "SEPText": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "crs2_Results": {
+                "type": "object",
+                "properties": {
+                    "AFRRows": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "Cases": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "CriminalRows": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "FedPenRows": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "JDCRows": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "Message": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "PageNo": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "QueryID": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "QueryRows": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "SEPRows": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "crs3_CRDefendants": {
+                "type": "object",
+                "properties": {
+                    "DefendantType": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "District": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "DocketNumber": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "NAME": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "State": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "crs3_CRDetails": {
+                "type": "object",
+                "properties": {
+                    "DetailCitations": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "DetailDate": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "DetailDesc": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "crs3_CaseInformation": {
+                "type": "object",
+                "properties": {
+                    "CaseIdentifier": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "CaseSummary": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "Citations": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "FiscalYear": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "Statutes": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "crs3_Locations": {
+                "type": "object",
+                "properties": {
+                    "City": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "County": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "EPARegion": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "Latitude": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "Longitude": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "State": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "Zip": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "crs3_Results": {
+                "type": "object",
+                "properties": {
+                    "CRDefendants": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "CRDetails": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "Locations": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "Message": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "crs5_Results": {
+                "type": "object",
+                "properties": {
+                    "Cases": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "Message": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "PageNo": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "QueryID": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "QueryRows": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "met_Results": {
+                "type": "object",
+                "properties": {
+                    "Message": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "ResultColumns": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "met_ResultsColumns": {
+                "type": "object",
+                "properties": {
+                    "ColumnID": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "ColumnName": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "DataLength": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "DataType": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "Description": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "ObjectName": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "rlk0_LuValues": {
+                "type": "object",
+                "properties": {
+                    "ValueCode": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "ValueDescription": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "rlk1_Results": {
+                "type": "object",
+                "properties": {
+                    "LuValues": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "Message": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            }
+        }
+    }
+}
