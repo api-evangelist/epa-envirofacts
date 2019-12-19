@@ -1,0 +1,290 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "version": "v1",
+        "title": "EPA Integrated Grants Management System API",
+        "description": "Integrated Grants Management System provides information used to track, award, administer, and monitor grants.",
+        "termsOfService": ""
+    },
+    "servers": [
+        "httpsiaspub.epa.gov\/enviro\/efservice\/"
+    ],
+    "paths": {
+        "\/OGD_CFDA\/ROWS\/{row_start}:{row_end}\/{output}": {
+            "get": {
+                "summary": "",
+                "description": "",
+                "operationId": "EnviroFactsOGDCFDA",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "output",
+                        "in": "path",
+                        "description": "which format to output (JSON,XML,CSV,Excel)"
+                    },
+                    {
+                        "name": "row_end",
+                        "in": "path",
+                        "description": "which row to end on"
+                    },
+                    {
+                        "name": "row_start",
+                        "in": "path",
+                        "description": "which row to start on"
+                    }
+                ]
+            }
+        },
+        "\/OGD_EF_GRANT_DRPT_CFDA\/ROWS\/{row_start}:{row_end}\/{output}": {
+            "get": {
+                "summary": "",
+                "description": "",
+                "operationId": "EnviroFactsOGDEFGRANTDRPTCFDA",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "output",
+                        "in": "path",
+                        "description": "which format to output (JSON,XML,CSV,Excel)"
+                    },
+                    {
+                        "name": "row_end",
+                        "in": "path",
+                        "description": "which row to end on"
+                    },
+                    {
+                        "name": "row_start",
+                        "in": "path",
+                        "description": "which row to start on"
+                    }
+                ]
+            }
+        },
+        "\/OGD_EF_GRANT_DRPT_SA\/ROWS\/{row_start}:{row_end}\/{output}": {
+            "get": {
+                "summary": "",
+                "description": "",
+                "operationId": "EnviroFactsOGDEFGRANTDRPTSA",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "output",
+                        "in": "path",
+                        "description": "which format to output (JSON,XML,CSV,Excel)"
+                    },
+                    {
+                        "name": "row_end",
+                        "in": "path",
+                        "description": "which row to end on"
+                    },
+                    {
+                        "name": "row_start",
+                        "in": "path",
+                        "description": "which row to start on"
+                    }
+                ]
+            }
+        },
+        "\/OGD_EF_GRANT_DTL_RPT\/ROWS\/{row_start}:{row_end}\/{output}": {
+            "get": {
+                "summary": "",
+                "description": "",
+                "operationId": "EnviroFactsOGDEFGRANTDTLRPT",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "output",
+                        "in": "path",
+                        "description": "which format to output (JSON,XML,CSV,Excel)"
+                    },
+                    {
+                        "name": "row_end",
+                        "in": "path",
+                        "description": "which row to end on"
+                    },
+                    {
+                        "name": "row_start",
+                        "in": "path",
+                        "description": "which row to start on"
+                    }
+                ]
+            }
+        },
+        "\/OGD_EF_GRANT_SUM_RPT\/ROWS\/{row_start}:{row_end}\/{output}": {
+            "get": {
+                "summary": "",
+                "description": "",
+                "operationId": "EnviroFactsOGDEFGRANTSUMRPT",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "output",
+                        "in": "path",
+                        "description": "which format to output (JSON,XML,CSV,Excel)"
+                    },
+                    {
+                        "name": "row_end",
+                        "in": "path",
+                        "description": "which row to end on"
+                    },
+                    {
+                        "name": "row_start",
+                        "in": "path",
+                        "description": "which row to start on"
+                    }
+                ]
+            }
+        },
+        "\/OGD_STAT_AUTHORITY\/ROWS\/{row_start}:{row_end}\/{output}": {
+            "get": {
+                "summary": "",
+                "description": "",
+                "operationId": "EnviroFactsOGDSTATAUTHORITY",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "output",
+                        "in": "path",
+                        "description": "which format to output (JSON,XML,CSV,Excel)"
+                    },
+                    {
+                        "name": "row_end",
+                        "in": "path",
+                        "description": "which row to end on"
+                    },
+                    {
+                        "name": "row_start",
+                        "in": "path",
+                        "description": "which row to start on"
+                    }
+                ]
+            }
+        }
+    },
+    "components": {
+        "schemas": {
+            "ogd_ef_grant_sum_rpt": {
+                "type": "object",
+                "properties": {
+                    "": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "AWARD_DATE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "CUMULATIVE_AWARD": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "GRANT_FAMILY": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "GRANT_FAMILY_SEQ": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "NUMBER_OF_AMENDMENTS": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "PROJ_BEG_DATE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "PROJ_END_DATE": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "ogd_ef_grant_drpt_cfda": {
+                "type": "object",
+                "properties": {
+                    "": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "FK_CFDA_SEQ": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "FK_GRANT_SEQ": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "ogd_cfda": {
+                "type": "object",
+                "properties": {
+                    "": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "CFDA_CODE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "CFDA_DESCRIPTION": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "CFDA_SEQ": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "ogd_ef_grant_drpt_sa": {
+                "type": "object",
+                "properties": {
+                    "": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "FK_GRANT_SEQ": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "FK_STAT_AUTH_SEQ": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "ogd_stat_authority": {
+                "type": "object",
+                "properties": {
+                    "": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "STAT_AUTH_CODE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "STAT_AUTH_DESCRIPTION": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "STAT_AUTH_SEQ": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "ogd_ef_grant_dt": {
+                "type": "object",
+                "properties": {
+                    "filler": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            }
+        }
+    }
+}
