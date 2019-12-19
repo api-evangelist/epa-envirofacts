@@ -1,0 +1,2532 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "version": "v1",
+        "title": "EPA Resource Conservation and Recovery Act Information API",
+        "description": "Resource Conservation and Recovery Act Information provides information about nationwide hazardous waste handlers.",
+        "termsOfService": ""
+    },
+    "servers": [
+        "httpsiaspub.epa.gov\/enviro\/efservice\/"
+    ],
+    "paths": {
+        "\/RCRC_CA_EVENTCODES\/ROWS\/{row_start}:{row_end}\/{output}": {
+            "get": {
+                "summary": "",
+                "description": "",
+                "operationId": "EnviroFactsRCRCCAEVENTCODES",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "output",
+                        "in": "path",
+                        "description": "which format to output (JSON,XML,CSV,Excel)"
+                    },
+                    {
+                        "name": "row_end",
+                        "in": "path",
+                        "description": "which row to end on"
+                    },
+                    {
+                        "name": "row_start",
+                        "in": "path",
+                        "description": "which row to start on"
+                    }
+                ]
+            }
+        },
+        "\/RCR_AREA_EVENT\/ROWS\/{row_start}:{row_end}\/{output}": {
+            "get": {
+                "summary": "",
+                "description": "",
+                "operationId": "EnviroFactsRCRAREAEVENT",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "output",
+                        "in": "path",
+                        "description": "which format to output (JSON,XML,CSV,Excel)"
+                    },
+                    {
+                        "name": "row_end",
+                        "in": "path",
+                        "description": "which row to end on"
+                    },
+                    {
+                        "name": "row_start",
+                        "in": "path",
+                        "description": "which row to start on"
+                    }
+                ]
+            }
+        },
+        "\/RCR_AUTHCODES\/ROWS\/{row_start}:{row_end}\/{output}": {
+            "get": {
+                "summary": "",
+                "description": "",
+                "operationId": "EnviroFactsRCRAUTHCODES",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "output",
+                        "in": "path",
+                        "description": "which format to output (JSON,XML,CSV,Excel)"
+                    },
+                    {
+                        "name": "row_end",
+                        "in": "path",
+                        "description": "which row to end on"
+                    },
+                    {
+                        "name": "row_start",
+                        "in": "path",
+                        "description": "which row to start on"
+                    }
+                ]
+            }
+        },
+        "\/RCR_CA_AREA\/ROWS\/{row_start}:{row_end}\/{output}": {
+            "get": {
+                "summary": "",
+                "description": "",
+                "operationId": "EnviroFactsRCRCAAREA",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "output",
+                        "in": "path",
+                        "description": "which format to output (JSON,XML,CSV,Excel)"
+                    },
+                    {
+                        "name": "row_end",
+                        "in": "path",
+                        "description": "which row to end on"
+                    },
+                    {
+                        "name": "row_start",
+                        "in": "path",
+                        "description": "which row to start on"
+                    }
+                ]
+            }
+        },
+        "\/RCR_CA_AUTHORITY\/ROWS\/{row_start}:{row_end}\/{output}": {
+            "get": {
+                "summary": "",
+                "description": "",
+                "operationId": "EnviroFactsRCRCAAUTHORITY",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "output",
+                        "in": "path",
+                        "description": "which format to output (JSON,XML,CSV,Excel)"
+                    },
+                    {
+                        "name": "row_end",
+                        "in": "path",
+                        "description": "which row to end on"
+                    },
+                    {
+                        "name": "row_start",
+                        "in": "path",
+                        "description": "which row to start on"
+                    }
+                ]
+            }
+        },
+        "\/RCR_CA_EVENT\/ROWS\/{row_start}:{row_end}\/{output}": {
+            "get": {
+                "summary": "",
+                "description": "",
+                "operationId": "EnviroFactsRCRCAEVENT",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "output",
+                        "in": "path",
+                        "description": "which format to output (JSON,XML,CSV,Excel)"
+                    },
+                    {
+                        "name": "row_end",
+                        "in": "path",
+                        "description": "which row to end on"
+                    },
+                    {
+                        "name": "row_start",
+                        "in": "path",
+                        "description": "which row to start on"
+                    }
+                ]
+            }
+        },
+        "\/RCR_EVENT_AUTHORITY\/ROWS\/{row_start}:{row_end}\/{output}": {
+            "get": {
+                "summary": "",
+                "description": "",
+                "operationId": "EnviroFactsRCREVENTAUTHORITY",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "output",
+                        "in": "path",
+                        "description": "which format to output (JSON,XML,CSV,Excel)"
+                    },
+                    {
+                        "name": "row_end",
+                        "in": "path",
+                        "description": "which row to end on"
+                    },
+                    {
+                        "name": "row_start",
+                        "in": "path",
+                        "description": "which row to start on"
+                    }
+                ]
+            }
+        },
+        "\/RCR_EVENT_UNIT\/ROWS\/{row_start}:{row_end}\/{output}": {
+            "get": {
+                "summary": "",
+                "description": "",
+                "operationId": "EnviroFactsRCREVENTUNIT",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "output",
+                        "in": "path",
+                        "description": "which format to output (JSON,XML,CSV,Excel)"
+                    },
+                    {
+                        "name": "row_end",
+                        "in": "path",
+                        "description": "which row to end on"
+                    },
+                    {
+                        "name": "row_start",
+                        "in": "path",
+                        "description": "which row to start on"
+                    }
+                ]
+            }
+        },
+        "\/RCR_HANDLER\/ROWS\/{row_start}:{row_end}\/{output}": {
+            "get": {
+                "summary": "",
+                "description": "",
+                "operationId": "EnviroFactsRCRHANDLER",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "output",
+                        "in": "path",
+                        "description": "which format to output (JSON,XML,CSV,Excel)"
+                    },
+                    {
+                        "name": "row_end",
+                        "in": "path",
+                        "description": "which row to end on"
+                    },
+                    {
+                        "name": "row_start",
+                        "in": "path",
+                        "description": "which row to start on"
+                    }
+                ]
+            }
+        },
+        "\/RCR_HBASIC\/ROWS\/{row_start}:{row_end}\/{output}": {
+            "get": {
+                "summary": "",
+                "description": "",
+                "operationId": "EnviroFactsRCRHBASIC",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "output",
+                        "in": "path",
+                        "description": "which format to output (JSON,XML,CSV,Excel)"
+                    },
+                    {
+                        "name": "row_end",
+                        "in": "path",
+                        "description": "which row to end on"
+                    },
+                    {
+                        "name": "row_start",
+                        "in": "path",
+                        "description": "which row to start on"
+                    }
+                ]
+            }
+        },
+        "\/RCR_HCERTIFICATION\/ROWS\/{row_start}:{row_end}\/{output}": {
+            "get": {
+                "summary": "",
+                "description": "",
+                "operationId": "EnviroFactsRCRHCERTIFICATION",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "output",
+                        "in": "path",
+                        "description": "which format to output (JSON,XML,CSV,Excel)"
+                    },
+                    {
+                        "name": "row_end",
+                        "in": "path",
+                        "description": "which row to end on"
+                    },
+                    {
+                        "name": "row_start",
+                        "in": "path",
+                        "description": "which row to start on"
+                    }
+                ]
+            }
+        },
+        "\/RCR_HNAICS\/ROWS\/{row_start}:{row_end}\/{output}": {
+            "get": {
+                "summary": "",
+                "description": "",
+                "operationId": "EnviroFactsRCRHNAICS",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "output",
+                        "in": "path",
+                        "description": "which format to output (JSON,XML,CSV,Excel)"
+                    },
+                    {
+                        "name": "row_end",
+                        "in": "path",
+                        "description": "which row to end on"
+                    },
+                    {
+                        "name": "row_start",
+                        "in": "path",
+                        "description": "which row to start on"
+                    }
+                ]
+            }
+        },
+        "\/RCR_HOTHER_PERMIT\/ROWS\/{row_start}:{row_end}\/{output}": {
+            "get": {
+                "summary": "",
+                "description": "",
+                "operationId": "EnviroFactsRCRHOTHERPERMIT",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "output",
+                        "in": "path",
+                        "description": "which format to output (JSON,XML,CSV,Excel)"
+                    },
+                    {
+                        "name": "row_end",
+                        "in": "path",
+                        "description": "which row to end on"
+                    },
+                    {
+                        "name": "row_start",
+                        "in": "path",
+                        "description": "which row to start on"
+                    }
+                ]
+            }
+        },
+        "\/RCR_HOWNER_OPERATOR\/ROWS\/{row_start}:{row_end}\/{output}": {
+            "get": {
+                "summary": "",
+                "description": "",
+                "operationId": "EnviroFactsRCRHOWNEROPERATOR",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "output",
+                        "in": "path",
+                        "description": "which format to output (JSON,XML,CSV,Excel)"
+                    },
+                    {
+                        "name": "row_end",
+                        "in": "path",
+                        "description": "which row to end on"
+                    },
+                    {
+                        "name": "row_start",
+                        "in": "path",
+                        "description": "which row to start on"
+                    }
+                ]
+            }
+        },
+        "\/RCR_HREPORT_UNIV\/ROWS\/{row_start}:{row_end}\/{output}": {
+            "get": {
+                "summary": "",
+                "description": "",
+                "operationId": "EnviroFactsRCRHREPORTUNIV",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "output",
+                        "in": "path",
+                        "description": "which format to output (JSON,XML,CSV,Excel)"
+                    },
+                    {
+                        "name": "row_end",
+                        "in": "path",
+                        "description": "which row to end on"
+                    },
+                    {
+                        "name": "row_start",
+                        "in": "path",
+                        "description": "which row to start on"
+                    }
+                ]
+            }
+        },
+        "\/RCR_HSTATE_ACTIVITY\/ROWS\/{row_start}:{row_end}\/{output}": {
+            "get": {
+                "summary": "",
+                "description": "",
+                "operationId": "EnviroFactsRCRHSTATEACTIVITY",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "output",
+                        "in": "path",
+                        "description": "which format to output (JSON,XML,CSV,Excel)"
+                    },
+                    {
+                        "name": "row_end",
+                        "in": "path",
+                        "description": "which row to end on"
+                    },
+                    {
+                        "name": "row_start",
+                        "in": "path",
+                        "description": "which row to start on"
+                    }
+                ]
+            }
+        },
+        "\/RCR_HUNIVERSAL_WASTE\/ROWS\/{row_start}:{row_end}\/{output}": {
+            "get": {
+                "summary": "",
+                "description": "",
+                "operationId": "EnviroFactsRCRHUNIVERSALWASTE",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "output",
+                        "in": "path",
+                        "description": "which format to output (JSON,XML,CSV,Excel)"
+                    },
+                    {
+                        "name": "row_end",
+                        "in": "path",
+                        "description": "which row to end on"
+                    },
+                    {
+                        "name": "row_start",
+                        "in": "path",
+                        "description": "which row to start on"
+                    }
+                ]
+            }
+        },
+        "\/RCR_HWASTE_CODE\/ROWS\/{row_start}:{row_end}\/{output}": {
+            "get": {
+                "summary": "",
+                "description": "",
+                "operationId": "EnviroFactsRCRHWASTECODE",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "output",
+                        "in": "path",
+                        "description": "which format to output (JSON,XML,CSV,Excel)"
+                    },
+                    {
+                        "name": "row_end",
+                        "in": "path",
+                        "description": "which row to end on"
+                    },
+                    {
+                        "name": "row_start",
+                        "in": "path",
+                        "description": "which row to start on"
+                    }
+                ]
+            }
+        },
+        "\/RCR_LU_COUNTY\/ROWS\/{row_start}:{row_end}\/{output}": {
+            "get": {
+                "summary": "",
+                "description": "",
+                "operationId": "EnviroFactsRCRLUCOUNTY",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "output",
+                        "in": "path",
+                        "description": "which format to output (JSON,XML,CSV,Excel)"
+                    },
+                    {
+                        "name": "row_end",
+                        "in": "path",
+                        "description": "which row to end on"
+                    },
+                    {
+                        "name": "row_start",
+                        "in": "path",
+                        "description": "which row to start on"
+                    }
+                ]
+            }
+        },
+        "\/RCR_LU_GENERATOR_STATUS\/ROWS\/{row_start}:{row_end}\/{output}": {
+            "get": {
+                "summary": "",
+                "description": "",
+                "operationId": "EnviroFactsRCRLUGENERATORSTATUS",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "output",
+                        "in": "path",
+                        "description": "which format to output (JSON,XML,CSV,Excel)"
+                    },
+                    {
+                        "name": "row_end",
+                        "in": "path",
+                        "description": "which row to end on"
+                    },
+                    {
+                        "name": "row_start",
+                        "in": "path",
+                        "description": "which row to start on"
+                    }
+                ]
+            }
+        },
+        "\/RCR_LU_LEGAL_OPERATING_STATUS\/ROWS\/{row_start}:{row_end}\/{output}": {
+            "get": {
+                "summary": "",
+                "description": "",
+                "operationId": "EnviroFactsRCRLULEGALOPERATINGSTATUS",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "output",
+                        "in": "path",
+                        "description": "which format to output (JSON,XML,CSV,Excel)"
+                    },
+                    {
+                        "name": "row_end",
+                        "in": "path",
+                        "description": "which row to end on"
+                    },
+                    {
+                        "name": "row_start",
+                        "in": "path",
+                        "description": "which row to start on"
+                    }
+                ]
+            }
+        },
+        "\/RCR_LU_NAICS\/ROWS\/{row_start}:{row_end}\/{output}": {
+            "get": {
+                "summary": "",
+                "description": "",
+                "operationId": "EnviroFactsRCRLUNAICS",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "output",
+                        "in": "path",
+                        "description": "which format to output (JSON,XML,CSV,Excel)"
+                    },
+                    {
+                        "name": "row_end",
+                        "in": "path",
+                        "description": "which row to end on"
+                    },
+                    {
+                        "name": "row_start",
+                        "in": "path",
+                        "description": "which row to start on"
+                    }
+                ]
+            }
+        },
+        "\/RCR_LU_STATE_ACTIVITY\/ROWS\/{row_start}:{row_end}\/{output}": {
+            "get": {
+                "summary": "",
+                "description": "",
+                "operationId": "EnviroFactsRCRLUSTATEACTIVITY",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "output",
+                        "in": "path",
+                        "description": "which format to output (JSON,XML,CSV,Excel)"
+                    },
+                    {
+                        "name": "row_end",
+                        "in": "path",
+                        "description": "which row to end on"
+                    },
+                    {
+                        "name": "row_start",
+                        "in": "path",
+                        "description": "which row to start on"
+                    }
+                ]
+            }
+        },
+        "\/RCR_LU_UNIVERSAL_WASTE\/ROWS\/{row_start}:{row_end}\/{output}": {
+            "get": {
+                "summary": "",
+                "description": "",
+                "operationId": "EnviroFactsRCRLUUNIVERSALWASTE",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "output",
+                        "in": "path",
+                        "description": "which format to output (JSON,XML,CSV,Excel)"
+                    },
+                    {
+                        "name": "row_end",
+                        "in": "path",
+                        "description": "which row to end on"
+                    },
+                    {
+                        "name": "row_start",
+                        "in": "path",
+                        "description": "which row to start on"
+                    }
+                ]
+            }
+        },
+        "\/RCR_LU_WASTE_CODE\/ROWS\/{row_start}:{row_end}\/{output}": {
+            "get": {
+                "summary": "",
+                "description": "",
+                "operationId": "EnviroFactsRCRLUWASTECODE",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "output",
+                        "in": "path",
+                        "description": "which format to output (JSON,XML,CSV,Excel)"
+                    },
+                    {
+                        "name": "row_end",
+                        "in": "path",
+                        "description": "which row to end on"
+                    },
+                    {
+                        "name": "row_start",
+                        "in": "path",
+                        "description": "which row to start on"
+                    }
+                ]
+            }
+        },
+        "\/RCR_PERMIT_EVENT_CODES\/ROWS\/{row_start}:{row_end}\/{output}": {
+            "get": {
+                "summary": "",
+                "description": "",
+                "operationId": "EnviroFactsRCRPERMITEVENTCODES",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "output",
+                        "in": "path",
+                        "description": "which format to output (JSON,XML,CSV,Excel)"
+                    },
+                    {
+                        "name": "row_end",
+                        "in": "path",
+                        "description": "which row to end on"
+                    },
+                    {
+                        "name": "row_start",
+                        "in": "path",
+                        "description": "which row to start on"
+                    }
+                ]
+            }
+        },
+        "\/RCR_PEVENT\/ROWS\/{row_start}:{row_end}\/{output}": {
+            "get": {
+                "summary": "",
+                "description": "",
+                "operationId": "EnviroFactsRCRPEVENT",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "output",
+                        "in": "path",
+                        "description": "which format to output (JSON,XML,CSV,Excel)"
+                    },
+                    {
+                        "name": "row_end",
+                        "in": "path",
+                        "description": "which row to end on"
+                    },
+                    {
+                        "name": "row_start",
+                        "in": "path",
+                        "description": "which row to start on"
+                    }
+                ]
+            }
+        },
+        "\/RCR_PROCESS_CODES\/ROWS\/{row_start}:{row_end}\/{output}": {
+            "get": {
+                "summary": "",
+                "description": "",
+                "operationId": "EnviroFactsRCRPROCESSCODES",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "output",
+                        "in": "path",
+                        "description": "which format to output (JSON,XML,CSV,Excel)"
+                    },
+                    {
+                        "name": "row_end",
+                        "in": "path",
+                        "description": "which row to end on"
+                    },
+                    {
+                        "name": "row_start",
+                        "in": "path",
+                        "description": "which row to start on"
+                    }
+                ]
+            }
+        },
+        "\/RCR_PSERIES\/ROWS\/{row_start}:{row_end}\/{output}": {
+            "get": {
+                "summary": "",
+                "description": "",
+                "operationId": "EnviroFactsRCRPSERIES",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "output",
+                        "in": "path",
+                        "description": "which format to output (JSON,XML,CSV,Excel)"
+                    },
+                    {
+                        "name": "row_end",
+                        "in": "path",
+                        "description": "which row to end on"
+                    },
+                    {
+                        "name": "row_start",
+                        "in": "path",
+                        "description": "which row to start on"
+                    }
+                ]
+            }
+        },
+        "\/RCR_PUNIT\/ROWS\/{row_start}:{row_end}\/{output}": {
+            "get": {
+                "summary": "",
+                "description": "",
+                "operationId": "EnviroFactsRCRPUNIT",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "output",
+                        "in": "path",
+                        "description": "which format to output (JSON,XML,CSV,Excel)"
+                    },
+                    {
+                        "name": "row_end",
+                        "in": "path",
+                        "description": "which row to end on"
+                    },
+                    {
+                        "name": "row_start",
+                        "in": "path",
+                        "description": "which row to start on"
+                    }
+                ]
+            }
+        },
+        "\/RCR_PUNIT_DETAIL\/ROWS\/{row_start}:{row_end}\/{output}": {
+            "get": {
+                "summary": "",
+                "description": "",
+                "operationId": "EnviroFactsRCRPUNITDETAIL",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "output",
+                        "in": "path",
+                        "description": "which format to output (JSON,XML,CSV,Excel)"
+                    },
+                    {
+                        "name": "row_end",
+                        "in": "path",
+                        "description": "which row to end on"
+                    },
+                    {
+                        "name": "row_start",
+                        "in": "path",
+                        "description": "which row to start on"
+                    }
+                ]
+            }
+        },
+        "\/RCR_UNIVERSE_DETAIL\/ROWS\/{row_start}:{row_end}\/{output}": {
+            "get": {
+                "summary": "",
+                "description": "",
+                "operationId": "EnviroFactsRCRUNIVERSEDETAIL",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "output",
+                        "in": "path",
+                        "description": "which format to output (JSON,XML,CSV,Excel)"
+                    },
+                    {
+                        "name": "row_end",
+                        "in": "path",
+                        "description": "which row to end on"
+                    },
+                    {
+                        "name": "row_start",
+                        "in": "path",
+                        "description": "which row to start on"
+                    }
+                ]
+            }
+        },
+        "\/RC_UNIT_OF_MEASURE\/ROWS\/{row_start}:{row_end}\/{output}": {
+            "get": {
+                "summary": "",
+                "description": "",
+                "operationId": "EnviroFactsRCUNITOFMEASURE",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "output",
+                        "in": "path",
+                        "description": "which format to output (JSON,XML,CSV,Excel)"
+                    },
+                    {
+                        "name": "row_end",
+                        "in": "path",
+                        "description": "which row to end on"
+                    },
+                    {
+                        "name": "row_start",
+                        "in": "path",
+                        "description": "which row to start on"
+                    }
+                ]
+            }
+        }
+    },
+    "components": {
+        "schemas": {
+            "rcr_hbasic": {
+                "type": "object",
+                "properties": {
+                    "": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "FACILITY_IDENTIFIER": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "HANDLER_ID": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "HANDLER_NAME": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "REGION": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "STATE": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "rcr_ca_authority": {
+                "type": "object",
+                "properties": {
+                    "": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "ACTIVITY_LOCATION": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "AUTHORITY_TYPE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "EFFECTIVE_DATE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "HANDLER_ID": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "ISSUE_DATE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "LEAD_PROGRAM": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "OWNER": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "PERSON_ID": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "PERSON_OWNER": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "REPOSITORY": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "RESPONSIBLE_AGENCY": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "REVOKE_DATE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "SUB_ORGANIZATION": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "SUB_ORGANIZATION_OWNER": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "rcr_ca_event": {
+                "type": "object",
+                "properties": {
+                    "": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "ACTIVITY_LOCATION": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "ACTUAL_DATE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "BEST_DATE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "CA_EVENT_CODE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "EVENT_SEQ": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "HANDLER_ID": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "OWNER": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "PERSON_ID": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "PERSON_OWNER": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "RESPONSIBLE_AGENCY": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "SCHEDULE_DATE_NEW": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "SCHEDULE_DATE_ORIG": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "SUB_ORGANIZATION": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "SUB_ORGANIZATION_OWNER": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "rcr_ca_area": {
+                "type": "object",
+                "properties": {
+                    "": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "AIR_RELEASE_IND": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "AREA_FACILITYWIDE_IND": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "AREA_NAME": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "AREA_SEQ": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "EPA_OWNER": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "EPA_PERSON_ID": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "GROUNDWATER_RELEASE_IND": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "HANDLER_ID": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "REGULATED_UNIT_IND": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "SOIL_RELEASE_IND": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "STATE_OWNER": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "STATE_PERSON_ID": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "SURFACE_WATER_RELEASE_IND": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "rcr_event_authority": {
+                "type": "object",
+                "properties": {
+                    "": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "AUTHORITY_AGENCY": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "AUTHORITY_ID": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "AUTHORITY_LOCATION": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "AUTHORITY_OWN": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "AUTHORITY_TYPE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "EFFECTIVE_DATE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "EVENT_AGENCY": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "EVENT_CODE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "EVENT_ID": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "EVENT_LOCATION": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "EVENT_OWN": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "EVENT_SEQ": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "rcr_area_event": {
+                "type": "object",
+                "properties": {
+                    "": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "ACTIVITY_LOCATION": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "AREA_HANDLER_ID": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "AREA_SEQ": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "CA_EVENT_CODE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "EVENT_HANDLER_ID": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "EVENT_OWN": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "EVENT_SEQ": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "RESPONSIBLE_AGENCY": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "rcr_authcodes": {
+                "type": "object",
+                "properties": {
+                    "": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "ACTIVE_STATUS": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "AUTHORITY_DESC": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "AUTHORITY_TYPE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "OWNER": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "rcr_pseries": {
+                "type": "object",
+                "properties": {
+                    "": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "HANDLER_ID": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "RESPONSIBLE_OWNER": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "RESPONSIBLE_PERSON": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "SERIES_NAME": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "SERIES_SEQ": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "rcr_pevent": {
+                "type": "object",
+                "properties": {
+                    "": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "ACTIVITY_LOCATION": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "ACTUAL_DATE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "BEST_DATE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "EVENT_SEQ": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "HANDLER_ID": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "OWNER": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "PERMIT_EVENT_CODE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "PERSON_ID": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "PERSON_OWNER": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "RESPONSIBLE_AGENCY": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "SCHEDULE_DATE_NEW": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "SCHEDULE_DATE_ORIG": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "SERIES_SEQ": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "SUB_ORGANIZATION": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "SUB_ORGANIZATION_OWNER": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "rcr_event_unit": {
+                "type": "object",
+                "properties": {
+                    "": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "ACTIVITY_LOCATION": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "EVENT_SEQ": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "HANDLER_ID": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "OWNER": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "PERMIT_EVENT_CODE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "RESPONSIBLE_AGENCY": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "SERIES_SEQ": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "UD_HANDLER_ID": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "UD_UNIT_SEQ": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "UNIT_DETAIL_SEQ": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "rcr_punit": {
+                "type": "object",
+                "properties": {
+                    "": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "HANDLER_ID": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "UNIT_NAME": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "UNIT_SEQ": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "rcr_permit_event_codes": {
+                "type": "object",
+                "properties": {
+                    "": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "ACTIVE_STATUS": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "EVENT_DESC": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "OWNER": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "PERMIT_EVENT_CODE": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "rcr_punit_detail": {
+                "type": "object",
+                "properties": {
+                    "": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "CAPACITY": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "CAPACITY_TYPE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "COMMERCIAL_STATUS_CODE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "EFFECTIVE_DATE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "HANDLER_ID": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "LEG_OP_STATUS_CODE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "LE_OWN": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "NUMBER_OF_UNITS": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "PROCESS_CODE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "PROCESS_OWN": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "STANDARDIZED_PERMIT_IND": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "UNIT_DETAIL_SEQ": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "UNIT_SEQ": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "UOM_OWN": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "UOM_TYPE": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "rcr_lu_legal_operating_status": {
+                "type": "object",
+                "properties": {
+                    "": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "ACTIVE_STATUS": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "AS_CONVERTER_TSDF": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "AS_FEDERALLY_REGULATED_TSDF": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "AS_STATE_REGULATED_TSDF": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "CLOSURE_WRKLD": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "CORRECTIVE_ACTION_WRKLD": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "FULL_ENFORCEMENT": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "GPRA_PERMIT_2006_ACCOMPLISHED": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "LEG_OP_STATUS_CODE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "LEG_OP_STATUS_DESC": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "OPERATING_TSDF": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "OWNER": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "PERMITTING_WRKLD": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "PERMIT_PROGRESS": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "PERMIT_RENEWAL_WRKLD": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "POST_CLOSURE_WRKLD": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "STRANGE_BUT_TRUE_FLAG": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "SUBJCA_NON_TSD": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "SUBJCA_TSD_3004": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "SUBJCA_TSD_DISCRETION": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "SUBJECT_TO_CORRECTIVE_ACT": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "SUBJECT_TO_INSPECTION": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "rcr_process_codes": {
+                "type": "object",
+                "properties": {
+                    "": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "ACTIVE_STATUS": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "OWNER": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "PROCESS_CODE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "PROCESS_DESC": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "PROCESS_TYPE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "UOM_OWN": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "UOM_TYPE": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "rcr_hreport_univ": {
+                "type": "object",
+                "properties": {
+                    "": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "ACCESSIBILITY": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "ACTIVE_SITE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "ACTIVITY_LOCATION": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "ADDRESSED_SNC": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "AS_CONVERTER_TSDF": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "AS_FEDERALLY_REGULATED_TSDF": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "AS_STATE_REGULATED_TSDF": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "CA725_INDICATOR": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "CA750_INDICATOR": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "CAWRKLD": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "CLOSWRKLD": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "COMMERCIAL_TSD": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "CONTACT_CITY": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "CONTACT_COUNTRY": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "CONTACT_EMAIL_ADDRESS": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "CONTACT_FAX": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "CONTACT_NAME": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "CONTACT_PHONE_AND_EXT": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "CONTACT_STATE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "CONTACT_STREET1": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "CONTACT_STREET2": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "CONTACT_STREET_NO": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "CONTACT_TITLE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "CONTACT_ZIP": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "EC_INDICATOR": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "EXTRACT_FLAG": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "FA_REQUIRED": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "FEDERAL_INDICATOR": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "FEDERAL_UNIVERSAL_WASTE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "FED_WASTE_GENERATOR": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "FED_WASTE_GENERATOR_OWNER": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "FULL_ENFORCEMENT": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "FURNACE_EXEMPTION": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "GENSTATUS": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "GPRA_CA": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "GPRA_PERMIT": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "GPRA_RENEWAL": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "HANDLER_ID": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "HANDLER_NAME": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "HHANDLER_LAST_CHANGE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "HSM": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "IC_INDICATOR": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "IMPORTER": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "IN_A_UNIVERSE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "IN_HANDLER_UNIVERSES": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "LAND_TYPE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "LOCATION_CITY": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "LOCATION_COUNTRY": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "LOCATION_COUNTY_CODE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "LOCATION_COUNTY_NAME": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "LOCATION_STATE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "LOCATION_STREET1": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "LOCATION_STREET2": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "LOCATION_STREET_NO": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "LOCATION_ZIP": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "MAIL_CITY": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "MAIL_COUNTRY": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "MAIL_STATE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "MAIL_STREET1": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "MAIL_STREET2": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "MAIL_STREET_NO": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "MAIL_ZIP": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "MIXED_WASTE_GENERATOR": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "NAIC1": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "NAIC2": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "NAIC3": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "NAIC4": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "NCAPS": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "NON_NOTIFIER": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "OFF_SITE_RECEIPT": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "ONSITE_BURNER_EXEMPT": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "OPERATING_TSDF": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "OPERATOR_NAME": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "OPERATOR_SEQ": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "OPERATOR_TYPE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "OWNER_NAME": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "OWNER_SEQ": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "OWNER_TYPE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "PCWRKLD": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "PERMIT_RENEWAL_WRKLD": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "PERMPROG": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "PERMWRKLD": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "RECEIVE_DATE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "RECYCLER": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "REGION": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "REPORT_CYCLE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "SEQ_NUMBER": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "SHORT_TERM_GENERATOR": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "SNC": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "SNC_WITH_COMP_SCHED": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "SOURCE_TYPE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "STATE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "STATE_DISTRICT": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "STATE_DISTRICT_OWNER": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "STATE_WASTE_GENERATOR": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "STATE_WASTE_GENERATOR_OWNER": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "SUBJCA": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "SUBJCA_NON_TSD": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "SUBJCA_TSD_3004": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "SUBJCA_TSD_DISCRETION": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "SUBPART_K": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "TRANSFER_FACILITY": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "TRANSPORTER": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "TSD_TYPE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "UNADDRESSED_SNC": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "UNDERGROUND_INJECTION": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "UNIVERSAL_WASTE_DEST_FACILITY": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "UNIVWASTE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "USED_OIL": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "rcr_handler": {
+                "type": "object",
+                "properties": {
+                    "filler": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "rcr_lu_generator_status": {
+                "type": "object",
+                "properties": {
+                    "": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "ACTIVE_STATUS": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "OWNER": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "WASTE_GENERATOR_STATUS_CODE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "WASTE_GENERATOR_STATUS_DESC": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "rcr_lu_county": {
+                "type": "object",
+                "properties": {
+                    "": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "ACTIVE_STATUS": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "COUNTY_CODE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "COUNTY_NAME": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "rcr_hnaics": {
+                "type": "object",
+                "properties": {
+                    "": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "ACTIVITY_LOCATION": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "HANDLER_ID": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "NAICS_CODE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "NAICS_OWNER": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "NAICS_SEQ": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "SEQ_NUMBER": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "SOURCE_TYPE": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "rcr_hwaste_code": {
+                "type": "object",
+                "properties": {
+                    "": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "ACTIVITY_LOCATION": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "HANDLER_ID": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "SEQ_NUMBER": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "SOURCE_TYPE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "WASTE_CODE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "WASTE_CODE_OWNER": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "rcr_huniversal_waste": {
+                "type": "object",
+                "properties": {
+                    "": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "ACCUMULATED": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "ACTIVITY_LOCATION": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "GENERATED": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "HANDLER_ID": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "SEQ_NUMBER": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "SOURCE_TYPE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "UNIVERSAL_WASTE_OWNER": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "UNIVERSAL_WASTE_TYPE": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "rcr_hstate_activity": {
+                "type": "object",
+                "properties": {
+                    "": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "ACTIVITY_LOCATION": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "HANDLER_ID": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "SEQ_NUMBER": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "SOURCE_TYPE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "STATE_ACTIVITY_OWNER": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "STATE_ACTIVITY_TYPE": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "rcr_hother_permit": {
+                "type": "object",
+                "properties": {
+                    "": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "ACTIVITY_LOCATION": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "HANDLER_ID": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "OTHER_PERMIT_DESC": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "OTHER_PERMIT_NUMBER": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "OTHER_PERMIT_OWNER": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "OTHER_PERMIT_TYPE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "SEQ_NUMBER": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "SOURCE_TYPE": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "rcr_howner_operator": {
+                "type": "object",
+                "properties": {
+                    "": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "ACTIVITY_LOCATION": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "CITY": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "COUNTRY": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "DATE_BECAME_CURRENT": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "DATE_ENDED_CURRENT": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "HANDLER_ID": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "OWNER_OPERATOR_INDICATOR": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "OWNER_OPERATOR_NAME": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "OWNER_OPERATOR_SEQ": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "OWNER_OPERATOR_TYPE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "PHONE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "SEQ_NUMBER": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "SOURCE_TYPE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "STATE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "STREET1": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "STREET2": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "STREET_NO": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "ZIP": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "rcr_hcertification": {
+                "type": "object",
+                "properties": {
+                    "": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "ACTIVITY_LOCATION": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "CERT_FIRST_NAME": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "CERT_LAST_NAME": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "CERT_MIDDLE_INITIAL": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "CERT_SEQ": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "CERT_SIGNED_DATE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "CERT_TITLE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "HANDLER_ID": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "SEQ_NUMBER": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "SOURCE_TYPE": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "rcr_lu_naics": {
+                "type": "object",
+                "properties": {
+                    "": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "ACTIVE_STATUS": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "NAICS_CODE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "NAICS_CYCLE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "NAICS_DESC": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "OWNER": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "rcr_lu_waste_code": {
+                "type": "object",
+                "properties": {
+                    "ACTIVE_STATUS": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "BR_LOAD_ACTIVE_STATUS": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "CODE_TYPE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "OWNER": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "WASTE_CODE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "WASTE_CODE_DESC": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "rcr_lu_universal_waste": {
+                "type": "object",
+                "properties": {
+                    "": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "ACTIVE_STATUS": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "OWNER": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "UNIVERSAL_WASTE_DESC": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "UNIVERSAL_WASTE_TYPE": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "rcr_lu_state_activity": {
+                "type": "object",
+                "properties": {
+                    "": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "ACTIVE_STATUS": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "ACTIVITY_DESC": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "ACTIVITY_TYPE": {
+                        "description": "",
+                        "type": "get"
+                    },
+                    "OWNER": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "rcrc_ca_eventcodes": {
+                "type": "object",
+                "properties": {
+                    "filler": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "rcr_universe_detail": {
+                "type": "object",
+                "properties": {
+                    "filler": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            },
+            "rc_unit_of_measure": {
+                "type": "object",
+                "properties": {
+                    "filler": {
+                        "description": "",
+                        "type": "get"
+                    }
+                }
+            }
+        }
+    }
+}
