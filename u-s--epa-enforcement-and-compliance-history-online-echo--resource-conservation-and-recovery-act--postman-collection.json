@@ -1,5 +1,5 @@
 {
-    "id": "e8926ba3db7d439263ce63ccf70f7d7d",
+    "id": "2ecb0b328ce9a4f361a2824b4deada1e",
     "name": "U.S. EPA Enforcement and Compliance History Online (ECHO) - Resource Conservation and Recovery Act ",
     "description": null,
     "auth": null,
@@ -10,7 +10,7 @@
     "folders": [],
     "requests": [
         {
-            "id": "2caf303416c07047faacd05d8414f493",
+            "id": "707e54632de70cd10be9234ed67af150",
             "name": "Resource Conservation and Recovery Act (RCRA) Download Data Service",
             "url": "httpsofmpub.epa.gov\/echo\/rcra_rest_services.get_download",
             "description": "Based on the QID obtained from a get_facilities or get_facility_info query, return a comma sepated vaule (CSV) file of the facilities found.",
@@ -37,11 +37,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "e8926ba3db7d439263ce63ccf70f7d7d",
+            "collectionId": "2ecb0b328ce9a4f361a2824b4deada1e",
             "rawModeData": ""
         },
         {
-            "id": "adbb63eed60b5056afd13f8c15a6f2dc",
+            "id": "72a7e2dbf201edb02d7f3247f13c2c89",
             "name": "Resource Conservation and Recovery Act (RCRA) Facility Search Service",
             "url": "httpsofmpub.epa.gov\/echo\/rcra_rest_services.get_facilities",
             "description": "Validates query search parameters and returns query identifier.  Use the responseset parameter to set the page size",
@@ -68,11 +68,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "e8926ba3db7d439263ce63ccf70f7d7d",
+            "collectionId": "2ecb0b328ce9a4f361a2824b4deada1e",
             "rawModeData": ""
         },
         {
-            "id": "fb67a31abb49893eccab0aaff50f2d37",
+            "id": "58db3d2bfb03ca969a08504834bba03a",
             "name": "Resource Conservation and Recovery Act (RCRA) Facility Enhanced Search Service",
             "url": "httpsofmpub.epa.gov\/echo\/rcra_rest_services.get_facility_info",
             "description": "Returns either an array of Facilities or an array of Clusters that meet the specified search criteria.",
@@ -99,11 +99,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "e8926ba3db7d439263ce63ccf70f7d7d",
+            "collectionId": "2ecb0b328ce9a4f361a2824b4deada1e",
             "rawModeData": ""
         },
         {
-            "id": "be240f7407ddba49c71261d171c8b5a9",
+            "id": "881954e4c7d81d7298a807b372b41378",
             "name": "Resource Conservation and Recovery Act (RCRA) GeoJSON Service",
             "url": "httpsofmpub.epa.gov\/echo\/rcra_rest_services.get_geojson",
             "description": "Based on the QID obtained from a get_facilities or get_facility_info query, return GeoJSON of the facilities found.",
@@ -130,11 +130,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "e8926ba3db7d439263ce63ccf70f7d7d",
+            "collectionId": "2ecb0b328ce9a4f361a2824b4deada1e",
             "rawModeData": ""
         },
         {
-            "id": "7a719598bc0d5fa55d631b01fe374cd7",
+            "id": "0d2619a23931203767c1a4e5d4ef8ea2",
             "name": "Resource Conservation and Recovery Act (RCRA) Info Clusters Service",
             "url": "httpsofmpub.epa.gov\/echo\/rcra_rest_services.get_info_clusters",
             "description": "Based on the QID obtained from a clustered get_facility_info query, download cluster facility information as either a CSV or GEOJSON file.",
@@ -161,11 +161,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "e8926ba3db7d439263ce63ccf70f7d7d",
+            "collectionId": "2ecb0b328ce9a4f361a2824b4deada1e",
             "rawModeData": ""
         },
         {
-            "id": "3c609a2248608147c154f7f13aad2147",
+            "id": "215f294601857e7421bc7a6e48569554",
             "name": "Resource Conservation and Recovery Act (RCRA) Map Service",
             "url": "httpsofmpub.epa.gov\/echo\/rcra_rest_services.get_map",
             "description": "The purpose of the GET_MAP service is to display facility coordinates and facility clusters related to a get_facilities facility query. Currently, the maximum number of coordinates returned is 500. GET_MAP performs automatic clustering at the state, county, and zip code levels to maximize the number of coordinates returned.",
@@ -192,11 +192,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "e8926ba3db7d439263ce63ccf70f7d7d",
+            "collectionId": "2ecb0b328ce9a4f361a2824b4deada1e",
             "rawModeData": ""
         },
         {
-            "id": "b8e87a317caf8f35a9f3071a4b63f5a4",
+            "id": "9805ba5574b8d101490557a7f62d411e",
             "name": "Resource Conservation and Recovery Act (RCRA) Paginated Results Service",
             "url": "httpsofmpub.epa.gov\/echo\/rcra_rest_services.get_qid",
             "description": "GET_QID is passed with a query ID corresponding to a previously run get_facilities query. It then returns a Facility object containing all matching facilities. The main purpose of GET_QID is for large querysets that contain multiple pages (responsesets) of output. GET_QID allows for pagination and for the selection and sorting of columns. ",
@@ -223,11 +223,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "e8926ba3db7d439263ce63ccf70f7d7d",
+            "collectionId": "2ecb0b328ce9a4f361a2824b4deada1e",
             "rawModeData": ""
         },
         {
-            "id": "51d15805f771d43e22b3f55cb0570630",
+            "id": "ebadf3e96fc82487f4915c7333bccd26",
             "name": "Resource Conservation and Recovery Act (RCRA) Metadata Service",
             "url": "httpsofmpub.epa.gov\/echo\/rcra_rest_services.metadata",
             "description": "Returns the JSON Object Name and ColumnId for usage with the qcolumns parameter for get_qid, get_facility_info and other service endpoints.",
@@ -254,7 +254,7 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "e8926ba3db7d439263ce63ccf70f7d7d",
+            "collectionId": "2ecb0b328ce9a4f361a2824b4deada1e",
             "rawModeData": ""
         }
     ]
