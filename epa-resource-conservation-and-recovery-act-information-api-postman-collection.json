@@ -1,5 +1,5 @@
 {
-    "id": "cdaa3b033cb4ff043b9ce3f37de33fba",
+    "id": "81f3ec480c871dd05b41f11d2ce79226",
     "name": "EPA Resource Conservation and Recovery Act Information API",
     "description": null,
     "auth": null,
@@ -10,7 +10,7 @@
     "folders": [],
     "requests": [
         {
-            "id": "17dd8c832b06e91b206ba75634e97a15",
+            "id": "8f3a9e37862fdc910313969798d392b6",
             "name": "",
             "url": "httpsiaspub.epa.gov\/enviro\/efservice\/\/RCRC_CA_EVENTCODES\/ROWS\/{row_start}:{row_end}\/{output}",
             "description": "",
@@ -51,11 +51,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "cdaa3b033cb4ff043b9ce3f37de33fba",
+            "collectionId": "81f3ec480c871dd05b41f11d2ce79226",
             "rawModeData": ""
         },
         {
-            "id": "f16b0fe9f0eea91e405724a28b9bfa6a",
+            "id": "9043133aa07abb6a92a3d088cf52db2c",
             "name": "",
             "url": "httpsiaspub.epa.gov\/enviro\/efservice\/\/RCR_AREA_EVENT\/ROWS\/{row_start}:{row_end}\/{output}",
             "description": "",
@@ -96,11 +96,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "cdaa3b033cb4ff043b9ce3f37de33fba",
+            "collectionId": "81f3ec480c871dd05b41f11d2ce79226",
             "rawModeData": ""
         },
         {
-            "id": "5da06340aaef63f96d2dc4fad84f4060",
+            "id": "62e3c736f3e6cdadb7b8d26ba63d3c34",
             "name": "",
             "url": "httpsiaspub.epa.gov\/enviro\/efservice\/\/RCR_AUTHCODES\/ROWS\/{row_start}:{row_end}\/{output}",
             "description": "",
@@ -141,11 +141,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "cdaa3b033cb4ff043b9ce3f37de33fba",
+            "collectionId": "81f3ec480c871dd05b41f11d2ce79226",
             "rawModeData": ""
         },
         {
-            "id": "44646585d367c222e809f1dc528c76ab",
+            "id": "9575f5bbe47c79a30a7511512bf2fe46",
             "name": "",
             "url": "httpsiaspub.epa.gov\/enviro\/efservice\/\/RCR_CA_AREA\/ROWS\/{row_start}:{row_end}\/{output}",
             "description": "",
@@ -186,11 +186,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "cdaa3b033cb4ff043b9ce3f37de33fba",
+            "collectionId": "81f3ec480c871dd05b41f11d2ce79226",
             "rawModeData": ""
         },
         {
-            "id": "52024f6bf5359f0711334f4b12a0bb9d",
+            "id": "476f3ab270d3c1383a9365661dc5159c",
             "name": "",
             "url": "httpsiaspub.epa.gov\/enviro\/efservice\/\/RCR_CA_AUTHORITY\/ROWS\/{row_start}:{row_end}\/{output}",
             "description": "",
@@ -231,11 +231,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "cdaa3b033cb4ff043b9ce3f37de33fba",
+            "collectionId": "81f3ec480c871dd05b41f11d2ce79226",
             "rawModeData": ""
         },
         {
-            "id": "77515eae778ea4e26b395f30bb78233a",
+            "id": "cbb1ff63e3fee6e77a3a3856f64e0e46",
             "name": "",
             "url": "httpsiaspub.epa.gov\/enviro\/efservice\/\/RCR_CA_EVENT\/ROWS\/{row_start}:{row_end}\/{output}",
             "description": "",
@@ -276,11 +276,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "cdaa3b033cb4ff043b9ce3f37de33fba",
+            "collectionId": "81f3ec480c871dd05b41f11d2ce79226",
             "rawModeData": ""
         },
         {
-            "id": "7c8bc646008ca2ecc9c08ac6669e6460",
+            "id": "dd3ce412d3dec363820d025e27459bc3",
             "name": "",
             "url": "httpsiaspub.epa.gov\/enviro\/efservice\/\/RCR_EVENT_AUTHORITY\/ROWS\/{row_start}:{row_end}\/{output}",
             "description": "",
@@ -321,11 +321,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "cdaa3b033cb4ff043b9ce3f37de33fba",
+            "collectionId": "81f3ec480c871dd05b41f11d2ce79226",
             "rawModeData": ""
         },
         {
-            "id": "fd339630a8d2e68692052e3e4aef9b11",
+            "id": "688604de00cfa7c176763a740b39002a",
             "name": "",
             "url": "httpsiaspub.epa.gov\/enviro\/efservice\/\/RCR_EVENT_UNIT\/ROWS\/{row_start}:{row_end}\/{output}",
             "description": "",
@@ -366,11 +366,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "cdaa3b033cb4ff043b9ce3f37de33fba",
+            "collectionId": "81f3ec480c871dd05b41f11d2ce79226",
             "rawModeData": ""
         },
         {
-            "id": "208d413fe2cbcca587ddf980416380b8",
+            "id": "7da0258c9ff96132c901c009f3040d06",
             "name": "",
             "url": "httpsiaspub.epa.gov\/enviro\/efservice\/\/RCR_HANDLER\/ROWS\/{row_start}:{row_end}\/{output}",
             "description": "",
@@ -411,11 +411,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "cdaa3b033cb4ff043b9ce3f37de33fba",
+            "collectionId": "81f3ec480c871dd05b41f11d2ce79226",
             "rawModeData": ""
         },
         {
-            "id": "89a46df5732e67647ab3c89329f57348",
+            "id": "b0cfeda309e979b3cfd6b06419906579",
             "name": "",
             "url": "httpsiaspub.epa.gov\/enviro\/efservice\/\/RCR_HBASIC\/ROWS\/{row_start}:{row_end}\/{output}",
             "description": "",
@@ -456,11 +456,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "cdaa3b033cb4ff043b9ce3f37de33fba",
+            "collectionId": "81f3ec480c871dd05b41f11d2ce79226",
             "rawModeData": ""
         },
         {
-            "id": "ce37036ef075b2718d8fbbba24fb7379",
+            "id": "af2d9893112ab5b690a05c05a27abc50",
             "name": "",
             "url": "httpsiaspub.epa.gov\/enviro\/efservice\/\/RCR_HCERTIFICATION\/ROWS\/{row_start}:{row_end}\/{output}",
             "description": "",
@@ -501,11 +501,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "cdaa3b033cb4ff043b9ce3f37de33fba",
+            "collectionId": "81f3ec480c871dd05b41f11d2ce79226",
             "rawModeData": ""
         },
         {
-            "id": "a9572edd95f28b5b2faaf17e7214c906",
+            "id": "a194df77081086828a8be06507616b5b",
             "name": "",
             "url": "httpsiaspub.epa.gov\/enviro\/efservice\/\/RCR_HNAICS\/ROWS\/{row_start}:{row_end}\/{output}",
             "description": "",
@@ -546,11 +546,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "cdaa3b033cb4ff043b9ce3f37de33fba",
+            "collectionId": "81f3ec480c871dd05b41f11d2ce79226",
             "rawModeData": ""
         },
         {
-            "id": "da6305208c82c5d7c834d7f933a41ae0",
+            "id": "0de643bb465953b2e3ca4476de5a3ee0",
             "name": "",
             "url": "httpsiaspub.epa.gov\/enviro\/efservice\/\/RCR_HOTHER_PERMIT\/ROWS\/{row_start}:{row_end}\/{output}",
             "description": "",
@@ -591,11 +591,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "cdaa3b033cb4ff043b9ce3f37de33fba",
+            "collectionId": "81f3ec480c871dd05b41f11d2ce79226",
             "rawModeData": ""
         },
         {
-            "id": "136a0bf90903b0fea59a6c43bc38bfff",
+            "id": "1ad77f5c27031e516ea1bae253aa9acd",
             "name": "",
             "url": "httpsiaspub.epa.gov\/enviro\/efservice\/\/RCR_HOWNER_OPERATOR\/ROWS\/{row_start}:{row_end}\/{output}",
             "description": "",
@@ -636,11 +636,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "cdaa3b033cb4ff043b9ce3f37de33fba",
+            "collectionId": "81f3ec480c871dd05b41f11d2ce79226",
             "rawModeData": ""
         },
         {
-            "id": "63cb7e10b4be5772317be081c70b0a21",
+            "id": "be3a1e70618a28127bae2ac1d81aff2e",
             "name": "",
             "url": "httpsiaspub.epa.gov\/enviro\/efservice\/\/RCR_HREPORT_UNIV\/ROWS\/{row_start}:{row_end}\/{output}",
             "description": "",
@@ -681,11 +681,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "cdaa3b033cb4ff043b9ce3f37de33fba",
+            "collectionId": "81f3ec480c871dd05b41f11d2ce79226",
             "rawModeData": ""
         },
         {
-            "id": "08b6881b669ca592623e2b6313199004",
+            "id": "51895f92435e69e989a8a77267cddcd2",
             "name": "",
             "url": "httpsiaspub.epa.gov\/enviro\/efservice\/\/RCR_HSTATE_ACTIVITY\/ROWS\/{row_start}:{row_end}\/{output}",
             "description": "",
@@ -726,11 +726,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "cdaa3b033cb4ff043b9ce3f37de33fba",
+            "collectionId": "81f3ec480c871dd05b41f11d2ce79226",
             "rawModeData": ""
         },
         {
-            "id": "e35246712732283ce5c9253328d6fb95",
+            "id": "ae4ceb3ef18db79879043f50f5addc96",
             "name": "",
             "url": "httpsiaspub.epa.gov\/enviro\/efservice\/\/RCR_HUNIVERSAL_WASTE\/ROWS\/{row_start}:{row_end}\/{output}",
             "description": "",
@@ -771,11 +771,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "cdaa3b033cb4ff043b9ce3f37de33fba",
+            "collectionId": "81f3ec480c871dd05b41f11d2ce79226",
             "rawModeData": ""
         },
         {
-            "id": "670061f7597ba0b61986cde2b98902bb",
+            "id": "e46388106bbda791b0de3cef76722227",
             "name": "",
             "url": "httpsiaspub.epa.gov\/enviro\/efservice\/\/RCR_HWASTE_CODE\/ROWS\/{row_start}:{row_end}\/{output}",
             "description": "",
@@ -816,11 +816,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "cdaa3b033cb4ff043b9ce3f37de33fba",
+            "collectionId": "81f3ec480c871dd05b41f11d2ce79226",
             "rawModeData": ""
         },
         {
-            "id": "d6d9bae3245aea38125bf331d15477d9",
+            "id": "650b37fc9dcca595b13ca43c844cee41",
             "name": "",
             "url": "httpsiaspub.epa.gov\/enviro\/efservice\/\/RCR_LU_COUNTY\/ROWS\/{row_start}:{row_end}\/{output}",
             "description": "",
@@ -861,11 +861,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "cdaa3b033cb4ff043b9ce3f37de33fba",
+            "collectionId": "81f3ec480c871dd05b41f11d2ce79226",
             "rawModeData": ""
         },
         {
-            "id": "16b319929cdeb367a2e3c7a76823ebe8",
+            "id": "02f423549512b82afe1f5de1fe928320",
             "name": "",
             "url": "httpsiaspub.epa.gov\/enviro\/efservice\/\/RCR_LU_GENERATOR_STATUS\/ROWS\/{row_start}:{row_end}\/{output}",
             "description": "",
@@ -906,11 +906,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "cdaa3b033cb4ff043b9ce3f37de33fba",
+            "collectionId": "81f3ec480c871dd05b41f11d2ce79226",
             "rawModeData": ""
         },
         {
-            "id": "6a2b2267a975dff39679695921ce5301",
+            "id": "1b0bedd3c5ca800c5058447f92d61cd7",
             "name": "",
             "url": "httpsiaspub.epa.gov\/enviro\/efservice\/\/RCR_LU_LEGAL_OPERATING_STATUS\/ROWS\/{row_start}:{row_end}\/{output}",
             "description": "",
@@ -951,11 +951,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "cdaa3b033cb4ff043b9ce3f37de33fba",
+            "collectionId": "81f3ec480c871dd05b41f11d2ce79226",
             "rawModeData": ""
         },
         {
-            "id": "ff81c5341b723dd5dd0a9e7d7e38b925",
+            "id": "52dc4e8f93acc63b0258087373558f62",
             "name": "",
             "url": "httpsiaspub.epa.gov\/enviro\/efservice\/\/RCR_LU_NAICS\/ROWS\/{row_start}:{row_end}\/{output}",
             "description": "",
@@ -996,11 +996,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "cdaa3b033cb4ff043b9ce3f37de33fba",
+            "collectionId": "81f3ec480c871dd05b41f11d2ce79226",
             "rawModeData": ""
         },
         {
-            "id": "29cd968b76da3ef1126ec9d48495ad02",
+            "id": "b0b643c5066de6c1b6f85ecfe9402ec8",
             "name": "",
             "url": "httpsiaspub.epa.gov\/enviro\/efservice\/\/RCR_LU_STATE_ACTIVITY\/ROWS\/{row_start}:{row_end}\/{output}",
             "description": "",
@@ -1041,11 +1041,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "cdaa3b033cb4ff043b9ce3f37de33fba",
+            "collectionId": "81f3ec480c871dd05b41f11d2ce79226",
             "rawModeData": ""
         },
         {
-            "id": "c53cb8e193bb452a44b7c1fe9911f991",
+            "id": "fe01c3a8f921eeb074a89e9a2c6d3afb",
             "name": "",
             "url": "httpsiaspub.epa.gov\/enviro\/efservice\/\/RCR_LU_UNIVERSAL_WASTE\/ROWS\/{row_start}:{row_end}\/{output}",
             "description": "",
@@ -1086,11 +1086,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "cdaa3b033cb4ff043b9ce3f37de33fba",
+            "collectionId": "81f3ec480c871dd05b41f11d2ce79226",
             "rawModeData": ""
         },
         {
-            "id": "9341531e2a864b58626c76fba154c75f",
+            "id": "d51866315b80aa6aa21cba836c25e382",
             "name": "",
             "url": "httpsiaspub.epa.gov\/enviro\/efservice\/\/RCR_LU_WASTE_CODE\/ROWS\/{row_start}:{row_end}\/{output}",
             "description": "",
@@ -1131,11 +1131,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "cdaa3b033cb4ff043b9ce3f37de33fba",
+            "collectionId": "81f3ec480c871dd05b41f11d2ce79226",
             "rawModeData": ""
         },
         {
-            "id": "b52425d2c3312cc2d3ea04a3680f55ac",
+            "id": "8e8b5ed1dca30904944989f78ae140a5",
             "name": "",
             "url": "httpsiaspub.epa.gov\/enviro\/efservice\/\/RCR_PERMIT_EVENT_CODES\/ROWS\/{row_start}:{row_end}\/{output}",
             "description": "",
@@ -1176,11 +1176,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "cdaa3b033cb4ff043b9ce3f37de33fba",
+            "collectionId": "81f3ec480c871dd05b41f11d2ce79226",
             "rawModeData": ""
         },
         {
-            "id": "9b77e98c0be2e8261df58c4066f408a2",
+            "id": "fff0aabdaa0e6ce0737927263479d045",
             "name": "",
             "url": "httpsiaspub.epa.gov\/enviro\/efservice\/\/RCR_PEVENT\/ROWS\/{row_start}:{row_end}\/{output}",
             "description": "",
@@ -1221,11 +1221,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "cdaa3b033cb4ff043b9ce3f37de33fba",
+            "collectionId": "81f3ec480c871dd05b41f11d2ce79226",
             "rawModeData": ""
         },
         {
-            "id": "eda7458e40041f6551e0ea936ca762ab",
+            "id": "8af63c6b3e8e66b9e604bd10e89c8023",
             "name": "",
             "url": "httpsiaspub.epa.gov\/enviro\/efservice\/\/RCR_PROCESS_CODES\/ROWS\/{row_start}:{row_end}\/{output}",
             "description": "",
@@ -1266,11 +1266,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "cdaa3b033cb4ff043b9ce3f37de33fba",
+            "collectionId": "81f3ec480c871dd05b41f11d2ce79226",
             "rawModeData": ""
         },
         {
-            "id": "9571176aa4166982141dc33739864555",
+            "id": "ffffa3102faf6ca0ecd1c00634a4c06f",
             "name": "",
             "url": "httpsiaspub.epa.gov\/enviro\/efservice\/\/RCR_PSERIES\/ROWS\/{row_start}:{row_end}\/{output}",
             "description": "",
@@ -1311,11 +1311,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "cdaa3b033cb4ff043b9ce3f37de33fba",
+            "collectionId": "81f3ec480c871dd05b41f11d2ce79226",
             "rawModeData": ""
         },
         {
-            "id": "1a03c0a52eae5975331b0fd653bf896c",
+            "id": "2cb5265de0e36b8091e95dec7622da00",
             "name": "",
             "url": "httpsiaspub.epa.gov\/enviro\/efservice\/\/RCR_PUNIT\/ROWS\/{row_start}:{row_end}\/{output}",
             "description": "",
@@ -1356,11 +1356,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "cdaa3b033cb4ff043b9ce3f37de33fba",
+            "collectionId": "81f3ec480c871dd05b41f11d2ce79226",
             "rawModeData": ""
         },
         {
-            "id": "3ae1c33b0513d0a74414cbbfebaf9b3d",
+            "id": "b01c4d56e8354e8741d5df3b298404b3",
             "name": "",
             "url": "httpsiaspub.epa.gov\/enviro\/efservice\/\/RCR_PUNIT_DETAIL\/ROWS\/{row_start}:{row_end}\/{output}",
             "description": "",
@@ -1401,11 +1401,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "cdaa3b033cb4ff043b9ce3f37de33fba",
+            "collectionId": "81f3ec480c871dd05b41f11d2ce79226",
             "rawModeData": ""
         },
         {
-            "id": "9f0709a4bc4e5e93154de22895afe40b",
+            "id": "62ec3517851054e8c08b6d648c55ec41",
             "name": "",
             "url": "httpsiaspub.epa.gov\/enviro\/efservice\/\/RCR_UNIVERSE_DETAIL\/ROWS\/{row_start}:{row_end}\/{output}",
             "description": "",
@@ -1446,11 +1446,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "cdaa3b033cb4ff043b9ce3f37de33fba",
+            "collectionId": "81f3ec480c871dd05b41f11d2ce79226",
             "rawModeData": ""
         },
         {
-            "id": "03e8371c2d63853a42ed407bfffa5ba1",
+            "id": "1a55bc736065ced61448c87298c15490",
             "name": "",
             "url": "httpsiaspub.epa.gov\/enviro\/efservice\/\/RC_UNIT_OF_MEASURE\/ROWS\/{row_start}:{row_end}\/{output}",
             "description": "",
@@ -1491,7 +1491,7 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "cdaa3b033cb4ff043b9ce3f37de33fba",
+            "collectionId": "81f3ec480c871dd05b41f11d2ce79226",
             "rawModeData": ""
         }
     ]
