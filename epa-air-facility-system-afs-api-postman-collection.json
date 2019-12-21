@@ -1,5 +1,5 @@
 {
-    "id": "f9ea649c072e7e022b022709555c2bab",
+    "id": "b4cf45c98a987f5dd4bc84b18041311c",
     "name": "EPA Air Facility System (AFS) API",
     "description": null,
     "auth": null,
@@ -10,7 +10,7 @@
     "folders": [],
     "requests": [
         {
-            "id": "6869c2d26e0b925d3857fe57cca95b8c",
+            "id": "c2c1e10bc3c374981b9bb59cb15f29a8",
             "name": "",
             "url": "httpsiaspub.epa.gov\/enviro\/efservice\/\/EFFRS_AFSACT1\/ROWS\/{row_start}:{row_end}\/{output}",
             "description": "",
@@ -51,11 +51,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "f9ea649c072e7e022b022709555c2bab",
+            "collectionId": "b4cf45c98a987f5dd4bc84b18041311c",
             "rawModeData": ""
         },
         {
-            "id": "f711d1b85f5d91dcf94cc219dd787ada",
+            "id": "83f2c7e84e2c02b4a5743860995b54ee",
             "name": "",
             "url": "httpsiaspub.epa.gov\/enviro\/efservice\/\/EFFRS_AFSACT2\/ROWS\/{row_start}:{row_end}\/{output}",
             "description": "",
@@ -96,11 +96,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "f9ea649c072e7e022b022709555c2bab",
+            "collectionId": "b4cf45c98a987f5dd4bc84b18041311c",
             "rawModeData": ""
         },
         {
-            "id": "0a703d14d8a81ef72231c40a47b0a33e",
+            "id": "7dd009d2a3fa39dc9cc5bb0b9e80985c",
             "name": "",
             "url": "httpsiaspub.epa.gov\/enviro\/efservice\/\/EFFRS_AFSAP\/ROWS\/{row_start}:{row_end}\/{output}",
             "description": "",
@@ -141,11 +141,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "f9ea649c072e7e022b022709555c2bab",
+            "collectionId": "b4cf45c98a987f5dd4bc84b18041311c",
             "rawModeData": ""
         },
         {
-            "id": "ce0119d0772d95ed46fa7d18022657e1",
+            "id": "ed1ef30fb05f8d98d44d2d37cc7449b5",
             "name": "",
             "url": "httpsiaspub.epa.gov\/enviro\/efservice\/\/EFFRS_AFSAPP\/ROWS\/{row_start}:{row_end}\/{output}",
             "description": "",
@@ -186,11 +186,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "f9ea649c072e7e022b022709555c2bab",
+            "collectionId": "b4cf45c98a987f5dd4bc84b18041311c",
             "rawModeData": ""
         },
         {
-            "id": "fb63bfd556269688511c265a209d2adf",
+            "id": "40fc75d3028d44785bfabb30255adafa",
             "name": "",
             "url": "httpsiaspub.epa.gov\/enviro\/efservice\/\/EFFRS_AFSCMS\/ROWS\/{row_start}:{row_end}\/{output}",
             "description": "",
@@ -231,11 +231,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "f9ea649c072e7e022b022709555c2bab",
+            "collectionId": "b4cf45c98a987f5dd4bc84b18041311c",
             "rawModeData": ""
         },
         {
-            "id": "b6da93d10f94002bbe07513106672467",
+            "id": "f824b757cc8ab5bdd1ce7f859487647d",
             "name": "",
             "url": "httpsiaspub.epa.gov\/enviro\/efservice\/\/EFFRS_AFSPLT1\/ROWS\/{row_start}:{row_end}\/{output}",
             "description": "",
@@ -276,11 +276,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "f9ea649c072e7e022b022709555c2bab",
+            "collectionId": "b4cf45c98a987f5dd4bc84b18041311c",
             "rawModeData": ""
         },
         {
-            "id": "4a3052f38b8d2c41da5a6715e385da77",
+            "id": "69c576645163e52e159b353dd5cae2b1",
             "name": "",
             "url": "httpsiaspub.epa.gov\/enviro\/efservice\/\/EFFRS_AFSPLT2\/ROWS\/{row_start}:{row_end}\/{output}",
             "description": "",
@@ -321,11 +321,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "f9ea649c072e7e022b022709555c2bab",
+            "collectionId": "b4cf45c98a987f5dd4bc84b18041311c",
             "rawModeData": ""
         },
         {
-            "id": "2fb1577f654fbefabb6e3be3b693f20c",
+            "id": "2327381031637df36bd11166a9c3ae2e",
             "name": "",
             "url": "httpsiaspub.epa.gov\/enviro\/efservice\/\/EFFRS_AFSSUBP\/ROWS\/{row_start}:{row_end}\/{output}",
             "description": "",
@@ -366,7 +366,7 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "f9ea649c072e7e022b022709555c2bab",
+            "collectionId": "b4cf45c98a987f5dd4bc84b18041311c",
             "rawModeData": ""
         }
     ]
