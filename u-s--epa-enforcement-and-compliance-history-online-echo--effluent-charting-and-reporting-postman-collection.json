@@ -1,5 +1,5 @@
 {
-    "id": "f6f1e207bd61e42bc8991d6c35ae2467",
+    "id": "fa70d128c81734221c83e497daaa5118",
     "name": "U.S. EPA Enforcement and Compliance History Online (ECHO) - Effluent Charting and Reporting",
     "description": null,
     "auth": null,
@@ -10,7 +10,7 @@
     "folders": [],
     "requests": [
         {
-            "id": "a9fedb04adfd27dd93653f73f9081b24",
+            "id": "cec82a2f53bf75fa975ddd537282c889",
             "name": "Effluent Charts Download Service",
             "url": "httpsofmpub.epa.gov\/echo\/eff_rest_services.download_effluent_chart",
             "description": "Downloads tabular Discharge Monitoring Report (DMR) and compliance data for one NPDES permit as a CSV.",
@@ -29,11 +29,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "f6f1e207bd61e42bc8991d6c35ae2467",
+            "collectionId": "fa70d128c81734221c83e497daaa5118",
             "rawModeData": ""
         },
         {
-            "id": "fddf0f65096ff5069895925969109f05",
+            "id": "30fd43f9a4f8cd6d00e18e0fe99038a7",
             "name": "Detailed Effluent Chart Service",
             "url": "httpsofmpub.epa.gov\/echo\/eff_rest_services.get_effluent_chart",
             "description": "Discharge Monitoring Report (DMR) data supporting each effluent chart for one NPDES permit. Includes Discharge Monitoring Reports and NPDES Violations. \n\n",
@@ -52,11 +52,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "f6f1e207bd61e42bc8991d6c35ae2467",
+            "collectionId": "fa70d128c81734221c83e497daaa5118",
             "rawModeData": ""
         },
         {
-            "id": "a074201d4523b036c74c29f37ec2368c",
+            "id": "e36d4af12bd4c196ede7389a0cafe0f1",
             "name": "Summary Effluent Chart Service",
             "url": "httpsofmpub.epa.gov\/echo\/eff_rest_services.get_summary_chart",
             "description": "Summary of compliance status each outfall and parameter for one NPDES permit. Provides the current compliance status and overall compliance status for the date range of interest. This service supports the Summary Matrix on the Effluent Charts.",
@@ -75,11 +75,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "f6f1e207bd61e42bc8991d6c35ae2467",
+            "collectionId": "fa70d128c81734221c83e497daaa5118",
             "rawModeData": ""
         },
         {
-            "id": "b9816a5031188e66a32b646f5cb2b249",
+            "id": "f0253f2bc8f5c1cc5fdb603e283b6e69",
             "name": "ECHO CWA Parameter Lookup Service",
             "url": "httpsofmpub.epa.gov\/echo\/rest_lookups.cwa_parameters",
             "description": "Look up Clean Water Act parameter codes and descriptions in the Integrated Compliance Information System - National Pollutant Discharge Elimination System (ICIS-NPDES) by code or term.",
@@ -98,7 +98,7 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "f6f1e207bd61e42bc8991d6c35ae2467",
+            "collectionId": "fa70d128c81734221c83e497daaa5118",
             "rawModeData": ""
         }
     ]
