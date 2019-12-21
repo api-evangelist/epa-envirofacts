@@ -1,5 +1,5 @@
 {
-    "id": "569f10c93b64cf47ac3e4326ace0fc48",
+    "id": "f6360087afe668e66ac1f532d1a39599",
     "name": "U.S. EPA Enforcement and Compliance History Online (ECHO) - Enforcement Case Search",
     "description": null,
     "auth": null,
@@ -10,7 +10,7 @@
     "folders": [],
     "requests": [
         {
-            "id": "7017589a61b304a7b1837cb5911e9f61",
+            "id": "b97b6f812d27e5925cd8bc29b41c562f",
             "name": "Enforcement Case Summary Report Search",
             "url": "httpsofmpub.epa.gov\/echo\/case_rest_services.get_case_report",
             "description": "The get_case_report service endpoint returns a complex object of civil enforcement case details based on the provided case id.",
@@ -44,11 +44,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "569f10c93b64cf47ac3e4326ace0fc48",
+            "collectionId": "f6360087afe668e66ac1f532d1a39599",
             "rawModeData": ""
         },
         {
-            "id": "57783d1926a23bd0d9828bd2e77c1736",
+            "id": "a8ebe6753d9fe3ad6aac0c7b5650c511",
             "name": "Enforcement Case Search",
             "url": "httpsofmpub.epa.gov\/echo\/case_rest_services.get_cases",
             "description": "The get_cases service end point searches for civil enforcement and criminal cases based on the provided selection criteria.",
@@ -75,11 +75,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "569f10c93b64cf47ac3e4326ace0fc48",
+            "collectionId": "f6360087afe668e66ac1f532d1a39599",
             "rawModeData": ""
         },
         {
-            "id": "2db0bb10d9275468079882c46ad84378",
+            "id": "513c70fdf4b91f2a310a0323f45a8f29",
             "name": "Enforcement Criminal Case Summary Report Search",
             "url": "httpsofmpub.epa.gov\/echo\/case_rest_services.get_crcase_report",
             "description": "The get_crcase_report service end point returns a complex object of criminal case detials based on the provided criminal case id.",
@@ -113,11 +113,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "569f10c93b64cf47ac3e4326ace0fc48",
+            "collectionId": "f6360087afe668e66ac1f532d1a39599",
             "rawModeData": ""
         },
         {
-            "id": "9c344a3aa9bfa718ec8554f7bc762ec5",
+            "id": "6d9f1d1650cd73449cd3de0f5d58e26b",
             "name": "Enforcement Case Download Data Service",
             "url": "httpsofmpub.epa.gov\/echo\/case_rest_services.get_download",
             "description": "Based on the QID obtained from a get_cases query, return a comma sepated vaule (CSV) file of the cases found.",
@@ -144,11 +144,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "569f10c93b64cf47ac3e4326ace0fc48",
+            "collectionId": "f6360087afe668e66ac1f532d1a39599",
             "rawModeData": ""
         },
         {
-            "id": "14189c8a147fd260f61cfd06cad79524",
+            "id": "38212227a121b6c0cf93a6fded921bae",
             "name": "Enforcement Case Map Service",
             "url": "httpsofmpub.epa.gov\/echo\/case_rest_services.get_map",
             "description": "The purpose of the GET_MAP service is to display facility coordinates and facility clusters related to a get_cases query. Currently, the maximum number of coordinates returned is 500. GET_MAP performs automatic clustering at the state, county, and zip code levels to maximize the number of coordinates returned.",
@@ -175,11 +175,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "569f10c93b64cf47ac3e4326ace0fc48",
+            "collectionId": "f6360087afe668e66ac1f532d1a39599",
             "rawModeData": ""
         },
         {
-            "id": "6bcd2de21743cb747a7bbd24a7d96e1e",
+            "id": "8a952fa0c096b55f92b482235569652a",
             "name": "Enforcement Case Paginated Results Service",
             "url": "httpsofmpub.epa.gov\/echo\/case_rest_services.get_qid",
             "description": "GET_QID is passed with a query ID corresponding to a previously run get_cases query. It then returns a CASES object containing all matching cases. The main purpose of GET_QID is for large querysets that contain multiple pages (responsesets) of output. GET_QID allows for pagination and for the selection and sorting of columns. ",
@@ -206,11 +206,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "569f10c93b64cf47ac3e4326ace0fc48",
+            "collectionId": "f6360087afe668e66ac1f532d1a39599",
             "rawModeData": ""
         },
         {
-            "id": "8e40564e81df635f947072dfab2846c6",
+            "id": "cebc4d7490ae1a00a40820d1bee58098",
             "name": "Enforcement Case Metadata Service",
             "url": "httpsofmpub.epa.gov\/echo\/case_rest_services.metadata",
             "description": "Returns the JSON Object Name and ColumnId for usage with the qcolumns parameter for get_cases endpoint.",
@@ -237,11 +237,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "569f10c93b64cf47ac3e4326ace0fc48",
+            "collectionId": "f6360087afe668e66ac1f532d1a39599",
             "rawModeData": ""
         },
         {
-            "id": "0e83d2a9e1d13e07a167bf060180d51f",
+            "id": "9c22fdab6fcc9e00a5acd1a931e5c8f9",
             "name": "ECHO ICIS Law Sections Lookup Service",
             "url": "httpsofmpub.epa.gov\/echo\/rest_lookups.icis_law_sections",
             "description": "Returns the ICIS Law Section Descriptions.",
@@ -268,7 +268,7 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "569f10c93b64cf47ac3e4326ace0fc48",
+            "collectionId": "f6360087afe668e66ac1f532d1a39599",
             "rawModeData": ""
         }
     ]
