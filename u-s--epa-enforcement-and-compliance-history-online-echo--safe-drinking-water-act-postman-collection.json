@@ -1,5 +1,5 @@
 {
-    "id": "e7ce0be3d939622cc88dec6afad0a89e",
+    "id": "ce97778ff0dd2b952a574d197f28e42b",
     "name": "U.S. EPA Enforcement and Compliance History Online (ECHO) - Safe Drinking Water Act",
     "description": null,
     "auth": null,
@@ -10,7 +10,7 @@
     "folders": [],
     "requests": [
         {
-            "id": "c3fee2fb93882ed8a79b2ff769de1348",
+            "id": "bb896b819a0cf6a626276e5d381b237f",
             "name": "Safe Drinking Water Act (SDWA) Download Data Service",
             "url": "httpsofmpub.epa.gov\/echo\/sdw_rest_services.get_download",
             "description": "Based on the QID obtained from a get_systems query, return a comma sepated vaule (CSV) file of the water systems found.",
@@ -37,11 +37,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "e7ce0be3d939622cc88dec6afad0a89e",
+            "collectionId": "ce97778ff0dd2b952a574d197f28e42b",
             "rawModeData": ""
         },
         {
-            "id": "5430dec1ae6fb904823afe4f7de55a4a",
+            "id": "1bbe1bec5e5f0c38702e1b08baef3867",
             "name": "Safe Drinking Water Act (SDWA) Paginated Results Service",
             "url": "httpsofmpub.epa.gov\/echo\/sdw_rest_services.get_qid",
             "description": "GET_QID is passed with a query ID corresponding to a previously run get_systems query. It then returns a Systems object containing all matching water systems. The main purpose of GET_QID is for large querysets that contain multiple pages (responsesets) of output. GET_QID allows for pagination and for the selection and sorting of columns. ",
@@ -68,11 +68,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "e7ce0be3d939622cc88dec6afad0a89e",
+            "collectionId": "ce97778ff0dd2b952a574d197f28e42b",
             "rawModeData": ""
         },
         {
-            "id": "3c70079d294e8b5a62ba1d8b17489ff7",
+            "id": "496c09a81696bc753f9a72a68b5afd8b",
             "name": "Safe Drinking Water Act (SDWA) Systems Search Service",
             "url": "httpsofmpub.epa.gov\/echo\/sdw_rest_services.get_systems",
             "description": "Returns an array of public water systems that meet the specified search criteria.",
@@ -99,11 +99,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "e7ce0be3d939622cc88dec6afad0a89e",
+            "collectionId": "ce97778ff0dd2b952a574d197f28e42b",
             "rawModeData": ""
         },
         {
-            "id": "bd513c6ebc6c0a0d7dd29489b5cceb61",
+            "id": "2bc914ea9f97a2aabc57c200348bcfb8",
             "name": "Safe Drinking Water Act (SDWA) Metadata Service",
             "url": "httpsofmpub.epa.gov\/echo\/sdw_rest_services.metadata",
             "description": "Returns the JSON Object Name and ColumnId for usage with the qcolumns parameter for get_systems endpoint.",
@@ -130,7 +130,7 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "e7ce0be3d939622cc88dec6afad0a89e",
+            "collectionId": "ce97778ff0dd2b952a574d197f28e42b",
             "rawModeData": ""
         }
     ]
