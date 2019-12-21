@@ -1,5 +1,5 @@
 {
-    "id": "284a4237936c1b8b753a759f53aceb04",
+    "id": "772accac8196fed00028b8d3d80128d1",
     "name": "U.S. EPA Enforcement and Compliance History Online (ECHO) - Clean Water Act (CWA) Rest Services",
     "description": null,
     "auth": null,
@@ -10,7 +10,7 @@
     "folders": [],
     "requests": [
         {
-            "id": "535ac0913946761a78743705b69a94a8",
+            "id": "8163e66eec5a3869d523a1bee2b96382",
             "name": "Clean Water Act (CWA) GeoJSON Service",
             "url": "httpsofmpub.epa.gov\/echo\/cwa_rest_services.get_download",
             "description": "Based on the QID obtained from a get_facilities or get_facility_info query, return GeoJSON of the facilities found.",
@@ -44,11 +44,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "284a4237936c1b8b753a759f53aceb04",
+            "collectionId": "772accac8196fed00028b8d3d80128d1",
             "rawModeData": ""
         },
         {
-            "id": "63dbce43bc31a91563e993f511fdefe9",
+            "id": "3969004c65d348baaa270467bf0f5051",
             "name": "Clean Water Act (CWA) Facility Search Service",
             "url": "httpsofmpub.epa.gov\/echo\/cwa_rest_services.get_facilities",
             "description": "Validates query search parameters and returns query identifier.  Use the responseset parameter to set the page size",
@@ -82,11 +82,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "284a4237936c1b8b753a759f53aceb04",
+            "collectionId": "772accac8196fed00028b8d3d80128d1",
             "rawModeData": ""
         },
         {
-            "id": "3001c1eafc0d99d42bdbd1fa4d5df6c2",
+            "id": "24b01eae69d5815c7dc9f1b795805b01",
             "name": "Clean Water Act (CWA) Facility Enhanced Search Service",
             "url": "httpsofmpub.epa.gov\/echo\/cwa_rest_services.get_facility_info",
             "description": "Returns either an array of Facilities or an array of Clusters that meet the specified search criteria.",
@@ -120,11 +120,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "284a4237936c1b8b753a759f53aceb04",
+            "collectionId": "772accac8196fed00028b8d3d80128d1",
             "rawModeData": ""
         },
         {
-            "id": "9be9153dee0e557a48ff5125f7b96dca",
+            "id": "2446b7a75cdc6d302ae0e572e6692711",
             "name": "Clean Water Act (CWA) Download Data Service",
             "url": "httpsofmpub.epa.gov\/echo\/cwa_rest_services.get_geojson",
             "description": "Based on the QID obtained from a get_facilities or get_facility_info query, return a comma sepated vaule (CSV) file of the facilities found.",
@@ -158,11 +158,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "284a4237936c1b8b753a759f53aceb04",
+            "collectionId": "772accac8196fed00028b8d3d80128d1",
             "rawModeData": ""
         },
         {
-            "id": "be6cd9147659c6824a2154acae10b8a0",
+            "id": "809150c6b045076423872bad0ef1d2f9",
             "name": "Clean Water Act (CWA) Info Clusters Service",
             "url": "httpsofmpub.epa.gov\/echo\/cwa_rest_services.get_info_clusters",
             "description": "Based on the QID obtained from a clustered get_facility_info query, download cluster facility information as either a CSV or GEOJSON file.",
@@ -189,11 +189,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "284a4237936c1b8b753a759f53aceb04",
+            "collectionId": "772accac8196fed00028b8d3d80128d1",
             "rawModeData": ""
         },
         {
-            "id": "6e8f68515e0b44e04c791c0a60c0c313",
+            "id": "e68463a52b6cd6a020e20fe4a5c42db9",
             "name": "Clean Water Act (CWA) Map Service",
             "url": "httpsofmpub.epa.gov\/echo\/cwa_rest_services.get_map",
             "description": "The purpose of the GET_MAP service is to display facility coordinates and facility clusters related to a get_facilities facility query. Currently, the maximum number of coordinates returned is 500. GET_MAP performs automatic clustering at the state, county, and zip code levels to maximize the number of coordinates returned.",
@@ -220,11 +220,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "284a4237936c1b8b753a759f53aceb04",
+            "collectionId": "772accac8196fed00028b8d3d80128d1",
             "rawModeData": ""
         },
         {
-            "id": "c420fdb489aee5c421f26e6fa53a35d3",
+            "id": "d8541467b7004fe90e944aad64350ba1",
             "name": "Clean Water Act (CWA) Paginated Results Service",
             "url": "httpsofmpub.epa.gov\/echo\/cwa_rest_services.get_qid",
             "description": "GET_QID is passed with a query ID corresponding to a previously run get_facilities query. It then returns a Facility object containing all matching facilities. The main purpose of GET_QID is for large querysets that contain multiple pages (responsesets) of output. GET_QID allows for pagination and for the selection and sorting of columns. ",
@@ -258,11 +258,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "284a4237936c1b8b753a759f53aceb04",
+            "collectionId": "772accac8196fed00028b8d3d80128d1",
             "rawModeData": ""
         },
         {
-            "id": "a4021a1b209e617bc6944a013ee4ed78",
+            "id": "cd23bbef6ff07cfd5780007cef052f19",
             "name": "Clean Water Act (CWA) Metadata Service",
             "url": "httpsofmpub.epa.gov\/echo\/cwa_rest_services.metadata",
             "description": "Returns the JSON Object Name and ColumnId for usage with the qcolumns parameter for get_qid, get_facility_info and other service endpoints.",
@@ -289,11 +289,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "284a4237936c1b8b753a759f53aceb04",
+            "collectionId": "772accac8196fed00028b8d3d80128d1",
             "rawModeData": ""
         },
         {
-            "id": "52355653c69d5e6b734fe9d078eb02f6",
+            "id": "67a0b5a07dc7b1ca7b1b3fabc68b8f8d",
             "name": "ECHO BP Tribes Lookup Service",
             "url": "httpsofmpub.epa.gov\/echo\/rest_lookups.bp_tribes",
             "description": "Returns the EPA Standard Indian Tribes and Native Alaskan Villages tribal_id and tribe_name.",
@@ -320,11 +320,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "284a4237936c1b8b753a759f53aceb04",
+            "collectionId": "772accac8196fed00028b8d3d80128d1",
             "rawModeData": ""
         },
         {
-            "id": "31dd19366e1dd2d3e013e1256d3ba599",
+            "id": "86c9ac8999d577e415666276b71a7943",
             "name": "ECHO CWA Parameter Lookup Service",
             "url": "httpsofmpub.epa.gov\/echo\/rest_lookups.cwa_parameters",
             "description": "Look up Clean Water Act parameter codes and descriptions in the Integrated Compliance Information System - National Pollutant Discharge Elimination System (ICIS-NPDES) by code or term.",
@@ -351,11 +351,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "284a4237936c1b8b753a759f53aceb04",
+            "collectionId": "772accac8196fed00028b8d3d80128d1",
             "rawModeData": ""
         },
         {
-            "id": "723d49c646b38c3044fe7681ed0353ca",
+            "id": "b606896eaef95cd04452c2674f34b38e",
             "name": "ECHO CWA Pollutants Lookup Service",
             "url": "httpsofmpub.epa.gov\/echo\/rest_lookups.cwa_pollutants",
             "description": "",
@@ -382,11 +382,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "284a4237936c1b8b753a759f53aceb04",
+            "collectionId": "772accac8196fed00028b8d3d80128d1",
             "rawModeData": ""
         },
         {
-            "id": "5dbe52bb0481609dbbd7b437a53f62a4",
+            "id": "4d032426057f2cf3184ce2beaa09f5ae",
             "name": "ECHO Federal Agency Lookup Service",
             "url": "httpsofmpub.epa.gov\/echo\/rest_lookups.federal_agencies",
             "description": "Look up Federal Agency Code",
@@ -413,11 +413,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "284a4237936c1b8b753a759f53aceb04",
+            "collectionId": "772accac8196fed00028b8d3d80128d1",
             "rawModeData": ""
         },
         {
-            "id": "c45e2a6a04a3768381cfcb7a75f6b4e2",
+            "id": "90b51bbfcf479a89ad99ad715902175c",
             "name": "ECHO ICIS NPDES Inspection Types Lookup Service",
             "url": "httpsofmpub.epa.gov\/echo\/rest_lookups.icis_inspection_types",
             "description": "Returns the ICIS NPDES Compliance Monitoring Type Code and Description.",
@@ -444,11 +444,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "284a4237936c1b8b753a759f53aceb04",
+            "collectionId": "772accac8196fed00028b8d3d80128d1",
             "rawModeData": ""
         },
         {
-            "id": "3b73604b3823ec7c7a0598a57c7b8b55",
+            "id": "4a902733ec9bbede9291544771530b26",
             "name": "ECHO ICIS Law Sections Lookup Service",
             "url": "httpsofmpub.epa.gov\/echo\/rest_lookups.icis_law_sections",
             "description": "Returns the ICIS Law Section Descriptions.",
@@ -475,11 +475,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "284a4237936c1b8b753a759f53aceb04",
+            "collectionId": "772accac8196fed00028b8d3d80128d1",
             "rawModeData": ""
         },
         {
-            "id": "5e99775ae899a1b3f5d7f1561e9f3364",
+            "id": "dd7aefad9a8c0d9f790af18f5998c64a",
             "name": "ECHO NAICS Codes Lookup Service",
             "url": "httpsofmpub.epa.gov\/echo\/rest_lookups.naics_codes",
             "description": "",
@@ -506,11 +506,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "284a4237936c1b8b753a759f53aceb04",
+            "collectionId": "772accac8196fed00028b8d3d80128d1",
             "rawModeData": ""
         },
         {
-            "id": "e7370e35658ef9366a265359d28b26ce",
+            "id": "eecd60bfc7e8ce0b19d2debff9aee2e3",
             "name": "ECHO NPDES Parameters Lookup Service",
             "url": "httpsofmpub.epa.gov\/echo\/rest_lookups.npdes_parameters",
             "description": "ICIS Limit Parameter Code and Name lookup based on the supply of a partial parameter name. (NPDES = National Pollutant Discharge Elimination System)",
@@ -537,11 +537,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "284a4237936c1b8b753a759f53aceb04",
+            "collectionId": "772accac8196fed00028b8d3d80128d1",
             "rawModeData": ""
         },
         {
-            "id": "9884890a5a106d4a8bf5d8dde2975b6e",
+            "id": "1fdd544701273571ed0d330a421449f8",
             "name": "ECHO WBD Code Lookup Service",
             "url": "httpsofmpub.epa.gov\/echo\/rest_lookups.wbd_code_lu",
             "description": "USGS Watershed Boundary Dataset (WBD) Name lookup based on a supplied WBD Code and Watershed Level",
@@ -568,11 +568,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "284a4237936c1b8b753a759f53aceb04",
+            "collectionId": "772accac8196fed00028b8d3d80128d1",
             "rawModeData": ""
         },
         {
-            "id": "566847fa172088c0732112dc2d3370ff",
+            "id": "f9f49a19a37194f72db40224769fdceb",
             "name": "ECHO WBD Name Lookup Service",
             "url": "httpsofmpub.epa.gov\/echo\/rest_lookups.wbd_name_lu",
             "description": "USGS Watershed Boundary Dataset (WBD) Code lookup based on a supplied WBD Name and Watershed Level",
@@ -599,7 +599,7 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "284a4237936c1b8b753a759f53aceb04",
+            "collectionId": "772accac8196fed00028b8d3d80128d1",
             "rawModeData": ""
         }
     ]
